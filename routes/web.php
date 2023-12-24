@@ -56,9 +56,9 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth','role:admin'])->group(function(){
-   
+
 //dossier medical
-//safae  
+//safae
 /**********************************ordonnance************************************************************/
 Route::get('Ordonnance/list',[OrdonnanceController::class,'list'])->name('Ordonnance.index');
 Route::get('Ordonnance/voir/{id}',[OrdonnanceController::class,'show'])->name('Ordonnance.Voir');
@@ -70,7 +70,7 @@ Route::get('Ordonnance/delete/{id}',[OrdonnanceController::class,'destroy'])->na
 
 /*************************************Consultation*********************************************/
 Route::get('Consultation/create',[ConsultationController::class,'create'])->name('Consultation.create');
-Route::get('Consultation/list',[ConsultationController::class,'list'])->name('Consultation.index');
+Route::get('Consultation/list',[ConsultationController::class,'index'])->name('Consultation.index');
 Route::get('Consultation/edit/{id}',[ConsultationController::class,'edit'])->name('Consultation.Modify');
 Route::post('Consultation/store',[ConsultationController::class,'store'])->name('Consultation.store');
 Route::put('Consultation/update/{id}',[ConsultationController::class,'update'])->name('Consultation.update');

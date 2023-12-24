@@ -24,7 +24,6 @@ class FichePatientController extends Controller
      */
     public function create()
     {
-       /* $Fiche_Patient*/
         $fiche_patients = new Fiche_Patient;
         return view('Fiche_Patient.create');
     }
@@ -36,10 +35,6 @@ class FichePatientController extends Controller
      */
     public function store(Request $request)
     {
-       /* $fiche_patients = $this->appointmentFromRequest($request);
-        $fiche_patients->save();
-       
-           return redirect()->route('Fiche_Patient.index');*/
 
         $fiche_patients = new Fiche_Patient;
         $fiche_patients->nom_pat=$request->input('nom_pat');
@@ -49,11 +44,11 @@ class FichePatientController extends Controller
         $fiche_patients->adresse=$request->input('adresse');
         $fiche_patients->telephone=$request->input('telephone');
         $fiche_patients->group_sang=$request->input('group_sang');
-        $fiche_patients->save(); 
-       
+        $fiche_patients->save();
+
            return redirect()->route('Fiche_Patient.index');
-        
-           
+
+
     }
 
     /**
@@ -75,7 +70,7 @@ class FichePatientController extends Controller
 
     public function update(Request $request, $id)
     {
-        
+
         $fiche_patients = Fiche_Patient::find($id);
         $fiche_patients->nom_pat=$request->input('nom_pat');
         $fiche_patients->prenom_pat=$request->input('prenom_pat');
@@ -84,9 +79,9 @@ class FichePatientController extends Controller
         $fiche_patients->adresse=$request->input('adresse');
         $fiche_patients->telephone=$request->input('telephone');
         $fiche_patients->group_sang=$request->input('group_sang');
-        $fiche_patients->save(); 
+        $fiche_patients->save();
         return redirect()->route('Fiche_Patient.index');
-        
+
     }
 
     private function FicheFromRequest(Request $request)
@@ -102,7 +97,7 @@ class FichePatientController extends Controller
         $newFiche_Patient->telephone = $request->input('telephone');
         $newFiche_Patient->group_sang = $request->input('group_sang');
 
-       
+
     }
 
     public function show($id)

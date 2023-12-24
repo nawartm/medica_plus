@@ -25,7 +25,7 @@
                 <th class="table-primary">Date</th>
                 <th class="table-primary">Heure</th>
                 <th class="table-primary">Durée</th>
-
+                <th class="table-primary">Action</th>
             </thead>
 
             <tbody>

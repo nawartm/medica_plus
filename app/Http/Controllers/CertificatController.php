@@ -24,7 +24,7 @@ class CertificatController extends Controller
      */
     public function create()
     {
-        
+
         return view('Certificat.create');
     }
 
@@ -35,7 +35,7 @@ class CertificatController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $Certificat = new Certificat;
         $Certificat->nom_pat=$request->input('nom_pat');
         $Certificat->prenom_pat=$request->input('prenom_pat');
@@ -44,11 +44,11 @@ class CertificatController extends Controller
         $Certificat->date=$request->input('date');
         $Certificat->heure=$request->input('heure');
         $Certificat->dure=$request->input('dure');
-        $Certificat->save(); 
-       
+        $Certificat->save();
+
            return redirect()->route('Certificat.index');
-        
-       
+
+
     }
 
     /**
@@ -65,12 +65,12 @@ class CertificatController extends Controller
     public function edit($id)
     {
         $certificats = Certificat::find($id);
-        return view('Certificat.edit')->with('certificats', $certificats);
+        return view('Certificat.edit', ['certificats' => $certificats]);
     }
 
     public function update(Request $request, $id)
     {
-        
+
         $Certificat = Certificat::find($id);
         $Certificat->nom_pat=$request->input('nom_pat');
         $Certificat->prenom_pat=$request->input('prenom_pat');
@@ -79,7 +79,7 @@ class CertificatController extends Controller
         $Certificat->date=$request->input('date');
         $Certificat->heure=$request->input('heure');
         $Certificat->dure=$request->input('dure');
-        $Certificat->save(); 
+        $Certificat->save();
         return redirect()->route('Certificat.index');
     }
 

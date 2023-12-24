@@ -9,22 +9,22 @@ class DepenseController extends Controller
 {
     /*-------ajouter depense------- */
     public function index(){
-       return view('depense.depense'); 
+       return view('depense.depense');
     }
 
     /*-------enregistrer depense------- */
     public function save(Request $request){
-      
+
         $mois_dep =  $request['mois_dep'];
         $motif_dep =  $request['motif_dep'];
         $montant_dep =  $request['montant_dep'];
-        
+
         $depense = new Depense();
 
         $depense->mois_dep = $mois_dep ;
         $depense->motif_dep = $motif_dep ;
         $depense->montant_dep = $montant_dep ;
-       
+
         $depense->save();
         return redirect::Route('listDepenses');
     }
@@ -48,20 +48,10 @@ class DepenseController extends Controller
         $depense->mois_dep=$request->mois_dep;
         $depense->motif_dep=$request->motif_dep;
         $depense->montant_dep=$request->montant_dep;
-        
-        $depense->save(); 
+
+        $depense->save();
         return redirect()->route('listDepenses');
     }
-
-    /*-------afficher depenses------- */
-    //   public function show(Request $request ){
-       
-    //      $mois_dep =  $request['mois'];
-    //      $motif_dep =  $request['motif'];
-    //      $montant_dep =  $request['montant'];
-        
-    //      return view("depense.show" ,['mois_dep'=>$mois_dep  , 'motif_dep'=>$motif_dep , 'montant_dep'=>$montant_dep]);
-    //   }
 
       public function show($id)
      {

@@ -15,13 +15,8 @@ class ConsultationController extends Controller
      */
     public function index()
     {
-        $AllConsu = Consultation::orderBy('id', 'ASC')->get();
-        return response()->view('Consultation.index', array('Consu' => $AllConsu));
-    }
-    public function list()
-    {
-        $Consultation =Consultation::all();
-        return view('Consultation.crudCons',compact('Consultation'));
+        $Consultation = Consultation::orderBy('id', 'ASC')->get();
+        return response()->view('Consultation.index', array('Consultation' => $Consultation));
     }
     /**
      * Show the form for creating a new resource.
@@ -30,7 +25,7 @@ class ConsultationController extends Controller
      */
     public function create()
     {
-       
+
         return view('Consultation.Create_Cons');
     }
 
@@ -41,7 +36,7 @@ class ConsultationController extends Controller
      */
     public function store(ConsultationRequest $request)
     {
-        
+
         $Consultation = new Consultation();
         $Consultation->nom_pat=$request->nom_pat;
         $Consultation->prenom_pat=$request->prenom_pat;
@@ -56,11 +51,11 @@ class ConsultationController extends Controller
         $Consultation->conclusion=$request->conclusion;
         $Consultation->date=$request->date;
         $Consultation->heure=$request->heure;
-        $Consultation->save(); 
-       
+        $Consultation->save();
+
            return redirect()->route('Consultation.index');
-        
-       
+
+
     }
 
     /**
@@ -82,7 +77,7 @@ class ConsultationController extends Controller
 
     public function update(ConsultationRequest $request, $id)
     {
-        
+
         $Consultation = Consultation::find($id);
         $Consultation->nom_pat=$request->nom_pat;
         $Consultation->prenom_pat=$request->prenom_pat;
@@ -97,7 +92,7 @@ class ConsultationController extends Controller
         $Consultation->conclusion=$request->conclusion;
         $Consultation->date=$request->date;
         $Consultation->heure=$request->heure;
-        $Consultation->save(); 
+        $Consultation->save();
         return redirect()->route('Consultation.index');
     }
 }

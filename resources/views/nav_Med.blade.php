@@ -21,7 +21,7 @@
         <nav>
             <i class="fa-solid fa-bars" id="menu"></i>
             <ul>
-                <li><a href="{{ route('home') }}"><img src="{{  }}" alt="medica" srcset=""></a></li>
+                <li><a href="{{ route('home') }}"><img src="" alt="medica" srcset=""></a></li>
 
                 <!--***************************************Gestion du dossier medical************************************** -->
 
@@ -105,9 +105,9 @@
                 const visibility = span.getAttribute('data-visible');
 
                 if (visibility === "true") {
-                    span.setAttribute("data-visible", "false"); // Set to false if currently true
+                    span.setAttribute("data-visible", "false");
                 } else {
-                    span.setAttribute("data-visible", "true"); // Set to true if not true
+                    span.setAttribute("data-visible", "true");
                 }
 
             }
