@@ -26,9 +26,6 @@
         <div class="tbl-content">
             <table cellpadding="0" cellspacing="1" border="0">
                 <tbody>
-
-
-
                     @foreach ($listF as $facture)
                         <tr>
                             <td>{{ $facture['id'] }}</td>
@@ -52,9 +49,6 @@
 
                 </tbody>
             </table>
-
-        </div>
-
     </section>
 
     <script>

@@ -9,16 +9,17 @@
             </ul>
         </div>
     @endif
-    <div class="container">
+    <div class="form">
         <h1>Formulaire Gestion des Certificats</h1>
         <form action="{{ url('Certificat/' . $certificats->id) }}" method="post">
             {!! csrf_field() !!}
             @method('PATCH')
-            <input type="hidden" name="id" id="id" value="{{ $certificats->id }}" id="id" />
+
             <label>Nom patient</label></br>
+            <input type="hidden" name="id" id="id" value="{{ $certificats->id }}" id="id" />
+            <label>Prénom patient</label></br>
             <input type="text" name="nom_pat" id="nom_pat" value="{{ $certificats->nom_pat }}"
                 class="form-control"></br>
-            <label>Prénom patient</label></br>
             <input type="text" name="prenom_pat" id="prenom_pat" value="{{ $certificats->prenom_pat }}"
                 class="form-control"></br>
             <label>Nom medecin</label></br>

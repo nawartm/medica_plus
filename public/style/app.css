@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
+    margin: 0 ;
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -40,13 +41,13 @@ ul {
 
     list-style: none;
 
-    & a {
-        text-decoration: none;
-        font-weight: 800;
-        font-size: large;
+}
+a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: large;
 
-        color: var(--bright-green);
-    }
+    color: var(--bright-green);
 }
 
 ul li a span[data-visible="false"] {
@@ -59,6 +60,7 @@ ul li a span[data-visible="false"] {
 body {
     display: grid;
     grid-template-columns: 1fr 8fr;
+    align-items: start;
 
     min-height: 100vh;
 }
@@ -126,4 +128,78 @@ table tbody tr:nth-of-type(even) {
 
 .btn-primary {
     background-color: var(--add-new);
+}
+
+/* Forms */
+
+.form {
+    display: grid ;
+    justify-content: center ;
+    align-content: center ;
+    min-height: 100% ;
+}
+
+.form form {
+    background-color: var(--dark-green) ;
+    padding: 1rem 2rem ;
+
+    display: flex ;
+    flex-direction: column ;
+    gap: 1rem ;
+
+    border-radius: 1rem ;
+
+    box-shadow: .1rem .1rem 2rem var(--edit);
+    width: fit-content ;
+
+}
+
+.remember {
+    max-width: fit-content ;
+}
+form label{
+    font-weight: 800 ;
+}
+
+form h3 {
+    font-size: 2rem ;
+    color: var(--bright-green);
+    font-weight: 800 ;
+}
+
+.top-title {
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+
+    & a{
+        text-decoration: none ;
+        color: var(--bright-green);
+        font-weight: 800 ;
+        font-size: 1.3rem ;
+    }
+}
+
+input {
+    padding: .5rem ;
+    border: var(--dark-green) solid .1rem ; 
+    border-radius: .3rem ;
+    outline: none ;
+    font-weight: bold ;
+    width: 24rem ;
+
+}
+
+input[type="submit"]{
+    max-width: fit-content ;
+}
+
+input:focus{
+    border: var(--lite-green) solid .1rem ; 
+}
+
+textarea {
+    min-height: 8rem ;
+    min-width: 24rem ;
+    padding: .3rem ;
 }
