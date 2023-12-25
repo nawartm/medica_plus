@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 * {
+<<<<<<< HEAD
     margin: 0;
+=======
+>>>>>>> 128e1b238cb4fdf2015155196daf8fc59057aa62
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -25,11 +28,14 @@ nav {
     background-color: var(--dark-green);
     padding: 0.5rem 1rem;
 
-    display: flex;
+    display: flex ;
     flex-direction: column;
     justify-content: space-between;
+<<<<<<< HEAD
 
     min-height: 100%;
+=======
+>>>>>>> 128e1b238cb4fdf2015155196daf8fc59057aa62
 }
 
 ul {
@@ -48,6 +54,12 @@ a {
     color: var(--bright-green);
 }
 
+/*
+
+css nesting
+
+*/
+
 ul li a span[data-visible="false"] {
     display: none;
 }
@@ -57,7 +69,6 @@ ul li a span[data-visible="false"] {
 body {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    align-items: start;
 
     min-height: 100vh;
 }
@@ -73,7 +84,7 @@ table {
     min-width: 100%;
     border-radius: 1rem 1rem;
     overflow: hidden;
-    box-shadow: 0 0 1.4rem var(--lite-green);
+    box-shadow: 0 0 1rem var(--lite-green);
 }
 
 table thead tr {
@@ -89,7 +100,11 @@ table td {
 }
 
 table tbody tr {
+<<<<<<< HEAD
     border-bottom: 0.1rem solid var(--dark-green);
+=======
+    border-bottom: .25rem solid var(--dark-green);
+>>>>>>> 128e1b238cb4fdf2015155196daf8fc59057aa62
 }
 
 table tbody tr:nth-of-type(even) {
@@ -99,7 +114,11 @@ table tbody tr:nth-of-type(even) {
 .btn {
     padding: 0.2rem 0.4rem;
     border: none;
+<<<<<<< HEAD
     border-radius: 0.3rem;
+=======
+    border-radius: .3rem ;
+>>>>>>> 128e1b238cb4fdf2015155196daf8fc59057aa62
     font-size: 1rem;
 
     max-width: fit-content;
@@ -109,6 +128,11 @@ table tbody tr:nth-of-type(even) {
         font-weight: 800;
         color: var(--bright-green);
     }
+}
+
+img {
+    aspect-ratio: 1 ;
+    max-height: 3rem ;
 }
 
 .btn-success {
@@ -126,6 +150,7 @@ table tbody tr:nth-of-type(even) {
 .btn-primary {
     background-color: var(--add-new);
 }
+<<<<<<< HEAD
 
 /* Forms */
 
@@ -198,3 +223,5 @@ textarea {
     min-width: 24rem;
     padding: 0.3rem;
 }
+=======
+>>>>>>> 128e1b238cb4fdf2015155196daf8fc59057aa62
