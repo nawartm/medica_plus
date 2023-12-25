@@ -21,7 +21,7 @@
         <nav>
             <i class="fa-solid fa-bars" id="menu"></i>
             <ul>
-                <li><a href="{{ route('home') }}"><img src="" alt="medica" srcset=""></a></li>
+                <li><a href="{{ route('home') }}"><img src="{{ asset('assets/Green Medical Logo (1).png') }}" alt="Medica+" srcset=""></a></li>
 
                 <!--***************************************Gestion du dossier medical************************************** -->
 

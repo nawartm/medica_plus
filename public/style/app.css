@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
-    padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
@@ -24,12 +24,9 @@ nav {
     background-color: var(--dark-green);
     padding: .5rem 1rem;
 
-    display: flex;
+    display: flex ;
     flex-direction: column;
     justify-content: space-between;
-
-    min-height: 100%;
-
 }
 
 ul {
@@ -49,16 +46,21 @@ ul {
     }
 }
 
+/*
+
+css nesting
+
+*/
+
 ul li a span[data-visible="false"] {
     display: none;
-
 }
 
 /* body  */
 
 body {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 7fr ;
 
     min-height: 100vh;
 }
@@ -74,7 +76,7 @@ table {
     min-width: 100%;
     border-radius: 1rem 1rem;
     overflow: hidden;
-    box-shadow: 0 0 1.4rem var(--lite-green);
+    box-shadow: 0 0 1rem var(--lite-green);
 }
 
 table thead tr {
@@ -90,7 +92,7 @@ table td {
 }
 
 table tbody tr {
-    border-bottom: .1rem solid var(--dark-green);
+    border-bottom: .25rem solid var(--dark-green);
 }
 
 table tbody tr:nth-of-type(even) {
@@ -100,7 +102,7 @@ table tbody tr:nth-of-type(even) {
 .btn {
     padding: .2rem .4rem;
     border: none;
-    border-radius: .3rem;
+    border-radius: .3rem ;
     font-size: 1rem;
 
     max-width: fit-content;
@@ -110,6 +112,11 @@ table tbody tr:nth-of-type(even) {
         font-weight: 800;
         color: var(--bright-green);
     }
+}
+
+img {
+    aspect-ratio: 1 ;
+    max-height: 3rem ;  
 }
 
 .btn-success {
