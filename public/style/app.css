@@ -1,36 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 * {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: 'Tajawal', sans-serif;
+    font-family: "Tajawal", sans-serif;
     text-transform: capitalize;
 }
 
 :root {
-    --dark-green: #0E6655;
-    --green: #74B49B;
-    --lite-green: #A7D7C5;
-    --bright-green: #F4F9F4;
-    --delete: #B31312;
-    --varning: #FFCD4B;
-    --edit: #219C90;
-    --add-new: #0079FF;
+    --dark-green: #0e6655;
+    --green: #74b49b;
+    --lite-green: #a7d7c5;
+    --bright-green: #f4f9f4;
+    --delete: #b31312;
+    --varning: #ffcd4b;
+    --edit: #219c90;
+    --add-new: #0079ff;
 }
 
 /* Nav  */
 nav {
     background-color: var(--dark-green);
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     min-height: 100%;
-
 }
 
 ul {
@@ -40,7 +39,6 @@ ul {
     gap: 1rem;
 
     list-style: none;
-
 }
 a {
     text-decoration: none;
@@ -52,7 +50,6 @@ a {
 
 ul li a span[data-visible="false"] {
     display: none;
-
 }
 
 /* body  */
@@ -87,12 +84,12 @@ table thead tr {
 
 table th,
 table td {
-    padding: .8rem 1rem;
+    padding: 0.8rem 1rem;
     text-align: center;
 }
 
 table tbody tr {
-    border-bottom: .1rem solid var(--dark-green);
+    border-bottom: 0.1rem solid var(--dark-green);
 }
 
 table tbody tr:nth-of-type(even) {
@@ -100,9 +97,9 @@ table tbody tr:nth-of-type(even) {
 }
 
 .btn {
-    padding: .2rem .4rem;
+    padding: 0.2rem 0.4rem;
     border: none;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     font-size: 1rem;
 
     max-width: fit-content;
@@ -133,73 +130,71 @@ table tbody tr:nth-of-type(even) {
 /* Forms */
 
 .form {
-    display: grid ;
-    justify-content: center ;
-    align-content: center ;
-    min-height: 100% ;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100%;
 }
 
 .form form {
-    background-color: var(--dark-green) ;
-    padding: 1rem 2rem ;
+    background-color: var(--dark-green);
+    padding: 1rem 2rem;
 
-    display: flex ;
-    flex-direction: column ;
-    gap: 1rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-    border-radius: 1rem ;
+    border-radius: 1rem;
 
-    box-shadow: .1rem .1rem 2rem var(--edit);
-    width: fit-content ;
-
+    box-shadow: 0.1rem 0.1rem 2rem var(--edit);
+    width: fit-content;
 }
 
 .remember {
-    max-width: fit-content ;
+    max-width: fit-content;
 }
-form label{
-    font-weight: 800 ;
+form label {
+    font-weight: 800;
 }
 
 form h3 {
-    font-size: 2rem ;
+    font-size: 2rem;
     color: var(--bright-green);
-    font-weight: 800 ;
+    font-weight: 800;
 }
 
 .top-title {
-    display: flex ;
-    justify-content: space-between ;
-    align-items: center ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    & a{
-        text-decoration: none ;
+    & a {
+        text-decoration: none;
         color: var(--bright-green);
-        font-weight: 800 ;
-        font-size: 1.3rem ;
+        font-weight: 800;
+        font-size: 1.3rem;
     }
 }
 
 input {
-    padding: .5rem ;
-    border: var(--dark-green) solid .1rem ; 
-    border-radius: .3rem ;
-    outline: none ;
-    font-weight: bold ;
-    width: 24rem ;
-
+    padding: 0.5rem;
+    border: var(--dark-green) solid 0.1rem;
+    border-radius: 0.3rem;
+    outline: none;
+    font-weight: bold;
+    width: 24rem;
 }
 
-input[type="submit"]{
-    max-width: fit-content ;
+input[type="submit"] {
+    max-width: fit-content;
 }
 
-input:focus{
-    border: var(--lite-green) solid .1rem ; 
+input:focus {
+    border: var(--lite-green) solid 0.1rem;
 }
 
 textarea {
-    min-height: 8rem ;
-    min-width: 24rem ;
-    padding: .3rem ;
+    min-height: 8rem;
+    min-width: 24rem;
+    padding: 0.3rem;
 }
