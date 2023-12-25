@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
-    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
@@ -37,13 +37,13 @@ ul {
 
     list-style: none;
 
-    & a {
-        text-decoration: none;
-        font-weight: 800;
-        font-size: large;
+}
+a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: large;
 
-        color: var(--bright-green);
-    }
+    color: var(--bright-green);
 }
 
 /*
@@ -60,7 +60,7 @@ ul li a span[data-visible="false"] {
 
 body {
     display: grid;
-    grid-template-columns: 1fr 7fr ;
+    grid-template-columns: 1fr 8fr;
 
     min-height: 100vh;
 }
@@ -116,7 +116,7 @@ table tbody tr:nth-of-type(even) {
 
 img {
     aspect-ratio: 1 ;
-    max-height: 3rem ;  
+    max-height: 3rem ;
 }
 
 .btn-success {

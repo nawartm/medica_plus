@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-image: url({{ asset('assets/subtle-prism.png') }});
+        }
+    </style>
     <title></title>
 </head>
 
@@ -80,7 +85,7 @@
                         onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
                         {{-- {{ __('quit') }} --}}
-                            <i class="fa-solid fa-power-off"></i>
+                        <i class="fa-solid fa-power-off"></i>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -92,9 +97,7 @@
             </ul>
         </nav>
     @endauth
-    <main>
-        @yield('app')
-    </main>
+    @yield('app')
     <script>
         let btn = document.getElementById('menu');
         const allSpans = document.querySelectorAll('span');
