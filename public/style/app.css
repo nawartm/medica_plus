@@ -5,7 +5,6 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Tajawal", sans-serif;
-    text-transform: capitalize;
 }
 
 :root {
@@ -21,6 +20,7 @@
 
 /* Nav  */
 nav {
+    text-transform: capitalize;
     background-color: var(--dark-green);
     padding: 0.5rem 1rem;
 
@@ -93,11 +93,7 @@ table td {
 }
 
 table tbody tr {
-<<<<<<< HEAD
-    border-bottom: 0.1rem solid var(--dark-green);
-=======
     border-bottom: .25rem solid var(--dark-green);
->>>>>>> 128e1b238cb4fdf2015155196daf8fc59057aa62
 }
 
 table tbody tr:nth-of-type(even) {
@@ -107,11 +103,7 @@ table tbody tr:nth-of-type(even) {
 .btn {
     padding: 0.2rem 0.4rem;
     border: none;
-<<<<<<< HEAD
-    border-radius: 0.3rem;
-=======
     border-radius: .3rem ;
->>>>>>> 128e1b238cb4fdf2015155196daf8fc59057aa62
     font-size: 1rem;
 
     max-width: fit-content;
@@ -143,7 +135,6 @@ img {
 .btn-primary {
     background-color: var(--add-new);
 }
-<<<<<<< HEAD
 
 /* Forms */
 
@@ -216,5 +207,3 @@ textarea {
     min-width: 24rem;
     padding: 0.3rem;
 }
-=======
->>>>>>> 128e1b238cb4fdf2015155196daf8fc59057aa62
