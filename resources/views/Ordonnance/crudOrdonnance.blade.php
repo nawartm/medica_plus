@@ -15,12 +15,12 @@
                     <tr>
                         <th>id</th>
                         <th>Nom patient</th>
-                        <th>Prenom Patient</th>
-                        <th>Nom medcin</th>
-                        <th>Prenom medcin</th>
-                        <th>Date</th>
+                        <th>Prénom Patient</th>
+                        <th>Nom médecin</th>
+                        <th>Prénom médecin</th>
+                        <th>la Date</th>
                         <th>Description</th>
-                        <th>Operations</th>
+                        <th>Opérations</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,13 +36,13 @@
                             <td>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Ordonnance.Modify', $Ordonnance->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">edit</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>
                                 <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
                                         href="{{ route('Ordonnance.Voir', $Ordonnance->id) }}"
-                                        class="btn btn-warning ps-0 py-0 pe-0">see</a></button>
+                                        class="btn btn-warning ps-0 py-0 pe-0">voir</a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('Ordonnance.delete', $Ordonnance->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">delete</a></button>
+                                        class="btn btn-danger ps-0 py-0 pe-0">supprimer</a></button>
                             </td>
                         </tr>
                     @endforeach
