@@ -23,6 +23,7 @@ nav {
     text-transform: capitalize;
     background-color: var(--dark-green);
     padding: 0.5rem 1rem;
+    min-height: 100% ;
 
     display: flex ;
     flex-direction: column;
@@ -62,6 +63,7 @@ ul li a span[data-visible="false"] {
 body {
     display: grid;
     grid-template-columns: 1fr 8fr;
+    align-items: start;
 
     min-height: 100vh;
 }
@@ -135,7 +137,6 @@ img {
 .btn-primary {
     background-color: var(--add-new);
 }
-
 /* Forms */
 
 .form {

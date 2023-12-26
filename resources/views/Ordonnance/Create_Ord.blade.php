@@ -16,27 +16,27 @@
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br> 
+                <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br>
                 <input type="text" class="form-control" name="nom_pat" placeholder="Entrez le nom du patient">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Prenom du patient</label><br> 
+                <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
                 <input type="text" class="form-control" name="prenom_pat">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Nom du medcin</label><br> 
+                <label for="exampleFormControlInput1" class="form-label">Nom du médecin</label><br>
                 <input type="text" class="form-control" name="nom_med">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Prenom du medcin</label><br> 
+                <label for="exampleFormControlInput1" class="form-label">Prénom du médecin</label><br>
                 <input type="text" class="form-control" name="prenom_med">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">date</label><br> 
+                <label for="exampleFormControlInput1" class="form-label">la date</label><br>
                 <input type="date" class="form-control" name="date" value="2022-02-22">
             </div>
             <div>
-                <label for="exampleFormControlTextarea1" class="form-label">Description</label><br> 
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label><br>
                 <textarea class="form-control" name="description" rows="3" placeholder="Ecrivez une description"></textarea>
             </div>
 

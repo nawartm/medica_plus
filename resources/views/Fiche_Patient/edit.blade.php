@@ -28,12 +28,12 @@
                     class="form-control"></br>
             </div>
             <div>
-                <label>Date de naissance</label></br>
+                <label>la Date de naissance</label></br>
                 <input type="text" name="date_naiss" id="date_naiss" value="{{ $fiche_patients->date_naiss }}"
                     class="form-control"></br>
             </div>
             <div>
-                <label>Sexe</label></br>
+                <label>le genre</label></br>
                 <input type="text" name="sexe" id="sexe" value="{{ $fiche_patients->sexe }}"
                     class="form-control"></br>
             </div>
@@ -51,12 +51,12 @@
             </div>
             <div>
 
-                <label>Groupe de Sang</label></br>
+                <label>Groupe sanguin</label></br>
                 <input type="text" name="group_sang" id="group_sang" value="{{ $fiche_patients->group_sang }}"
                     class="form-control"></br>
             </div>
 
-            <input type="submit" value="Update" class="btn btn-success"></br>
+            <input type="submit" value="modifier" class="btn btn-success"></br>
         </form>
     </div>
 @endsection

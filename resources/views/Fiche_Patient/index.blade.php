@@ -14,7 +14,7 @@
         <h2> Gestion des Fiches Patients</h2>
         <button type="button" class="btn btn-primary">
             <a href="{{ url('/Fiche_Patient/create') }}" title="Add New Fiche du Patient">
-                <i class="fa fa-plus" aria-hidden="true"></i> Add New
+                <i class="fa fa-plus" aria-hidden="true"></i> ajouter nouveau patient
             </a>
         </button>
 
@@ -25,10 +25,11 @@
                 <th class="table-primary">Nom patient</th>
                 <th class="table-primary">Prénom patient</th>
                 <th class="table-primary">Date de naissance</th>
-                <th class="table-primary">Sexe</th>
+                <th class="table-primary">le genere</th>
                 <th class="table-primary">Adresse</th>
                 <th class="table-primary">Tél</th>
-                <th class="table-primary">Groupe de Sang</th>
+                <th class="table-primary">Groupe sanguin</th>
+                <th class="table-primary">Opérations</th>
 
             </thead>
             <tbody>
@@ -45,17 +46,17 @@
                         <td>
                             <a href="{{ url('/Fiche_Patient/' . $item->id) }}" title="View Fiche du Patient"><button
                                     class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                    View</button></a>
+                                    voir</button></a>
                             <a href="{{ url('/Fiche_Patient/' . $item->id . '/edit') }}"
                                 title="Edit Fiche du Patient"><button class="btn btn-primary btn-sm"><i
-                                        class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                                        class="fa fa-pencil-square-o" aria-hidden="true"></i> modifier</button></a>
                             <form method="POST" action="{{ url('/Fiche_Patient' . '/' . $item->id) }}"
                                 accept-charset="UTF-8" style="display:inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete Fiche du Patient"
                                     onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
-                                        aria-hidden="true"></i> Delete</button>
+                                        aria-hidden="true"></i> supprimer</button>
                             </form>
                         </td>
                     </tr>

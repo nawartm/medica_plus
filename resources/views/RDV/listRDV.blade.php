@@ -2,22 +2,22 @@
 @section('app')
     <section>
         <!--for demo wrap-->
-        <h1>Gestion des RDVs</h1>
+        <h1>Gestion des rendez vous</h1>
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="/RDVRDV" style="color:white" class="btn btn-sm me-2">Ajouter
-                un RDV</a>
+                un rendez vous</a>
         </button>
         <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
                     <tr>
-                        <th class="table-primary"> ID </th>
-                        <th class="table-secondary"> Nom_Patient </th>
-                        <th class="table-success"> Prenom_Patient </th>
-                        <th class="table-primary"> Tel_Patient </th>
-                        <th class="table-warning"> date </th>
-                        <th class="table-info"> heure </th>
-                        <th class="table-danger"> action </th>
+                        <th class="table-primary"> Id </th>
+                        <th class="table-secondary"> Nom Patient </th>
+                        <th class="table-success"> Prénom Patient </th>
+                        <th class="table-primary"> Tél Patient </th>
+                        <th class="table-warning"> la date </th>
+                        <th class="table-info"> l'heure </th>
+                        <th class="table-danger"> opérations </th>
                     </tr>
                 </thead>
             </table>
@@ -39,10 +39,11 @@
                             <td>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/edit', $RDV->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">edit</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>
+
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="\delete?id={{ $RDV['id'] }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">delete</a></button>
+                                        class="btn btn-danger ps-0 py-0 pe-0">supprimer</a></button>
                             </td>
                         </tr>
                     @endforeach

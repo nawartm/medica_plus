@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire de RDV</h1>
+        <h1>Formulaire des rendez-vous</h1>
         <form action="{{ route('/update', $RDV->id) }} " method="get" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
@@ -20,20 +20,20 @@
                 <input type="text" class="form-control" name="nom_patient" placeholder="" value=" {{ $RDV->nom_pat }}">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Prenom du patient</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
                 <input type="text" class="form-control" name="prenom_patient" value="{{ $RDV->prenom_pat }}">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Tel du patient</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Tél patient</label><br>
                 <input type="text" class="form-control" name="tel_patient" value="{{ $RDV->tel_patient }}">
             </div>
 
             <div >
-                <label for="exampleFormControlInput1" class="form-label">date</label><br>
+                <label for="exampleFormControlInput1" class="form-label">la date</label><br>
                 <input type="date" class="form-control" name="date" value="{{ $RDV->date }}">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">heure</label><br>
+                <label for="exampleFormControlInput1" class="form-label">l'heure</label><br>
                 <input type="text" class="form-control" name="heure" value="{{ $RDV->heure }}">
             </div>
             <div >

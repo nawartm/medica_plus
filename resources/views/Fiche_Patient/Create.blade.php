@@ -22,11 +22,11 @@
                 <input type="text" name="prenom_pat" id="prenom_pat" class="form-control"></br>
             </div>
             <div>
-                <label>Date de naissance</label></br>
+                <label> la Date de naissance</label></br>
                 <input type="text" name="date_naiss" id="date_naiss" class="form-control"></br>
             </div>
             <div>
-                <label>Sexe</label></br>
+                <label>le genre</label></br>
                 <input type="text" name="sexe" id="sexe" class="form-control"></br>
             </div>
             <div>
@@ -38,11 +38,11 @@
                 <input type="text" name="telephone" id="telephone" class="form-control"></br>
             </div>
             <div>
-                <label>Groupe de Sang</label></br>
+                <label>Groupe sanguin</label></br>
                 <input type="text" name="group_sang" id="group_sang" class="form-control"></br>
             </div>
 
-            <input type="submit" value="Save" class="btn btn-success"></br>
+            <input type="submit" value="valider" class="btn btn-success"></br>
         </form>
     </div>
 @endsection
