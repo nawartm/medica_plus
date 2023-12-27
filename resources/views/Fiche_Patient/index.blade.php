@@ -2,7 +2,7 @@
 @section('app')
     <section>
         @if ($errors->any())
-            <div class="alert alert-danger col-8 offset-2">
+            <div>
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -22,14 +22,14 @@
             <thead>
 
 
-                <th class="table-primary">Nom patient</th>
-                <th class="table-primary">Prénom patient</th>
-                <th class="table-primary">Date de naissance</th>
-                <th class="table-primary">le genere</th>
-                <th class="table-primary">Adresse</th>
-                <th class="table-primary">Tél</th>
-                <th class="table-primary">Groupe sanguin</th>
-                <th class="table-primary">Opérations</th>
+                <th >Nom patient</th>
+                <th >Prénom patient</th>
+                <th >Date de naissance</th>
+                <th >le genere</th>
+                <th >Adresse</th>
+                <th >Tél</th>
+                <th >Groupe sanguin</th>
+                <th >Opérations</th>
 
             </thead>
             <tbody>

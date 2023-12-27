@@ -18,45 +18,45 @@
             @method('PATCH')
             <input type="hidden" name="id" id="id" value="{{ $fiche_patients->id }}" id="id" />
             <div>
-                <label>Nom patient</label></br>
+                <label>Nom patient</label><br>
                 <input type="text" name="nom_pat" id="nom_pat" value="{{ $fiche_patients->nom_pat }}"
-                    class="form-control"></br>
+                    ><br>
             </div>
             <div>
-                <label>Prénom patient</label></br>
+                <label>Prénom patient</label><br>
                 <input type="text" name="prenom_pat" id="prenom_pat" value="{{ $fiche_patients->prenom_pat }}"
-                    class="form-control"></br>
+                    ><br>
             </div>
             <div>
-                <label>la Date de naissance</label></br>
+                <label>la Date de naissance</label><br>
                 <input type="text" name="date_naiss" id="date_naiss" value="{{ $fiche_patients->date_naiss }}"
-                    class="form-control"></br>
+                    ><br>
             </div>
             <div>
-                <label>le genre</label></br>
+                <label>le genre</label><br>
                 <input type="text" name="sexe" id="sexe" value="{{ $fiche_patients->sexe }}"
-                    class="form-control"></br>
+                    ><br>
             </div>
             <div>
 
-                <label>Adresse</label></br>
+                <label>Adresse</label><br>
                 <input type="text" name="adresse" id="adresse" value="{{ $fiche_patients->adresse }}"
-                    class="form-control"></br>
+                    ><br>
             </div>
             <div>
 
-                <label>Tél</label></br>
+                <label>Tél</label><br>
                 <input type="text" name="telephone" id="telephone" value="{{ $fiche_patients->telephone }}"
-                    class="form-control"></br>
+                    ><br>
             </div>
             <div>
 
-                <label>Groupe sanguin</label></br>
+                <label>Groupe sanguin</label><br>
                 <input type="text" name="group_sang" id="group_sang" value="{{ $fiche_patients->group_sang }}"
-                    class="form-control"></br>
+                    ><br>
             </div>
 
-            <input type="submit" value="modifier" class="btn btn-success"></br>
+            <input type="submit" value="modifier" class="btn btn-success"><br>
         </form>
     </div>
 @endsection
