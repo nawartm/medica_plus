@@ -2,20 +2,20 @@
 @section('app')
     <section>
         <!--for demo wrap-->
-        <h1>Gestion des depenses</h1>
+        <h1>Gestion des dépenses</h1>
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" class="btn btn-sm me-2">Ajouter
-                une depense</a>
+                une dépense</a>
         </button>
         <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
                     <tr>
-                        <th class="table-primary"> Numero </th>
-                        <th class="table-secondary">Mois de depense </th>
-                        <th class="table-success"> Motif de depense </th>
-                        <th class="table-primary"> Montant de depense</th>
-                        <th class="table-danger"> action </th>
+                        <th class="table-primary"> Id </th>
+                        <th class="table-secondary">Mois de dépense </th>
+                        <th class="table-success"> Motif de dépense </th>
+                        <th class="table-primary"> Montant de dépense</th>
+                        <th class="table-danger"> opération </th>
                     </tr>
                 </thead>
             </table>
@@ -34,10 +34,10 @@
                             <td>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/editD', $depense->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">edit</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>
                                 <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
                                         href="{{ route('/viewD', $depense->id) }}"
-                                        class="btn btn-warning ps-0 py-0 pe-0">see</a></button>
+                                        class="btn btn-warning ps-0 py-0 pe-0">voir</a></button>
                             </td>
                         </tr>
                     @endforeach

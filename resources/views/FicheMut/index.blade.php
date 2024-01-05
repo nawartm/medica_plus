@@ -11,10 +11,10 @@
         </div>
     @endif
 
-    <h2> Gestion des Fiches Mutuelle</h2>
+    <h2> Gestion des Fiches Mutuelles</h2>
     <button type="button" class="btn btn-primary">
         <a href="{{ url('/FicheMut/create') }}"  title="Add New Fiche Mutuelle">
-            <i class="fa fa-plus" aria-hidden="true"></i> Add New
+            <i class="fa fa-plus" aria-hidden="true"></i> ajouter une nouvelle
         </a>
     </button>
     <table class="table">
@@ -24,11 +24,11 @@
             <th>Prénom patient</th>
             <th>Nom médecin</th>
             <th>Prénom médecin</th>
-            <th>Date de Soins</th>
+            <th>Date de Soin</th>
             <th>Code Mutuelle</th>
             <th>Montant Total</th>
             <th>Montant Mutuelle</th>
-
+            <th>opération </th>
         </thead>
 
         <tbody>
@@ -46,17 +46,17 @@
                     <td>
                         <a href="{{ url('/FicheMut/' . $item->id) }}" title="View Fiche Mutuelle"><button
                                 class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                View</button></a>
+                                Voir</button></a>
                         <a href="{{ url('/FicheMut/' . $item->id . '/edit') }}" title="Edit Fiche du Patient"><button
                                 class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                Edit</button></a>
+                                modifier</button></a>
                         <form method="POST" action="{{ url('/FicheMut' . '/' . $item->id) }}" accept-charset="UTF-8"
                             style="display:inline">
                             {{ method_field('DELETE') }}
                             {{ csrf_field() }}
                             <button type="submit" class="btn btn-danger btn-sm" title="Delete Fiche Mutuelle"
                                 onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
-                                    aria-hidden="true"></i> Delete</button>
+                                    aria-hidden="true"></i> supprimer</button>
                         </form>
                     </td>
                 </tr>

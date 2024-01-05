@@ -2,7 +2,7 @@
 @section('app')
     <section>
         <!--for demo wrap-->
-        <h1>Gestion des impayees</h1>
+        <h1>Gestion des impayés</h1>
         <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Impayee.create') }} " style="color:white"
                 class="btn btn-sm me-2">Ajouter </a>
@@ -13,11 +13,11 @@
                     <tr>
                         <th>id</th>
                         <th>Nom patient</th>
-                        <th>Prenom Patient</th>
-                        <th>tel</th>
+                        <th>Prénom Patient</th>
+                        <th>tél</th>
                         <th>montant_APS</th>
                         <th>montant_RS</th>
-                        <th>operations</th>
+                        <th>opérations</th>
 
                     </tr>
                 </thead>

@@ -20,15 +20,15 @@
                 <input type="text" class="form-control" name="nom_pat" placeholder="Entrez le nom du patient">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Prenom du patient</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
                 <input type="text" class="form-control" name="prenom_pat">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Nom du medcin</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Nom du médcin</label><br>
                 <input type="text" class="form-control" name="nom_med" placeholder="Entrez le nom du patient">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Prenom du medcin</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Prénom du medcin</label><br>
                 <input type="text" class="form-control" name="prenom_med">
             </div>
             <div>
@@ -40,7 +40,7 @@
                 <input type="text" class="form-control" name="taille">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">pois</label><br>
+                <label for="exampleFormControlInput1" class="form-label">poids</label><br>
                 <input type="text" class="form-control" name="pois">
             </div>
             <div>
@@ -48,7 +48,7 @@
                 <input type="text" class="form-control" name="tension">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">temperatur</label><br>
+                <label for="exampleFormControlInput1" class="form-label">températur</label><br>
                 <input type="text" class="form-control" name="temperatur">
             </div>
             <div>

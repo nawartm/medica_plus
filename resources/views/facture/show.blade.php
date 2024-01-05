@@ -6,15 +6,15 @@
         <h3 class="">Mr/Mm {{ $factures->nom_pat }} {{ $factures->prenom_pat }}</h3>
     </div>
     <div >
-        <h3 >885 Rue Nour</h3>
-        <h3 >Meknes Ouislan</h3>
+        <h3 > quarier daraa</h3>
+        <h3 >zagora/h3>
         <h3 >Tel:05.78.45.94.76</h3>
         <h3 >Tel:06.98.23.91.86</h3>
     </div>
     <br>
     <p>Date : {{ $factures->date }}</p>
     <p>Nom du patient : {{ $factures->nom_pat }}</p>
-    <p>Prenom du patient : {{ $factures->prenom_pat }}</p>
+    <p>Prénom du patient : {{ $factures->prenom_pat }}</p>
 
     <p>Tarif de consultation :{{ $factures->tarif_cns }}</p>
     </div>

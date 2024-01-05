@@ -22,10 +22,10 @@
                 class="form-control"></br>
             <input type="text" name="prenom_pat" id="prenom_pat" value="{{ $certificats->prenom_pat }}"
                 class="form-control"></br>
-            <label>Nom medecin</label></br>
+            <label>Nom médecin</label></br>
             <input type="text" name="nom_med" id="nom_med" value="{{ $certificats->nom_med }}"
                 class="form-control"></br>
-            <label>Prénom medecin</label></br>
+            <label>Prénom médecin</label></br>
             <input type="text" name="prenom_med" id="prenom_med" value="{{ $certificats->prenom_med }}"
                 class="form-control"></br>
 
@@ -36,7 +36,7 @@
             <label>Durée</label></br>
             <input type="text" name="dure" id="dure" value="{{ $certificats->dure }}" class="form-control"></br>
 
-            <input type="submit" value="Update" class="btn btn-success"></br>
+            <input type="submit" value="modifier" class="btn btn-success"></br>
         </form>
     </div>
 @endsection

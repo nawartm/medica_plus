@@ -13,19 +13,19 @@
                     <tr>
                         <th>id</th>
                         <th>Nom patient</th>
-                        <th>Prenom Patient</th>
+                        <th>Prénom Patient</th>
                         <th>Nom medcin</th>
-                        <th>Prenom medcin</th>
+                        <th>Prénom medcin</th>
                         <th>motif</th>
                         <th>taille</th>
-                        <th>pois</th>
+                        <th>poids</th>
                         <th>tension</th>
-                        <th>temperatur</th>
+                        <th>températur</th>
                         <th>examen</th>
                         <th>conclusion</th>
                         <th>date</th>
                         <th>heure</th>
-                        <th>Operations</th>
+                        <th>Opérations</th>
                     </tr>
                 </thead>
             </table>
@@ -53,10 +53,10 @@
                             <td>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Consultation.Modify', $Consultation->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">edit</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('Consultation.delete', $Consultation->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">delete</a></button>
+                                        class="btn btn-danger ps-0 py-0 pe-0">supprimer</a></button>
                             </td>
                         </tr>
                     @endforeach

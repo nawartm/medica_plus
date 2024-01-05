@@ -10,7 +10,7 @@
                         </div>
                     @endif
                     <div class="form">
-                        <h1>Formulaire Gestion Des Fiches Mutuelle</h1>
+                        <h1>Formulaire Gestion Des Fiches Mutuelles</h1>
 
                         <form action="{{ url('FicheMut/' . $fiche_muts->id) }}" method="post">
                             {!! csrf_field() !!}
@@ -38,7 +38,7 @@
                                 class="form-control"></br>
                             </div>
                             <div>
-                                <label>Date de soins</label></br>
+                                <label>Date de soin</label></br>
                                 <input type="text" name="date_soins" id="date_soins" value="{{ $fiche_muts->date_soins }}"
                                 class="form-control"></br>
                             </div>
@@ -58,7 +58,7 @@
                                 value="{{ $fiche_muts->montant_mut }}" class="form-control"></br>
                             </div>
 
-                            <input type="submit" value="Update" class="btn btn-success"></br>
+                            <input type="submit" value="modifier" class="btn btn-success"></br>
                         </form>
                     </div>
                 @endsection

@@ -11,12 +11,12 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire de facture</h1>
+        <h1>Formulaire des factures</h1>
         <form action="{{ route('/updateF', $factures->id) }}" method="get" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Dtae</label>
+                <label for="exampleFormControlInput1" class="form-label">Date</label>
                 <input type="date" class="form-control" name="date" placeholder=""
                     value=" {{ $factures->date }}>
                </div>
@@ -30,7 +30,7 @@
             </div>
 
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Prenom du patient</label>
+                <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label>
                 <input type="text" class="form-control" name="prenom_pat" value=" {{ $factures->prenom_pat }}">
             </div>
             <div >

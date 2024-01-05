@@ -1,7 +1,7 @@
 @extends('nav_Med')
 @section('app')
     <div class="form">
-        <h1>Formulaire Gestion des Fiches Examen</h1>
+        <h1>Formulaire Gestion des Fiches Examens</h1>
         <form action="{{ url('Fiche_Examen') }}" method="post">
             {!! csrf_field() !!}
             <div>
@@ -12,8 +12,8 @@
                 <label>Résultat</label></br>
                 <input type="text" name="resultat" id="resultat" class="form-control"></br>
             </div>
-                
-            <input type="submit" value="Save" class="btn btn-success"></br>
+
+            <input type="submit" value="valider" class="btn btn-success"></br>
         </form>
     </div>
 @endsection

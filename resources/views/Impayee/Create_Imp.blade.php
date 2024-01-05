@@ -18,7 +18,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h1>Formulaire des impayees</h1>
+                            <h1>Formulaire des impayés</h1>
                         </div>
                         <div class="card-body">
                             <form action="{{ route('Impayee.store') }}" method="post" enctype="multipart/form-data">
@@ -30,11 +30,11 @@
                                         placeholder="Entrez le nom du patient">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Prenom du patient</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label>
                                     <input type="text" class="form-control" name="prenom_pat">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">telefone du patient</label>
+                                    <label for="exampleFormControlInput1" class="form-label">tél du patient</label>
                                     <input type="text" class="form-control" name="tel_pat">
                                 </div>
                                 <div class="mb-1">

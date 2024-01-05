@@ -11,12 +11,12 @@
                 <thead>
                     <tr>
 
-                        <th> Numero </th>
+                        <th> Id</th>
                         <th>Date </th>
                         <th>Tarif de consultation</th>
                         <th> Nom du patient</th>
-                        <th> Prenom du patient</th>
-                        <th> action </th>
+                        <th> Prénom du patient</th>
+                        <th> opération </th>
 
 
                     </tr>
@@ -36,13 +36,13 @@
                             <td>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="\deleteF?id={{ $facture['id'] }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">delete</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">supprimer</a></button>
                                 <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
                                         href="{{ route('/editF', $facture->id) }}"
-                                        class="btn btn-warning ps-0 py-0 pe-0">edit</a></button>
+                                        class="btn btn-warning ps-0 py-0 pe-0">modifier</a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('/viewF', $facture->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">see</a></button>
+                                        class="btn btn-danger ps-0 py-0 pe-0">voir</a></button>
                             </td>
                         <tr>
                     @endforeach

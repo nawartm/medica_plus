@@ -13,14 +13,14 @@
     <div class="row border border-dark ">
         <div class="col-sm bg-white float-start  p-4 ps-5 pe-0" style=" color:white;">
             <h3>Docteur {{ $certificats->nom_med }}</h3><br />
-            <h3 class="fs-6 text-black-50">Medecin general</h3>
+            <h3 class="fs-6 text-black-50">Médecin général</h3>
             <h3 class="fs-6 text-black-50 ">Diplomé de la faculté de medcine à Fes</h3>
             <h3 class="fs-6 text-black-50">Mr/Mm {{ $certificats->nom_pat }}
                 {{ $certificats->prenom_pat }}</h3>
         </div>
         <div class="col-sm bg-white float-end fs-6 p-5 pe-5 ps-0">
-            <h3 class="fs-6 text-black-50"> 885 Rue Nour</h3>
-            <h3 class="fs-6 text-black-50"> Meknes Ouislan</h3>
+            <h3 class="fs-6 text-black-50"> quartier daraa</h3>
+            <h3 class="fs-6 text-black-50"> zagora</h3>
             <h3 class="fs-6 text-black-50"> Tel:05.78.45.94.76</h3>
             <h3 class="fs-6 text-black-50"> Tel:06.98.23.91.86</h3>
         </div>
@@ -32,7 +32,7 @@
         <p name="" id="" cols="200" rows="10"> L'Heure :
             {{ $certificats->heure }} </p><br><br><br>
 
-        <p name="" id="" cols="200" rows="10"> La Durrée du Certificat
+        <p name="" id="" cols="200" rows="10"> La Durée du Certificat
             : {{ $certificats->dure }}</p><br><br><br><br><br>
 
     </div>

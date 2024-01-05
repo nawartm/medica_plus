@@ -16,7 +16,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h1>Formulaire des Impayees</h1>
+                            <h1>Formulaire des Impayés</h1>
                         </div>
                         <div class="card-body">
                             <form action="{{ route('Impayee.update', $Impayee->id) }}" method="post"
@@ -31,12 +31,12 @@
                                         placeholder="Entrez le nom du patient" value="{{ $Impayee->nom_pat }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Prenom du patient</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label>
                                     <input type="text" class="form-control" name="prenom_pat"
                                         value="{{ $Impayee->prenom_pat }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">telefone du patient</label>
+                                    <label for="exampleFormControlInput1" class="form-label">tél du patient</label>
                                     <input type="text" class="form-control" name="tel_pat"
                                         value="{{ $Impayee->tel_pat }}">
                                 </div>

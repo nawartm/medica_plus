@@ -22,16 +22,16 @@
                     value="{{ $Consultation->nom_pat }}">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Prenom du patient</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
                 <input type="text" class="form-control" name="prenom_pat" value="{{ $Consultation->prenom_pat }}">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Nom du medcin</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Nom du médcin</label><br>
                 <input type="text" class="form-control" name="nom_med" placeholder="Entrez le nom du patient"
                     value="{{ $Consultation->nom_med }}">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Prenom du medcin</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Prénom du médcin</label><br>
                 <input type="text" class="form-control" name="prenom_med" value="{{ $Consultation->prenom_med }}">
             </div>
             <div >
@@ -43,7 +43,7 @@
                 <input type="text" class="form-control" name="taille" value="{{ $Consultation->taille }} ">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">pois</label><br>
+                <label for="exampleFormControlInput1" class="form-label">poids</label><br>
                 <input type="text" class="form-control" name="pois" value="{{ $Consultation->pois }}">
             </div>
             <div >
@@ -51,7 +51,7 @@
                 <input type="text" class="form-control" name="tension" value="{{ $Consultation->tension }}">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">temperatur</label><br>
+                <label for="exampleFormControlInput1" class="form-label">température</label><br>
                 <input type="text" class="form-control" name="temperatur" value="{{ $Consultation->temperatur }}">
             </div>
             <div >
