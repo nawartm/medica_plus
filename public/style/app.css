@@ -5,7 +5,6 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Tajawal", sans-serif;
-    text-transform: capitalize;
 }
 
 :root {
@@ -21,6 +20,7 @@
 
 /* Nav  */
 nav {
+    text-transform: capitalize;
     background-color: var(--dark-green);
     padding: 0.5rem 1rem;
     min-height: 100% ;
@@ -105,7 +105,7 @@ table tbody tr:nth-of-type(even) {
 .btn {
     padding: 0.2rem 0.4rem;
     border: none;
-    border-radius: 0.3rem;
+    border-radius: .3rem ;
     font-size: 1rem;
 
     max-width: fit-content;
