@@ -10,10 +10,10 @@
                 </ul>
             </div>
         @endif
-        <h2> Gestion des Certificats</h2>
+        <h2> Gestion des certificats</h2>
         <button type="button" class="btn btn-primary">
             <a href="{{ url('/Certificat/create') }}" title="Add New Certificat">
-                <i class="fa fa-plus" aria-hidden="true"></i> ajouter certificat
+                <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
             </a>
         </button>
         <table class="table">
@@ -22,10 +22,10 @@
                 <th class="table-primary">Prénom patient</th>
                 <th class="table-primary">Nom médecin</th>
                 <th class="table-primary">Prénom médecin</th>
-                <th class="table-primary">Date</th>
-                <th class="table-primary">Heure</th>
-                <th class="table-primary">Durée</th>
-                <th class="table-primary">opérations</th>
+                <th class="table-primary">La date</th>
+                <th class="table-primary">L'heure</th>
+                <th class="table-primary">La durée</th>
+                <th class="table-primary">Opérations</th>
             </thead>
 
             <tbody>
@@ -53,7 +53,7 @@
                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete Certificat"
                                     onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
                                         aria-hidden="true"></i>
-                                    supprimer</button>
+                                    Supprimer</button>
                             </form>
                         </td>
                     </tr>

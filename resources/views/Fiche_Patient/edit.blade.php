@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire Gestion Des Fiches Patients</h1>
+        <h1>Formulaire gestion des fiches patients</h1>
 
         <form action="{{ url('Fiche_Patient/' . $fiche_patients->id) }}" method="post">
             {!! csrf_field() !!}
@@ -28,12 +28,12 @@
                     ><br>
             </div>
             <div>
-                <label>la Date de naissance</label><br>
+                <label>La date de naissance</label><br>
                 <input type="text" name="date_naiss" id="date_naiss" value="{{ $fiche_patients->date_naiss }}"
                     ><br>
             </div>
             <div>
-                <label>le genre</label><br>
+                <label>Le genre</label><br>
                 <input type="text" name="sexe" id="sexe" value="{{ $fiche_patients->sexe }}"
                     ><br>
             </div>
@@ -56,7 +56,7 @@
                     ><br>
             </div>
 
-            <input type="submit" value="modifier" class="btn btn-success"><br>
+            <input type="submit" value="valider" class="btn btn-success"><br>
         </form>
     </div>
 @endsection

@@ -16,7 +16,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h1>Formulaire d'Ordonnance</h1>
+                            <h1>Formulaire d'ordonnance</h1>
                         </div>
                         <div class="card-body">
                             <form action="{{ route('Ordonnance.update', $Ordonnance->id) }}" method="post"
@@ -31,22 +31,22 @@
                                         placeholder="Entrez le nom du patient" value="{{ $Ordonnance->nom_pat }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Prenom du patient</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label>
                                     <input type="text" class="form-control" name="prenom_pat"
                                         value="{{ $Ordonnance->prenom_pat }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Nom du medcin</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Nom du médecin</label>
                                     <input type="text" class="form-control" name="nom_med"
                                         value="{{ $Ordonnance->nom_med }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Prenom du medcin</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Prénom du médecin</label>
                                     <input type="text" class="form-control" name="prenom_med"
                                         value="{{ $Ordonnance->prenom_med }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">date</label>
+                                    <label for="exampleFormControlInput1" class="form-label">La date</label>
                                     <input type="date" class="form-control" name="date"
                                         value="{{ $Ordonnance->date }}">
                                 </div>
@@ -60,7 +60,7 @@
                                     <link rel="stylesheet"
                                         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                                    <input type="submit" value="Modifier">
+                                    <input type="submit" value="Valider">
                                 </div>
                             </form>
 

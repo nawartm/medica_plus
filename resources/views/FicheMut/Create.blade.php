@@ -10,7 +10,7 @@
                         </div>
                     @endif
                     <div class="form">
-                        <h1>Formulaire Gestion des Fiches Mutuelles</h1>
+                        <h1>Formulaire gestion des fiches mutuelles</h1>
 
 
                         <form action="{{ url('FicheMut') }}" method="post">
@@ -33,26 +33,26 @@
                             </div>
                             <div>
 
-                                <label>Date de Soin</label></br>
+                                <label>La date du soin</label></br>
                                 <input type="text" name="date_soins" id="date_soins" class="form-control"></br>
                             </div>
                             <div>
 
-                                <label>Code Mutuelle</label></br>
+                                <label>Code mutuelle</label></br>
                             <input type="text" name="code_mut" id="code_mut" class="form-control"></br>
                             </div>
                             <div>
 
-                                <label>Montant Total</label></br>
+                                <label>Montant total</label></br>
                                 <input type="text" name="montant_total" id="montant_total" class="form-control"></br>
                             </div>
                             <div>
 
-                                <label>Montant Mutuelle</label></br>
+                                <label>Montant mutuelle</label></br>
                                 <input type="text" name="montant_mut" id="montant_mut" class="form-control"></br>
                             </div>
 
-                            <input type="submit" value="valider" class="btn btn-success"></br>
+                            <input type="submit" value="Valider" class="btn btn-success"></br>
                         </form>
                     </div>
                 @endsection

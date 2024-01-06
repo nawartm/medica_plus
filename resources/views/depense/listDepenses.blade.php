@@ -5,7 +5,7 @@
         <h1>Gestion des dépenses</h1>
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" class="btn btn-sm me-2">Ajouter
-                une dépense</a>
+                </a>
         </button>
         <div>
             <table >
@@ -15,7 +15,7 @@
                         <th class="table-secondary">Mois de dépense </th>
                         <th class="table-success"> Motif de dépense </th>
                         <th class="table-primary"> Montant de dépense</th>
-                        <th class="table-danger"> opérations </th>
+                        <th class="table-danger"> Opérations </th>
                     </tr>
                 </thead>
 
@@ -31,10 +31,10 @@
                             <td>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/editD', $depense->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
                                 <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
                                         href="{{ route('/viewD', $depense->id) }}"
-                                        class="btn btn-warning ps-0 py-0 pe-0">voir</a></button>
+                                        class="btn btn-warning ps-0 py-0 pe-0">Voir</a></button>
                             </td>
                         </tr>
                     @endforeach

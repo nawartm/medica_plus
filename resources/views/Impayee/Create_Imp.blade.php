@@ -24,15 +24,15 @@
                 <input type="text" class="form-control" name="prenom_pat">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">tél du patient</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Tél du patient</label><br>
                 <input type="text" class="form-control" name="tel_pat">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">montant_APS</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Montant_APS</label><br>
                 <input type="text" class="form-control" name="montant_APS">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">montant_RS</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Montant_RS</label><br>
                 <input type="text" class="form-control" name="montant_RS">
             </div>
 

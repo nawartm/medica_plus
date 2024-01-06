@@ -16,7 +16,7 @@
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Date</label>
+                <label for="exampleFormControlInput1" class="form-label">La date</label>
                 <input type="date" class="form-control" name="date" placeholder=""
                     value=" {{ $factures->date }}>
                </div>

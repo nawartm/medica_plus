@@ -1,11 +1,11 @@
 @extends('nav_Med')
 @section('app')
     <div class="form">
-        <h1>Formulaire Gestion des Fiches Examens</h1>
+        <h1>Formulaire gestion des fiches examens</h1>
         <form action="{{ url('Fiche_Examen') }}" method="post">
             {!! csrf_field() !!}
             <div>
-                <label>Date d'examen</label></br>
+                <label>La date d'examen</label></br>
                 <input type="text" name="date_examen" id="date_examen" class="form-control"></br>
             </div>
             <div>

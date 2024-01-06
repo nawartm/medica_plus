@@ -11,20 +11,20 @@
             <table>
                 <thead>
                     <tr>
-                        <th>id</th>
+                        <th>Id</th>
                         <th>Nom patient</th>
                         <th>Prénom Patient</th>
-                        <th>Nom medcin</th>
-                        <th>Prénom medcin</th>
-                        <th>motif</th>
-                        <th>taille</th>
-                        <th>poids</th>
-                        <th>tension</th>
-                        <th>températur</th>
-                        <th>examen</th>
-                        <th>conclusion</th>
-                        <th>date</th>
-                        <th>heure</th>
+                        <th>Nom médecin</th>
+                        <th>Prénom médecin</th>
+                        <th>Motif</th>
+                        <th>Taille</th>
+                        <th>Poids</th>
+                        <th>Tension</th>
+                        <th>Températur</th>
+                        <th>Examen</th>
+                        <th>Conclusion</th>
+                        <th>La date</th>
+                        <th>La heure</th>
                         <th>Opérations</th>
                     </tr>
                 </thead>

@@ -10,7 +10,7 @@
         </div>
     @endif
     <div class="form">
-        <h1>Formulaire Gestion des Certificats</h1>
+        <h1>Formulaire gestion des certificats</h1>
         <form action="{{ url('Certificat/' . $certificats->id) }}" method="post">
             {!! csrf_field() !!}
             @method('PATCH')
@@ -25,21 +25,29 @@
                 <input type="text" name="prenom_pat" id="prenom_pat" value="{{ $certificats->prenom_pat }}"
                 class="form-control"></br>
             </div>
+            <div>
             <label>Nom médecin</label></br>
             <input type="text" name="nom_med" id="nom_med" value="{{ $certificats->nom_med }}"
                 class="form-control"></br>
+            </div>
+            <div>
             <label>Prénom médecin</label></br>
             <input type="text" name="prenom_med" id="prenom_med" value="{{ $certificats->prenom_med }}"
                 class="form-control"></br>
-
-            <label>Date</label></br>
+            </div>
+            <div>
+            <label>La date</label></br>
             <input type="text" name="date" id="date" value="{{ $certificats->date }}" class="form-control"></br>
-            <label>heure</label></br>
+            </div>
+            <div>
+            <label>l'heure</label></br>
             <input type="text" name="heure" id="heure" value="{{ $certificats->heure }}" class="form-control"></br>
-            <label>Durée</label></br>
+            </div>
+            <div>
+            <label>La durée</label></br>
             <input type="text" name="dure" id="dure" value="{{ $certificats->dure }}" class="form-control"></br>
-
-            <input type="submit" value="modifier" class="btn btn-success"></br>
+            </div>
+            <input type="submit" value="Valider" class="btn btn-success"></br>
         </form>
     </div>
 @endsection

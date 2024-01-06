@@ -61,7 +61,7 @@
                 <!-- *************************G.des Rdvs**************************-->
 
                 <li><a href="{{ route('listRDV') }}"><i class="fa-regular fa-calendar-check"></i><span data-visible="true">
-                            Gestion des Rdvs</span></a>
+                            Gestion des rendez-vous</span></a>
                     <!-- First Tier Drop Down -->
                 </li>
                 <!-- ******************************Gestion des fiches patients************************************ -->
