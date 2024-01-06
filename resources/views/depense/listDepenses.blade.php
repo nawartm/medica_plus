@@ -7,21 +7,18 @@
                 class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" class="btn btn-sm me-2">Ajouter
                 une dépense</a>
         </button>
-        <div class="tbl-header">
-            <table cellpadding="0" cellspacing="0" border="0">
+        <div>
+            <table >
                 <thead>
                     <tr>
                         <th class="table-primary"> Id </th>
                         <th class="table-secondary">Mois de dépense </th>
                         <th class="table-success"> Motif de dépense </th>
                         <th class="table-primary"> Montant de dépense</th>
-                        <th class="table-danger"> opération </th>
+                        <th class="table-danger"> opérations </th>
                     </tr>
                 </thead>
-            </table>
-        </div>
-        <div class="tbl-content">
-            <table cellpadding="0" cellspacing="1" border="0">
+
                 <tbody>
                     @foreach ($listD as $depense)
                         <tr>

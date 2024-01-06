@@ -71,7 +71,7 @@
                 <input type="text" class="form-control" name="heure" value="{{ $Consultation->heure }}">
             </div>
 
-            <input type="submit" value="Modifier">
+            <input type="submit" value="valider">
         </form>
     </div>
 

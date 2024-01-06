@@ -20,10 +20,6 @@
                         <th class="table-danger"> opérations </th>
                     </tr>
                 </thead>
-            </table>
-        </div>
-        <div class="tbl-content">
-            <table cellpadding="0" cellspacing="1" border="0">
                 <tbody>
                     @foreach ($listR as $RDV)
                         <tr>
@@ -64,8 +60,4 @@
             });
         }).resize();
     </script>
-
-
-
-    </div>
 @endsection

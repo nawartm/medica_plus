@@ -25,7 +25,7 @@
                 <th >Nom patient</th>
                 <th >Prénom patient</th>
                 <th >Date de naissance</th>
-                <th >le genere</th>
+                <th >le genre</th>
                 <th >Adresse</th>
                 <th >Tél</th>
                 <th >Groupe sanguin</th>

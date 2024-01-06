@@ -14,14 +14,17 @@
         <form action="{{ url('Certificat/' . $certificats->id) }}" method="post">
             {!! csrf_field() !!}
             @method('PATCH')
-
-            <label>Nom patient</label></br>
             <input type="hidden" name="id" id="id" value="{{ $certificats->id }}" id="id" />
-            <label>Prénom patient</label></br>
-            <input type="text" name="nom_pat" id="nom_pat" value="{{ $certificats->nom_pat }}"
+            <div>
+                <label>Nom patient</label></br>
+                <input type="text" name="nom_pat" id="nom_pat" value="{{ $certificats->nom_pat }}"
                 class="form-control"></br>
-            <input type="text" name="prenom_pat" id="prenom_pat" value="{{ $certificats->prenom_pat }}"
+            </div>
+            <div>
+                <label>Prénom patient</label></br>
+                <input type="text" name="prenom_pat" id="prenom_pat" value="{{ $certificats->prenom_pat }}"
                 class="form-control"></br>
+            </div>
             <label>Nom médecin</label></br>
             <input type="text" name="nom_med" id="nom_med" value="{{ $certificats->nom_med }}"
                 class="form-control"></br>

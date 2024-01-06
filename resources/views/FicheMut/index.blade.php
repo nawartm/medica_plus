@@ -28,7 +28,7 @@
             <th>Code Mutuelle</th>
             <th>Montant Total</th>
             <th>Montant Mutuelle</th>
-            <th>opération </th>
+            <th>opérations </th>
         </thead>
 
         <tbody>

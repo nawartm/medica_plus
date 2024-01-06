@@ -8,7 +8,7 @@
                 class="btn btn-sm me-2">Ajouter </a>
         </button>
         <div class="tbl-header">
-            <table cellpadding="0">
+            <table>
                 <thead>
                     <tr>
                         <th>id</th>
@@ -28,10 +28,6 @@
                         <th>Opérations</th>
                     </tr>
                 </thead>
-            </table>
-        </div>
-        <div class="tbl-content">
-            <table cellpadding="0" cellspacing="1" border="0">
                 <tbody>
                     @foreach ($Consultation as $Consultation)
                         <tr>
@@ -67,7 +63,6 @@
         </div>
 
     </section>
-    </div>
     <script>
         $(window).on("load resize ", function() {
             var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();

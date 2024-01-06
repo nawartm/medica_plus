@@ -16,7 +16,7 @@
 
                 <th class="table-primary">Date Examen</th>
                 <th class="table-primary">Résultat</th>
-                <th class="table-primary">opération </th>
+                <th class="table-primary">opérations </th>
 
             </thead>
             <tbody>

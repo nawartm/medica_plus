@@ -1,7 +1,7 @@
 <div id="container">
     <nav>
         <ul>
-            <li><a href="#">CabinetMed</a></li>
+            <li><a href="#">Médica+</a></li>
             <!--*******************G. des Comptabiliteés**************************-->
             <li><a href="#">Gestion des comptabilités</a>
                 <!-- First Tier Drop Down -->

@@ -6,8 +6,8 @@
                 class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('facture') }} " style="color:white"
                 class="btn btn-sm me-2">Ajouter une facture</a>
         </button>
-        <div class="tbl-header">
-            <table cellpadding="0" cellspacing="0" border="0">
+        <div >
+            <table >
                 <thead>
                     <tr>
 
@@ -21,10 +21,7 @@
 
                     </tr>
                 </thead>
-            </table>
-        </div>
-        <div class="tbl-content">
-            <table cellpadding="0" cellspacing="1" border="0">
+
                 <tbody>
                     @foreach ($listF as $facture)
                         <tr>

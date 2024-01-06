@@ -48,13 +48,13 @@
 
                 <!-- **************Gestion des comptabilités *****************-->
                 <li><a href="{{ route('Impayee.index') }}"><i class="fa-solid fa-file-invoice-dollar"></i><span
-                            data-visible="true"> Impayees</span></a>
+                            data-visible="true"> Impayés</span></a>
                 </li>
                 <li><a href="{{ route('listFactures') }}"><i class="fa-solid fa-comments-dollar"></i><span
                             data-visible="true"> factures</span></a>
                 </li>
                 <li><a href="{{ route('listDepenses') }}"><i class="fa-solid fa-comment-dollar"></i><span
-                            data-visible="true"> depenses</span></a>
+                            data-visible="true"> dépenses</span></a>
                 </li>
 
 

@@ -8,7 +8,7 @@
                 class="btn btn-sm me-2">Ajouter </a>
         </button>
         <div class="tbl-header">
-            <table cellpadding="0" cellspacing="0" border="0">
+            <table>
                 <thead>
                     <tr>
                         <th>id</th>
@@ -20,11 +20,7 @@
                         <th>opérations</th>
 
                     </tr>
-                </thead>
-            </table>
-        </div>
-        <div class="tbl-content">
-            <table cellpadding="0" cellspacing="1" border="0">
+
                 <tbody>
                     @foreach ($Impayee as $Impayee)
                         <tr>
@@ -40,10 +36,10 @@
                             <td>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Impayee.Modify', $Impayee->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">edit</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('Impayee.delete', $Impayee->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">delete</a></button>
+                                        class="btn btn-danger ps-0 py-0 pe-0">supprimer</a></button>
                             </td>
                         </tr>
                     @endforeach
@@ -66,5 +62,5 @@
 
 
 
-    </div>
+
 @endsection
