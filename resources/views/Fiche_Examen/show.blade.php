@@ -11,8 +11,8 @@
 
                         </div>
                         <div class="col-sm bg-white float-end fs-6 p-5 pe-5 ps-0">
-                            <h3 class="fs-6 text-black-50"> quartier daraa</h3>
-                            <h3 class="fs-6 text-black-50"> zagora</h3>
+                            <h3 class="fs-6 text-black-50"> Quartier daraa</h3>
+                            <h3 class="fs-6 text-black-50"> Zagora</h3>
                             <h3 class="fs-6 text-black-50"> Tel:05.78.45.94.76</h3>
                             <h3 class="fs-6 text-black-50"> Tel:06.98.23.91.86</h3>
                         </div>

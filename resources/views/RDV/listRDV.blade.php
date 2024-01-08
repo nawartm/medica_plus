@@ -33,6 +33,9 @@
                             <td>{{ $RDV['heure'] }}</td>
 
                             <td>
+                                <a href="{{ url('/RDV/' . $RDV->id) }}" title="View RDV"><button
+                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
+                                    Voir</button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/edit', $RDV->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>

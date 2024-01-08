@@ -7,8 +7,8 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
             <div class="top-title">
-                <h3>enregistrez-vous</h3>
-                <a href="{{ route('login') }}">connencter-vous ?</a>
+                <h3>Enregistrez-vous</h3>
+                <a href="{{ route('login') }}">Connencter-vous ?</a>
             </div>
 
             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('nom complet') }}</label>
@@ -49,7 +49,7 @@
             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required
                 autocomplete="new-password">
 
-            <input type="submit" value="se connecter" class="btn btn-primary">
+            <input type="submit" value="Se connecter" class="btn btn-primary">
         </form>
     </div>
 @endsection

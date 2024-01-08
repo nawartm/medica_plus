@@ -47,6 +47,9 @@
                             <td>{{ $Consultation->heure }}</td>
 
                             <td>
+                                <a href="{{ url('/Consultation/' . $Consultation->id) }}" title="View Consultation"><button
+                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
+                                    Voir</button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Consultation.Modify', $Consultation->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>

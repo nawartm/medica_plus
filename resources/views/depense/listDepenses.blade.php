@@ -29,12 +29,14 @@
                             <td>{{ $depense['motif_dep'] }}</td>
                             <td>{{ $depense['montant_dep'] }}</td>
                             <td>
+                                <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
+                                    href="{{ route('/viewD', $depense->id) }}"
+                                    class="btn btn-warning ps-0 py-0 pe-0">Voir</a></button>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/editD', $depense->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
-                                <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
-                                        href="{{ route('/viewD', $depense->id) }}"
-                                        class="btn btn-warning ps-0 py-0 pe-0">Voir</a></button>
+
+
                             </td>
                         </tr>
                     @endforeach

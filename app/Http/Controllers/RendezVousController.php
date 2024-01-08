@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class RendezVousController extends Controller
 {
-    
+
     //ajouter
      public function index(){
          return view('RDV.creat');
@@ -15,13 +15,13 @@ class RendezVousController extends Controller
 
     //enregistrer
     public function save(Request $request){
-      
+
         $nom_patient =  $request['nom_patient'];
         $prenom_patient =  $request['prenom_patient'];
         $tel_patient =  $request['tel_patient'];
         $date =  $request['date'];
         $heure= $request['heure'];
-        
+
         $RDV = new RendezVous();
 
         $RDV->nom_pat = $nom_patient ;
@@ -40,7 +40,7 @@ class RendezVousController extends Controller
         $listRDV = $RDV::all();
 
         return view("RDV.listRDV",['listR'=>$listRDV] );
-    
+
     }
 
     //supprimer
@@ -49,7 +49,7 @@ class RendezVousController extends Controller
         $id =  $request['id'];
         $RDV = new RendezVous();
         $RDV->find($id)->delete();
-    
+
         return Redirect::route('listRDV')->with(['message'=> 'Successfully deleted!!']);
     }
 
@@ -58,7 +58,7 @@ class RendezVousController extends Controller
         $RDV=RendezVous::find($id);
         return view('RDV.edit')->with('RDV',$RDV);
     }
-    
+
     public function update(Request $request ,$id){
         $RDV=RendezVous::where('id',$id)->first();
         $RDV->nom_pat=$request->nom_patient;
@@ -66,9 +66,13 @@ class RendezVousController extends Controller
         $RDV->tel_pat=$request->tel_patient;
         $RDV->date=$request->date;
         $RDV->heure=$request->heure;
-        
-        $RDV->save(); 
+
+        $RDV->save();
         return redirect()->route('listRDV');
     }
-
+    public function show($id)
+    {
+        $RDV =  RendezVous::find($id);
+        return view('RDV.show')->with('RDV', $RDV) ;
+    }
 }
