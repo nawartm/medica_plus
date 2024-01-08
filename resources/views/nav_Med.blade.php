@@ -24,9 +24,11 @@
 <body>
     @auth
         <nav>
-            <i class="fa-solid fa-bars" id="menu"></i>
+            <a href="{{ route('home') }}">
+                <img src="{{ asset('assets/Green Medical Logo (1).png') }}" alt="Medica+" srcset="">
+                <span>Medica+</span>
+            </a>
             <ul>
-                <li><a href="{{ route('home') }}"><img src="{{ asset('assets/Green Medical Logo (1).png') }}" alt="Medica+" srcset=""></a></li>
 
                 <!--***************************************Gestion du dossier medical************************************** -->
 

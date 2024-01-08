@@ -1,13 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 * {
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: "Tajawal", sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .95rem ;
 }
 
 :root {
+    --dark: #17202A ;
     --dark-green: #0e6655;
     --green: #74b49b;
     --lite-green: #a7d7c5;
@@ -154,7 +155,7 @@ img {
 }
 
 .form form {
-    background-color: var(--dark-green);
+    background-color: var(--bright-green);
     padding: 1rem 2rem;
 
     display: flex;
@@ -165,6 +166,10 @@ img {
 
     box-shadow: 0.1rem 0.1rem 2rem var(--edit);
     width: fit-content;
+
+    a {
+        color: var(--dark) ;
+    }
 }
 
 .remember {
