@@ -40,7 +40,7 @@
                 </label>
 
             </div>
-            <input type="submit" value="Se connecter" class="btn btn-primary">
+            <input type="submit" value="Se connecter" class="btn btn-success">
 
 
             @if (Route::has('password.request'))

@@ -11,7 +11,7 @@
                 <a href="{{ route('login') }}">Connencter-vous ?</a>
             </div>
 
-            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('nom complet') }}</label>
+            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Nom complet') }}</label>
 
             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name"
                 value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -33,7 +33,7 @@
                 </span>
             @enderror
 
-            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('mot de passe') }}</label>
+            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Mot de passe') }}</label>
 
             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"
                 name="password" required autocomplete="new-password">
@@ -49,7 +49,7 @@
             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required
                 autocomplete="new-password">
 
-            <input type="submit" value="Se connecter" class="btn btn-primary">
+            <input type="submit" value="Se connecter" class="btn btn-success">
         </form>
     </div>
 @endsection

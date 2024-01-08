@@ -34,15 +34,16 @@
                             <td>{{ $Ordonnance->date }}</td>
                             <td>{{ Str::limit($Ordonnance->description, 6) }}</td>
                             <td>
+                                <a
+                                        href="{{ route('Ordonnance.Voir', $Ordonnance->id) }}"
+                                        class="btn">
+                                <button type="button" class="btn " id="load1" style=""><i class="fa fa-eye" aria-hidden="true"></i>View</button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Ordonnance.Modify', $Ordonnance->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
-                                <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
-                                        href="{{ route('Ordonnance.Voir', $Ordonnance->id) }}"
-                                        class="btn btn-warning ps-0 py-0 pe-0">Voir</a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('Ordonnance.delete', $Ordonnance->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">Supprimer</a></button>
+                                        class="btn btn-danger">Supprimer</a></button>
                             </td>
                         </tr>
                     @endforeach

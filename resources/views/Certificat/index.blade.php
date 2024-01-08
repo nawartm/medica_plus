@@ -41,20 +41,19 @@
                         <td>{{ $item->dure }}</td>
                         <td>
                             <a href="{{ url('/Certificat/' . $item->id) }}" title="View Certificat"><button
-                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
+                                    class="btn btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
                                     Voir</button></a>
-                            <a href="{{ url('/Certificat/' . $item->id . '/edit') }}" title="Edit Certificat"><button
-                                    class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                    Modifier</button></a>
+                            <button class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="{{ url('/Certificat/' . $item->id . '/edit') }}" title="Edit Certificat">Modifier</a></button>
                             <form method="POST" action="{{ url('/Certificat' . '/' . $item->id) }}" accept-charset="UTF-8"
                                 style="display:inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
-                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Certificat"
+                                <button type="submit" class="btn btn-danger a" title="Delete Certificat"
                                     onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
                                         aria-hidden="true"></i>
                                     Supprimer</button>
                             </form>
+
                         </td>
                     </tr>
                 @endforeach

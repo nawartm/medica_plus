@@ -31,13 +31,13 @@
                                     class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
                                     Voir</button></a>
                             <a href="{{ url('/Fiche_Examen/' . $item->id . '/edit') }}" title="Edit Fiche Examen"><button
-                                    class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    class="btn btn-primary a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                     Modifier</button></a>
                             <form method="POST" action="{{ url('/Fiche_Examen' . '/' . $item->id) }}"
                                 accept-charset="UTF-8" style="display:inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
-                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Fiche Examen"
+                                <button type="submit" class="btn btn-danger a" title="Delete Fiche Examen"
                                     onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
                                         aria-hidden="true"></i> Supprimer</button>
                             </form>
