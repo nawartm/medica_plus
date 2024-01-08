@@ -10,7 +10,7 @@
         </div>
     @endif
     <div class="form">
-        <h1>Formulaire Gestion des Fiches Patients</h1>
+        <h1>Formulaire gestion des fiches patients</h1>
         <form action="{{ url('Fiche_Patient') }}" method="post">
             {!! csrf_field() !!}
             <div>
@@ -22,11 +22,11 @@
                 <input type="text" name="prenom_pat" id="prenom_pat" ><br>
             </div>
             <div>
-                <label> la Date de naissance</label><br>
+                <label> La date de naissance</label><br>
                 <input type="date" name="date_naiss" id="date_naiss" ><br>
             </div>
             <div>
-                <label>le genre</label><br>
+                <label>Le genre</label><br>
                 <input type="text" name="sexe" id="sexe" ><br>
             </div>
             <div>

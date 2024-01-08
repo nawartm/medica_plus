@@ -11,20 +11,20 @@
             <table>
                 <thead>
                     <tr>
-                        <th>id</th>
+                        <th>Id</th>
                         <th>Nom patient</th>
                         <th>Prénom Patient</th>
-                        <th>Nom medcin</th>
-                        <th>Prénom medcin</th>
-                        <th>motif</th>
-                        <th>taille</th>
-                        <th>poids</th>
-                        <th>tension</th>
-                        <th>températur</th>
-                        <th>examen</th>
-                        <th>conclusion</th>
-                        <th>date</th>
-                        <th>heure</th>
+                        <th>Nom médecin</th>
+                        <th>Prénom médecin</th>
+                        <th>Motif</th>
+                        <th>Taille</th>
+                        <th>Poids</th>
+                        <th>Tension</th>
+                        <th>Températur</th>
+                        <th>Examen</th>
+                        <th>Conclusion</th>
+                        <th>La date</th>
+                        <th>La heure</th>
                         <th>Opérations</th>
                     </tr>
                 </thead>
@@ -47,6 +47,9 @@
                             <td>{{ $Consultation->heure }}</td>
 
                             <td>
+                                <a href="{{ url('/Consultation/' . $Consultation->id) }}" title="View Consultation"><button
+                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
+                                    Voir</button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Consultation.Modify', $Consultation->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>

@@ -10,7 +10,7 @@
                         </div>
                     @endif
                     <div class="form">
-                        <h1>Formulaire Gestion Des Fiches Mutuelles</h1>
+                        <h1>Formulaire Gestion des fiches mutuelles</h1>
 
                         <form action="{{ url('FicheMut/' . $fiche_muts->id) }}" method="post">
                             {!! csrf_field() !!}
@@ -38,27 +38,27 @@
                                 class="form-control"></br>
                             </div>
                             <div>
-                                <label>Date de soin</label></br>
+                                <label>La date du soin</label></br>
                                 <input type="text" name="date_soins" id="date_soins" value="{{ $fiche_muts->date_soins }}"
                                 class="form-control"></br>
                             </div>
                             <div>
-                                <label>Code Mutuelle</label></br>
+                                <label>Code mutuelle</label></br>
                                 <input type="text" name="code_mut" id="code_mut" value="{{ $fiche_muts->code_mut }}"
                                 class="form-control"></br>
                             </div>
                             <div>
-                                <label>Montant Total</label></br>
+                                <label>Montant total</label></br>
                                 <input type="text" name="montant_total" id="montant_total"
                                 value="{{ $fiche_muts->montant_total }}" class="form-control"></br>
                             </div>
                             <div>
-                                <label>Montant Mutuelle</label></br>
+                                <label>Montant mutuelle</label></br>
                                 <input type="text" name="montant_mut" id="montant_mut"
                                 value="{{ $fiche_muts->montant_mut }}" class="form-control"></br>
                             </div>
 
-                            <input type="submit" value="modifier" class="btn btn-success"></br>
+                            <input type="submit" value="Valider" class="btn btn-success"></br>
                         </form>
                     </div>
                 @endsection

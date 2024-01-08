@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire de Rendez-vous</h1>
+        <h1>Formulaire de rendez-vous</h1>
         <form action="/save" method="get" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
@@ -29,11 +29,11 @@
             </div>
 
             <div >
-                <label for="exampleFormControlInput1" class="form-label">la date</label><br>
+                <label for="exampleFormControlInput1" class="form-label">La date</label><br>
                 <input type="date" class="form-control" name="date" value="2022-02-22">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">l'heure</label><br>
+                <label for="exampleFormControlInput1" class="form-label">L'heure</label><br>
                 <input type="text" class="form-control" name="heure">
             </div>
             <div >

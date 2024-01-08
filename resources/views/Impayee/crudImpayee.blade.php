@@ -11,13 +11,13 @@
             <table>
                 <thead>
                     <tr>
-                        <th>id</th>
+                        <th>Id</th>
                         <th>Nom patient</th>
                         <th>Prénom Patient</th>
-                        <th>tél</th>
-                        <th>montant_APS</th>
-                        <th>montant_RS</th>
-                        <th>opérations</th>
+                        <th>Tél</th>
+                        <th>Montant_APS</th>
+                        <th>Montant_RS</th>
+                        <th>Opérations</th>
 
                     </tr>
 
@@ -34,12 +34,15 @@
                             <td>{{ $Impayee->montant_RS }}</td>
 
                             <td>
+                                <a href="{{ url('/Impayee/' . $Impayee->id) }}" title="View Impayee"><button
+                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
+                                    Voir</button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Impayee.Modify', $Impayee->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('Impayee.delete', $Impayee->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">supprimer</a></button>
+                                        class="btn btn-danger ps-0 py-0 pe-0">Supprimer</a></button>
                             </td>
                         </tr>
                     @endforeach

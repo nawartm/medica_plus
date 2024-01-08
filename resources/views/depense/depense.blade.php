@@ -16,7 +16,7 @@
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
             <div >
-                <label for="exampleFormControlInput1" class="form-label">Mois de dépense/label><br>
+                <label for="exampleFormControlInput1" class="form-label">Mois de dépense</label><br>
                 <input type="text" class="form-control" name="mois_dep" placeholder="">
             </div>
             <div >

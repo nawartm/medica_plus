@@ -10,7 +10,7 @@
         </div>
     @endif
     <div class="form">
-        <h1>Formulaire Gestion des Certificats</h1>
+        <h1>Formulaire gestion des certificats</h1>
         <form action="{{ url('Certificat') }}" method="post">
             {!! csrf_field() !!}
             <div>
@@ -30,15 +30,15 @@
                 <input type="text" name="prenom_med" id="prenom_med" class="form-control">
             </div>
             <div>
-                <label>date</label></br>
+                <label>La date</label></br>
                 <input type="text" name="date" id="date" class="form-control">
             </div>
             <div>
-                <label>heure</label></br>
+                <label>L'heure</label></br>
                 <input type="text" name="heure" id="heure" class="form-control">
             </div>
             <div>
-                <label>durée</label></br>
+                <label>La durée</label></br>
                 <input type="text" name="dure" id="dure" class="form-control">
             </div>
 

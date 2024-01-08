@@ -29,11 +29,11 @@
             </div>
 
             <div >
-                <label for="exampleFormControlInput1" class="form-label">la date</label><br>
+                <label for="exampleFormControlInput1" class="form-label">La date</label><br>
                 <input type="date" class="form-control" name="date" value="{{ $RDV->date }}">
             </div>
             <div >
-                <label for="exampleFormControlInput1" class="form-label">l'heure</label><br>
+                <label for="exampleFormControlInput1" class="form-label">L'heure</label><br>
                 <input type="text" class="form-control" name="heure" value="{{ $RDV->heure }}">
             </div>
             <div >

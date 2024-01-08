@@ -7,7 +7,7 @@ use App\Models\Impayee;
 
 class ImpayeeController extends Controller
 {
-   
+
     /**
      * Display a listing of the resource.
      *
@@ -25,20 +25,14 @@ class ImpayeeController extends Controller
         $Impayee =Impayee::all();
         return view('Impayee.crudImpayee',compact('Impayee'));
     }
-    public function show($id){ 
-   
-        $Impayee=Impayee::where('id',$id)->first();// ??????????????? s'affiche pas 
-          return view('Impayee.Impayee')->with([
-          'Impayee' => $Impayee
-          ]);
-        }
+
      /* Show the form for creating a new resource.
      *
      * @return Response
      */
     public function create()
     {
-       
+
         return view('Impayee.Create_Imp');
     }
 
@@ -49,7 +43,7 @@ class ImpayeeController extends Controller
      */
     public function store(ImpayeeRequest $request)
     {
-        
+
         $Impayee = new Impayee();
         $Impayee->nom_pat=$request->nom_pat;
         $Impayee->prenom_pat=$request->prenom_pat;
@@ -57,11 +51,11 @@ class ImpayeeController extends Controller
         $Impayee->montant_APS=$request->montant_APS;
         $Impayee->montant_RS=$request->montant_RS;
 
-        $Impayee->save(); 
-       
+        $Impayee->save();
+
            return redirect()->route('Impayee.index');
-        
-       
+
+
     }
 
     /**
@@ -83,7 +77,7 @@ class ImpayeeController extends Controller
 
     public function update(ImpayeeRequest $request, $id)
     {
-        
+
         $Impayee = Impayee::where('id',$id)->first();
         $Impayee->nom_pat=$request->nom_pat;
         $Impayee->prenom_pat=$request->prenom_pat;
@@ -91,9 +85,14 @@ class ImpayeeController extends Controller
         $Impayee->montant_APS=$request->montant_APS;
         $Impayee->montant_RS=$request->montant_RS;
 
-        $Impayee->save(); 
+        $Impayee->save();
         return redirect()->route('Impayee.index');
     }
 
+    public function show($id)
+    {
+        $Impayee = Impayee::find($id);
+        return view('Impayee.show')->with('Impayee', $Impayee) ;
+    }
 
 }

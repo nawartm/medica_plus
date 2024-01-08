@@ -95,4 +95,9 @@ class ConsultationController extends Controller
         $Consultation->save();
         return redirect()->route('Consultation.index');
     }
+    public function show($id)
+    {
+        $consultation = Consultation::find($id);
+        return view('Consultation.show')->with('consultation', $consultation) ;
+    }
 }

@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire d'Ordonnance</h1>
+        <h1>Formulaire d'ordonnance</h1>
         <form action="{{ route('Ordonnance.store') }}" method="post" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
@@ -32,7 +32,7 @@
                 <input type="text" class="form-control" name="prenom_med">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">la date</label><br>
+                <label for="exampleFormControlInput1" class="form-label">La date</label><br>
                 <input type="date" class="form-control" name="date" value="2022-02-22">
             </div>
             <div>

@@ -24,47 +24,47 @@
                 <input type="text" class="form-control" name="prenom_pat">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Nom du médcin</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Nom du médecin</label><br>
                 <input type="text" class="form-control" name="nom_med" placeholder="Entrez le nom du patient">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">Prénom du medcin</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Prénom du médecin</label><br>
                 <input type="text" class="form-control" name="prenom_med">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">motif</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Motif</label><br>
                 <input type="text" class="form-control" name="motif">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">taille</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Taille</label><br>
                 <input type="text" class="form-control" name="taille">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">poids</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Poids</label><br>
                 <input type="text" class="form-control" name="pois">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">tension</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Tension</label><br>
                 <input type="text" class="form-control" name="tension">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">températur</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Température</label><br>
                 <input type="text" class="form-control" name="temperatur">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">examen</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Examen</label><br>
                 <input type="text" class="form-control" name="examen">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">conclusion</label><br>
+                <label for="exampleFormControlInput1" class="form-label">Conclusion</label><br>
                 <input type="text" class="form-control" name="conclusion">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">date</label><br>
+                <label for="exampleFormControlInput1" class="form-label">La date</label><br>
                 <input type="date" class="form-control" name="date">
             </div>
             <div>
-                <label for="exampleFormControlInput1" class="form-label">heure</label><br>
+                <label for="exampleFormControlInput1" class="form-label">L'heure</label><br>
                 <input type="text" class="form-control" name="heure">
             </div>
             <input type="submit" class="btn btn-primary" value="Valider">

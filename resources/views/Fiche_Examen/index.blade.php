@@ -1,11 +1,11 @@
 @extends('nav_Med')
 @section('app')
     <section>
-        <h2>Gestion des Fiches D'examens</h2>
+        <h2>Gestion des fiches d'examens</h2>
 
         <button type="button" class="btn btn-primary">
             <a href="{{ url('/Fiche_Examen/create') }}" title="Add New Fiche Examen">
-                <i class="fa fa-plus" aria-hidden="true"></i> ajouter un nouveau
+                <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
             </a>
         </button>
 
@@ -14,9 +14,9 @@
 
 
 
-                <th class="table-primary">Date Examen</th>
+                <th class="table-primary">La date d'examen</th>
                 <th class="table-primary">Résultat</th>
-                <th class="table-primary">opérations </th>
+                <th class="table-primary">Opérations </th>
 
             </thead>
             <tbody>
@@ -32,14 +32,14 @@
                                     Voir</button></a>
                             <a href="{{ url('/Fiche_Examen/' . $item->id . '/edit') }}" title="Edit Fiche Examen"><button
                                     class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                    modifier</button></a>
+                                    Modifier</button></a>
                             <form method="POST" action="{{ url('/Fiche_Examen' . '/' . $item->id) }}"
                                 accept-charset="UTF-8" style="display:inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete Fiche Examen"
                                     onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
-                                        aria-hidden="true"></i> supprimer</button>
+                                        aria-hidden="true"></i> Supprimer</button>
                             </form>
                         </td>
                     </tr>

@@ -33,7 +33,7 @@ Route::get('/RDV',[RendezVousController::class,'listRDV'])->name('listRDV');
 Route::get('/delete',[RendezVousController::class,'delete']);
 Route::get('/edit/{id}',[RendezVousController::class,'edit'])->name('/edit');
 Route::get('/update/{id}',[RendezVousController::class,'update'])->name('/update');
-
+Route::get('RendezVous/{id}', [RendezVousController::class, 'show'])->name('RendezVous.show');
 /*---------Depense------------ */
 Route::get('/depense',[DepenseController::class,'index'])->name('depense');
 Route::get('/saveD',[DepenseController::class,'save']);
@@ -75,7 +75,7 @@ Route::get('Consultation/edit/{id}',[ConsultationController::class,'edit'])->nam
 Route::post('Consultation/store',[ConsultationController::class,'store'])->name('Consultation.store');
 Route::put('Consultation/update/{id}',[ConsultationController::class,'update'])->name('Consultation.update');
 Route::get('Consultation/delete/{id}',[ConsultationController::class,'destroy'])->name('Consultation.delete');
-
+Route::get('Consultation/{id}', [ConsultationController::class, 'show'])->name('Consultation.show');
 /*************************************certificat*********************************************/
 Route::resource('/Certificat', CertificatController::class);
 
@@ -89,7 +89,7 @@ Route::resource('/Fiche_Examen', ExamenController::class);
 });
 
 
-//safae
+
 /**********************************Impayee************************************************************/
 Route::get('Impayee/create',[ImpayeeController::class,'create'])->name('Impayee.create');
 Route::get('Impayee/list',[ImpayeeController::class,'list'])->name('Impayee.index');
@@ -97,8 +97,8 @@ Route::get('Impayee/edit/{id}',[ImpayeeController::class,'edit'])->name('Impayee
 Route::post('Impayee/store',[ImpayeeController::class,'store'])->name('Impayee.store');
 Route::put('Impayee/update/{id}',[ImpayeeController::class,'update'])->name('Impayee.update');
 Route::get('Impayee/delete/{id}',[ImpayeeController::class,'destroy'])->name('Impayee.delete');
+Route::get('Impayee/{id}', [ImpayeeController::class, 'show'])->name('Impayee.show');
 
 
-//ibtissam
 /**********************************fiche_patient************************************************************/
 Route::resource('/Fiche_Patient', FichePatientController::class);
