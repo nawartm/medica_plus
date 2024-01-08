@@ -47,7 +47,14 @@ a {
 
     color: var(--bright-green);
 }
-
+.login {
+    background-color: var(--dark-green);
+    grid-column: span 2 ;
+    padding: 1rem 0;
+    display: flex ;
+    justify-content: center ;
+    gap: 2rem ;
+}
 /*
 
 css nesting
@@ -162,6 +169,10 @@ img {
 
 .remember {
     max-width: fit-content;
+
+    input[type="checkbox"]{
+        max-width: fit-content;
+    }
 }
 form label {
     font-weight: 800;
@@ -207,4 +218,11 @@ textarea {
     min-height: 8rem;
     min-width: 24rem;
     padding: 0.3rem;
+}
+
+#sectionAimprimer {
+    display: grid ;
+    justify-content: center ;
+    gap: 2rem ;
+    padding: 3rem 2rem ;
 }

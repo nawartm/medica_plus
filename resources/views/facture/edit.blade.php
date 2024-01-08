@@ -15,25 +15,24 @@
         <form action="{{ route('/updateF', $factures->id) }}" method="get" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
-            <div >
-                <label for="exampleFormControlInput1" class="form-label">Date</label>
-                <input type="date" class="form-control" name="date" placeholder=""
-                    value=" {{ $factures->date }}>
-               </div>
-               <div >
-                <label for="exampleFormControlInput1" class="form-label">Tarif de consultation</label>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Date</label><br>
+                <input type="date" class="form-control" name="date" placeholder="" value=" {{ $factures->date }}">
+            </div>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Tarif de consultation</label><br>
                 <input type="text" class="form-control" name="tarif_cns" value=" {{ $factures->tarif_cns }}">
             </div>
-            <div >
-                <label for="exampleFormControlInput1" class="form-label">Nom du patient</label>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br>
                 <input type="text" class="form-control" name="nom_pat" value=" {{ $factures->nom_pat }}">
             </div>
 
-            <div >
-                <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
                 <input type="text" class="form-control" name="prenom_pat" value=" {{ $factures->prenom_pat }}">
             </div>
-            <div >
+            <div>
                 <input type="submit" value="Valider">
             </div>
         </form>

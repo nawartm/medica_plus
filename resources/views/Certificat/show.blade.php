@@ -9,6 +9,7 @@
             </ul>
         </div>
     @endif
+<div id="sectionAimprimer">
 
     <div class="row border border-dark ">
         <div class="col-sm bg-white float-start  p-4 ps-5 pe-0" style=" color:white;">
@@ -26,21 +27,20 @@
         </div>
         <br>
         <h3 class="float-end fs-6 text-black-50">{{ $certificats->date }}</h3>
-
+        
         <p name="" id="" cols="200" rows="10"> Mm/Mr
             {{ $certificats->nom_pat }}</p><br><br><br>
-        <p name="" id="" cols="200" rows="10"> L'Heure :
+            <p name="" id="" cols="200" rows="10"> L'Heure :
             {{ $certificats->heure }} </p><br><br><br>
-
-        <p name="" id="" cols="200" rows="10"> La Durée du Certificat
-            : {{ $certificats->dure }}</p><br><br><br><br><br>
-
-    </div>
-
-    </div>
-    </div>
-    <button type="button" class="btn btn-warning btn-lg float-sm-end" id="load2" style="color:white;"
-        data-loading-text=" Processing Order"><i class='fa fa-spinner fa-spin text-light '></i><a href="#"
+            
+            <p name="" id="" cols="200" rows="10"> La Durée du Certificat
+                : {{ $certificats->dure }}</p><br><br><br><br><br>
+                
+            </div>
+            
+        </div>
+            <button type="button" class="btn btn-warning btn-lg float-sm-end" id="load2" style="color:white;"
+            data-loading-text=" Processing Order"><i class='fa fa-spinner fa-spin text-light '></i><a href="#"
             onClick="imprimer('sectionAimprimer')" class="btn btn-sm ms-2">Imprimer</a>
         <script>
             function imprimer(divName) {

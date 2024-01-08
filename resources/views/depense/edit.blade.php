@@ -26,7 +26,6 @@
                 <input type="text" class="form-control" name="montant_dep" value=" {{ $depenses->montant_dep }}">
             </div>
 
-
             <div>
                 <input type="submit" value="Valider">
             </div>

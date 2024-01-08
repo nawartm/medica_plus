@@ -25,19 +25,28 @@
                 <input type="text" name="prenom_pat" id="prenom_pat" value="{{ $certificats->prenom_pat }}"
                 class="form-control"></br>
             </div>
-            <label>Nom médecin</label></br>
-            <input type="text" name="nom_med" id="nom_med" value="{{ $certificats->nom_med }}"
+            <div>
+                <label>Nom médecin</label></br>
+                <input type="text" name="nom_med" id="nom_med" value="{{ $certificats->nom_med }}"
                 class="form-control"></br>
-            <label>Prénom médecin</label></br>
-            <input type="text" name="prenom_med" id="prenom_med" value="{{ $certificats->prenom_med }}"
+            </div>
+            <div>
+                <label>Prénom médecin</label></br>
+                <input type="text" name="prenom_med" id="prenom_med" value="{{ $certificats->prenom_med }}"
                 class="form-control"></br>
-
-            <label>Date</label></br>
-            <input type="text" name="date" id="date" value="{{ $certificats->date }}" class="form-control"></br>
-            <label>heure</label></br>
-            <input type="text" name="heure" id="heure" value="{{ $certificats->heure }}" class="form-control"></br>
-            <label>Durée</label></br>
-            <input type="text" name="dure" id="dure" value="{{ $certificats->dure }}" class="form-control"></br>
+            </div>
+            <div>
+                <label>Date</label></br>
+                <input type="text" name="date" id="date" value="{{ $certificats->date }}" class="form-control"></br>
+            </div>
+            <div>
+                <label>heure</label></br>
+                <input type="text" name="heure" id="heure" value="{{ $certificats->heure }}" class="form-control"></br>
+            </div>
+            <div>
+                <label>Durée</label></br>
+                <input type="text" name="dure" id="dure" value="{{ $certificats->dure }}" class="form-control"></br>
+            </div>
 
             <input type="submit" value="modifier" class="btn btn-success"></br>
         </form>
