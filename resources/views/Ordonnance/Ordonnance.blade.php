@@ -1,16 +1,5 @@
 @extends('nav_Med')
 @section('app')
-<<<<<<< HEAD
-    <section>
-        <div id='sectionAimprimer'>
-            <div>
-                <div class="" style=" color:#17202A;">
-                    <h3>Docteur {{ $Ordonnance->nom_med }}</h3><br />
-                    <h3>Médecin général</h3>
-                    <h3 class="fs-6 text-black-50 ">Diplomé de la faculté de médecine à Fes</h3>
-                    <h3>Mr/Mm {{ $Ordonnance->nom_pat }} {{ $Ordonnance->prenom_pat }}
-                    </h3>
-=======
         <div class="container-fluid mb-5 ">
             <div id='sectionAimprimer'>
                 <div class="container-fluid mt-5 mb-5">
@@ -39,7 +28,6 @@
 
                     </div>
 
->>>>>>> 2d288098f36baa354ea7baf340f055d19da3d8e9
                 </div>
                 <div class="">
                     <h3>quartier daraa</h3>
