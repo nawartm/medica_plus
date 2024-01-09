@@ -6,7 +6,7 @@
         <div style="margin:3em;">
         <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Consultation.create') }} " style="color:white"
-                class="btn ">+Ajouter </a>
+                >+Ajouter </a>
         </button>
     </div>
         <div class="tbl-header">

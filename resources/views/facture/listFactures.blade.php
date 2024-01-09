@@ -5,7 +5,7 @@
         <div style="margin:3em;">
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('facture') }} " style="color:white"
-                class="btn btn-sm me-2">+Ajouter </a>
+                >+Ajouter </a>
         </button>
     </div>
         <div >

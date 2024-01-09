@@ -5,7 +5,7 @@
         <h1>Gestion des dépenses</h1>
         <div style="margin:3em;">
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
-                class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" class="btn btn-sm me-2">+Ajouter
+                class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" >+Ajouter
                 </a>
         </button>
     </div>

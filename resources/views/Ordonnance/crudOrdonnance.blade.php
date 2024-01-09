@@ -5,9 +5,9 @@
         <h1>Gestion des ordonnances</h1>
 
         <div style="margin:3em;">
-            <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order"><i
+            <button type="button" class="btn btn-primary " id="load1" data-loading-text=" Processing Order"><i
                     class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Ordonnance.create') }} " style="color:white"
-                    class="btn">+Ajouter </a>
+                    >+Ajouter </a>
             </button>
         </div>
         <div class="">
