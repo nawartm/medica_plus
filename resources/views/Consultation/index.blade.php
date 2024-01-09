@@ -54,10 +54,10 @@
                                    </button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Consultation.Modify', $Consultation->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('Consultation.delete', $Consultation->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">supprimer</a></button>
+                                        class="btn btn-danger ps-0 py-0 pe-0"><i class="fa-solid fa-trash"></i></a></button>
                             </td>
                         </tr>
                     @endforeach

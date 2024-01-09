@@ -41,10 +41,10 @@
                                 <button type="button" class="btn" id="load1" style=""><i class="fa fa-eye" aria-hidden="true"></i></button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Ordonnance.Modify', $Ordonnance->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('Ordonnance.delete', $Ordonnance->id) }}"
-                                        class="btn btn-danger">Supprimer</a></button>
+                                        class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></button>
                             </td>
                         </tr>
                     @endforeach

@@ -38,7 +38,7 @@
                                     class="btn"></a></button>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/editD', $depense->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
 
 
                             </td>
