@@ -60,6 +60,11 @@ ul li a span[data-visible="false"] {
 }
 
 /* body  */
+body {
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
 
 main{
     grid-column: span 2;
