@@ -17,7 +17,7 @@
             @csrf
             <div>
                 <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br>
-                <input type="text" class="form-control" name="nom_pat" placeholder="Entrez le nom du patient">
+                <input type="text" class="form-control" name="nom_pat" >
             </div>
             <div>
                 <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
@@ -37,7 +37,7 @@
             </div>
             <div>
                 <label for="exampleFormControlTextarea1" class="form-label">Description</label><br>
-                <textarea class="form-control" name="description" rows="3" placeholder="Ecrivez une description"></textarea>
+                <textarea class="form-control" name="description" rows="3" ></textarea>
             </div>
 
             <div>

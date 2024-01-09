@@ -40,11 +40,11 @@
                                 </a> <i class="fa fa-eye" aria-hidden="true"></i></button>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/editF', $facture->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
 
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                             href="\deleteF?id={{ $facture['id'] }}"
-                                            class="btn btn-danger">Supprimer</a></button>
+                                            class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></button>
                             </td>
                         <tr>
                     @endforeach

@@ -52,14 +52,14 @@
                                 </button></a>
                         <a href="{{ url('/FicheMut/' . $item->id . '/edit') }}" title="Edit Fiche du Patient"><button
                                 class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                Modifier</button></a>
+                                <i class="fa-solid fa-pen-to-square"></i></button></a>
                         <form method="POST" action="{{ url('/FicheMut' . '/' . $item->id) }}" accept-charset="UTF-8"
                             style="display:inline">
                             {{ method_field('DELETE') }}
                             {{ csrf_field() }}
                             <button type="submit" class="btn btn-danger a" title="Delete Fiche Mutuelle"
                                 onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
-                                    aria-hidden="true"></i> Supprimer</button>
+                                    aria-hidden="true"></i> <i class="fa-solid fa-trash"></i></button>
                         </form>
                     </td>
                 </tr>

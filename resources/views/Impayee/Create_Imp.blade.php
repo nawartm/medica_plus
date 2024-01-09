@@ -11,13 +11,13 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire des impayés</h1></br>
+        <h1>Formulaire des impayés</h1><br>
         <form action="{{ route('Impayee.store') }}" method="post" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
             <div>
                 <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br>
-                <input type="text" class="form-control" name="nom_pat" placeholder="Entrez le nom du patient">
+                <input type="text" class="form-control" name="nom_pat" >
             </div>
             <div>
                 <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>

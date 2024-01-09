@@ -41,10 +41,10 @@
                                     </button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Impayee.Modify', $Impayee->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
                                         href="{{ route('Impayee.delete', $Impayee->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">Supprimer</a></button>
+                                        class="btn btn-danger ps-0 py-0 pe-0"><i class="fa-solid fa-trash"></i></a></button>
                             </td>
                         </tr>
                     @endforeach

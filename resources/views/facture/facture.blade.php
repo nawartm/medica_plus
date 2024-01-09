@@ -17,7 +17,7 @@
             @csrf
             <div>
                 <label for="exampleFormControlInput1" class="form-label">La date</label><br>
-                <input type="date" class="form-control" name="date" placeholder="">
+                <input type="date" class="form-control" name="date" >
             </div>
             <div>
                 <label for="exampleFormControlInput1" class="form-label">Tarif de consultation</label><br>

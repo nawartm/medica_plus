@@ -16,9 +16,9 @@
                         class="form-control"></br>
                 </div>
                 <div>
-                    <label>Résultat</label></br>
+                    <label>Résultat</label><br>
                     <input type="text" name="resultat" id="resultat" value="{{ $fiche_examens->resultat }}"
-                        class="form-control"></br>
+                        class="form-control"><br>
                 </div>
 
                 <input type="submit" value="Valider" class="btn btn-success"></br>

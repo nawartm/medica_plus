@@ -45,15 +45,13 @@
                             <a href="{{ url('/Certificat/' . $item->id) }}" title="View Certificat"><button
                                     class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
                                    </button></a>
-                            <button class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="{{ url('/Certificat/' . $item->id . '/edit') }}" title="Edit Certificat">Modifier</a></button>
+                                   <a href="{{ url('/Certificat/' . $item->id . '/edit') }}" title="Edit Certificat"><button class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><i class="fa-solid fa-pen-to-square"></i></button></a>
                             <form method="POST" action="{{ url('/Certificat' . '/' . $item->id) }}" accept-charset="UTF-8"
                                 style="display:inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
                                 <button type="submit" class="btn btn-danger a" title="Delete Certificat"
-                                    onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
-                                        aria-hidden="true"></i>
-                                    Supprimer</button>
+                                    onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa-solid fa-trash"></i></button>
                             </form>
 
                         </td>
