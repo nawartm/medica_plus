@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem ;
+
 }
 
 :root {
@@ -55,9 +55,7 @@ css nesting
 
 */
 
-ul li a span[data-visible="false"] {
-    display: none;
-}
+
 
 /* body  */
 body {
@@ -80,7 +78,7 @@ main{
 
         border: .2rem solid var(--dark-green );
         border-radius: 1rem ;
-        background-color: hsl(1 10% 10%/0.4);
+        background-color: hsla(198, 59%, 69%, 0.4);
         backdrop-filter: blur(0.5rem);
         box-shadow: 0 0 5rem var(--dark);
 
@@ -100,7 +98,7 @@ main{
                 border-radius: .5rem ;
             }
 
-        } 
+        }
     }
 }
 
@@ -209,7 +207,7 @@ table tbody tr:nth-of-type(even) {
 
     border-radius: 1rem;
 
-    /* box-shadow: 0.1rem 0.1rem 2rem var(--edit); */
+   
     border: .2rem solid var(--edit);
     width: fit-content;
 

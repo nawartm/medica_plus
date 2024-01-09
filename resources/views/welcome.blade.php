@@ -10,7 +10,7 @@
 
     <style>
         body {
-            background-image: url({{ asset('assets/healthcare-medical-symbol-c4g11g7l1o1hev4m.jpg') }} );
+            background-image: url({{ asset('assets/wallpaper.jpg') }} );
         }
     </style>
 
