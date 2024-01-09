@@ -58,9 +58,9 @@
                 <li><a href="{{ route('listFactures') }}"><i class="fa-solid fa-comments-dollar"></i><span
                             data-visible="true"> factures</span></a>
                 </li>
-                <li><a href="{{ route('listDepenses') }}"><i class="fa-solid fa-comment-dollar"></i><span
+                {{-- <li><a href="{{ route('listDepenses') }}"><i class="fa-solid fa-comment-dollar"></i><span
                             data-visible="true"> dépenses</span></a>
-                </li>
+                </li> --}}
 
 
                 <!-- *************************G.des Rdvs**************************-->
