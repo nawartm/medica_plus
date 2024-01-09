@@ -2,11 +2,13 @@
 @section('app')
     <section>
         <!--for demo wrap-->
-        <h1>Gestion des consultation</h1>
+        <h1>Gestion des consultations</h1>
+        <div style="margin:3em;">
         <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Consultation.create') }} " style="color:white"
-                class="btn btn-sm me-2">Ajouter </a>
+                class="btn ">+Ajouter </a>
         </button>
+    </div>
         <div class="tbl-header">
             <table>
                 <thead>
@@ -24,7 +26,7 @@
                         <th>Examen</th>
                         <th>Conclusion</th>
                         <th>La date</th>
-                        <th>La heure</th>
+                        <th>L'heure</th>
                         <th>Opérations</th>
                     </tr>
                 </thead>
@@ -48,8 +50,8 @@
 
                             <td>
                                 <a href="{{ url('/Consultation/' . $Consultation->id) }}" title="View Consultation"><button
-                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                    Voir</button></a>
+                                    class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
+                                   </button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Consultation.Modify', $Consultation->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">modifier</a></button>

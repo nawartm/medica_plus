@@ -1,7 +1,7 @@
 @extends('nav_Med')
 @section('app')
     <div class="form">
-        <h1>Formulaire gestion des fiches examens</h1>
+        <h1>Formulaire gestion des fiches examens</h1></br>
         <form action="{{ url('Fiche_Examen') }}" method="post">
             {!! csrf_field() !!}
             <div>

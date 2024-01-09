@@ -3,10 +3,12 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des impayés</h1>
+        <div style="margin:3em;">
         <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Impayee.create') }} " style="color:white"
-                class="btn btn-sm me-2">Ajouter </a>
+                class="btn btn-sm me-2">+Ajouter </a>
         </button>
+    </div>
         <div class="tbl-header">
             <table>
                 <thead>
@@ -35,8 +37,8 @@
 
                             <td>
                                 <a href="{{ url('/Impayee/' . $Impayee->id) }}" title="View Impayee"><button
-                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                    Voir</button></a>
+                                    class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
+                                    </button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Impayee.Modify', $Impayee->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>

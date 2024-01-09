@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire des consultations</h1>
+        <h1>Formulaire des consultations</h1></br>
         <form action="{{ route('Consultation.store') }}" method="post" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
@@ -67,7 +67,7 @@
                 <label for="exampleFormControlInput1" class="form-label">L'heure</label><br>
                 <input type="text" class="form-control" name="heure">
             </div>
-            <input type="submit" class="btn btn-primary" value="Valider">
+            <input type="submit" class="btn btn-success" value="Valider">
 
         </form>
 

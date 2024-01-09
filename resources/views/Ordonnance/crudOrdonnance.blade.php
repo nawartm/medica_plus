@@ -3,10 +3,11 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des ordonnances</h1>
+
         <div style="margin:3em;">
             <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order"><i
                     class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Ordonnance.create') }} " style="color:white"
-                    class="btn">Ajouter une ordonnance</a>
+                    class="btn">+Ajouter </a>
             </button>
         </div>
         <div class="">
@@ -37,7 +38,7 @@
                                 <a
                                         href="{{ route('Ordonnance.Voir', $Ordonnance->id) }}"
                                         class="btn">
-                                <button type="button" class="btn " id="load1" style=""><i class="fa fa-eye" aria-hidden="true"></i>View</button></a>
+                                <button type="button" class="btn" id="load1" style=""><i class="fa fa-eye" aria-hidden="true"></i></button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('Ordonnance.Modify', $Ordonnance->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>

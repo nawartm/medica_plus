@@ -1,48 +1,40 @@
 @extends('nav_Med')
 @section('app')
-        <div class="container-fluid mb-5 ">
-            <div id='sectionAimprimer'>
-                <div class="container-fluid mt-5 mb-5">
-
-                    <div class="row border border-dark ">
-                        <div class="col-sm bg-white float-start  p-4 ps-5 pe-0" style=" color:white;">
-                            <h3>Docteur {{ $Ordonnance->nom_med }}</h3><br />
-                            <h3 class="fs-6 text-black-50">Médecin général</h3>
-                            <h3 class="fs-6 text-black-50 ">Diplomé de la faculté de médecine à Fès</h3>
-                            <h3 class="fs-6 text-black-50">Mr/Mm {{ $Ordonnance->nom_pat }} {{ $Ordonnance->prenom_pat }}
-                            </h3>
-                        </div>
-                        <div class="col-sm bg-white float-end fs-6 p-5 pe-5 ps-0">
-                            <h3 class="fs-6 text-black-50">quartier daraa</h3>
-                            <h3 class="fs-6 text-black-50">zagora</h3>
-                            <h3 class="fs-6 text-black-50">Tel:05.78.45.94.76</h3>
-                            <h3 class="fs-6 text-black-50">Tel:06.98.23.91.86</h3>
-                        </div>
-                        <br>
-                        <h3 class="float-end fs-6 text-black-50">{{ $Ordonnance->date }}</h3>
-
-                        <p name="" id="" cols="200" rows="10">Mm/Mr {{ $Ordonnance->nom_pat }}
-                            {{ $Ordonnance->prenom_pat }}</p><br><br><br>
-                        <p name="" id="" cols="200" rows="10">{{ $Ordonnance->description }}</p>
-                        <br><br><br><br><br>
-
+    <section>
+        <div id="sectionAimprimer">
+            <div>
+                <div class="row border border-dark ">
+                    <div class="col-sm bg-white float-start  p-4 ps-5 pe-0" style=" color:white;">
+                        <h3>Docteur {{ $Ordonnance->nom_med }}</h3><br />
+                        <h3 class="fs-6 text-black-50">Médecin général</h3>
+                        <h3 class="fs-6 text-black-50 ">Diplomé de la faculté de médecine à Fès</h3>
+                        <h3 class="fs-6 text-black-50">Mr/Mm {{ $Ordonnance->nom_pat }} {{ $Ordonnance->prenom_pat }}
+                        </h3>
                     </div>
+                    <br>
+                    <h3 class="float-end fs-6 text-black-50">{{ $Ordonnance->date }}</h3>
+
+                    <p name="" id="" cols="200" rows="10">Mm/Mr {{ $Ordonnance->nom_pat }}
+                        {{ $Ordonnance->prenom_pat }}</p><br><br><br>
+                    <p name="" id="" cols="200" rows="10">{{ $Ordonnance->description }}</p>
+                    <br>
 
                 </div>
-                <div class="">
-                    <h3>quartier daraa</h3>
-                    <h3>zagora</h3>
-                    <h3>Tel:05.78.45.94.76</h3>
-                    <h3>Tel:06.98.23.91.86</h3>
-                </div>
-
-                <h3 class="">{{ $Ordonnance->date }}</h3>
-
-                <p name="" id="" cols="200" rows="10">Mm/Mr {{ $Ordonnance->nom_pat }}
-                    {{ $Ordonnance->prenom_pat }}</p>
-                <p name="" id="" cols="200" rows="10">{{ $Ordonnance->description }}</p>
 
             </div>
+            <div class="">
+                <h3>quartier daraa</h3>
+                <h3>zagora</h3>
+                <h3>Tel:05.78.45.94.76</h3>
+                <h3>Tel:06.98.23.91.86</h3>
+            </div>
+
+            <h3 class="">{{ $Ordonnance->date }}</h3>
+
+            <p name="" id="" cols="200" rows="10">Mm/Mr {{ $Ordonnance->nom_pat }}
+                {{ $Ordonnance->prenom_pat }}</p>
+            <p name="" id="" cols="200" rows="10">{{ $Ordonnance->description }}</p>
+
         </div>
 
         <button type="button" onClick="imprimer('sectionAimprimer')" class="btn btn-primary" id="load2"

@@ -12,12 +12,13 @@
         @endif
 
         <h2> Gestion des fiches patients</h2>
+        <div style="margin:3em;">
         <button type="button" class="btn btn-primary">
             <a href="{{ url('/Fiche_Patient/create') }}" title="Add New Fiche du Patient">
                 <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
             </a>
         </button>
-
+        </div>
         <table class="table">
             <thead>
 
@@ -45,16 +46,16 @@
                         <td>{{ $item->group_sang }}</td>
                         <td>
                             <a href="{{ url('/Fiche_Patient/' . $item->id) }}" title="View Fiche du Patient"><button
-                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                    Voir</button></a>
+                                    class="btn"><i class="fa fa-eye" aria-hidden="true"></i>
+                                    </button></a>
                             <a href="{{ url('/Fiche_Patient/' . $item->id . '/edit') }}"
-                                title="Edit Fiche du Patient"><button class="btn btn-primary btn-sm"><i
+                                title="Edit Fiche du Patient"><button class="btn btn-success a"><i
                                         class="fa fa-pencil-square-o" aria-hidden="true"></i> Modifier</button></a>
                             <form method="POST" action="{{ url('/Fiche_Patient' . '/' . $item->id) }}"
                                 accept-charset="UTF-8" style="display:inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
-                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Fiche du Patient"
+                                <button type="submit" class="btn btn-danger a" title="Delete Fiche du Patient"
                                     onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o"
                                         aria-hidden="true"></i> Supprimer</button>
                             </form>

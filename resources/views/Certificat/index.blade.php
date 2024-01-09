@@ -11,11 +11,13 @@
             </div>
         @endif
         <h2> Gestion des certificats</h2>
-        <button type="button" class="btn btn-primary">
+        <div style="margin:3em;" >
+        <button type="button" class="btn btn-primary" >
             <a href="{{ url('/Certificat/create') }}" title="Add New Certificat">
                 <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
             </a>
         </button>
+        </div>
         <table class="table">
             <thead>
                 <th class="table-primary">Nom patient</th>
@@ -41,9 +43,9 @@
                         <td>{{ $item->dure }}</td>
                         <td>
                             <a href="{{ url('/Certificat/' . $item->id) }}" title="View Certificat"><button
-                                    class="btn btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                    Voir</button></a>
-                            <button class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="{{ url('/Certificat/' . $item->id . '/edit') }}" title="Edit Certificat">Modifier</a></button>
+                                    class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
+                                   </button></a>
+                            <button class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="{{ url('/Certificat/' . $item->id . '/edit') }}" title="Edit Certificat">Modifier</a></button>
                             <form method="POST" action="{{ url('/Certificat' . '/' . $item->id) }}" accept-charset="UTF-8"
                                 style="display:inline">
                                 {{ method_field('DELETE') }}

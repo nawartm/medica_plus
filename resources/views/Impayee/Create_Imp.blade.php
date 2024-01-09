@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire des impayés</h1>
+        <h1>Formulaire des impayés</h1></br>
         <form action="{{ route('Impayee.store') }}" method="post" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
@@ -36,7 +36,7 @@
                 <input type="text" class="form-control" name="montant_RS">
             </div>
 
-            <input type="submit" value="Valider">
+            <input type="submit" class="btn btn-success" value="Valider">
     </div>
     </form>
 @endsection

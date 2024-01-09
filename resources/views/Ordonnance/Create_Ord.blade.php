@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire d'ordonnance</h1>
+        <h1>Formulaire d'ordonnance</h1></br>
         <form action="{{ route('Ordonnance.store') }}" method="post" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
@@ -41,7 +41,7 @@
             </div>
 
             <div>
-                <input type="submit" value="Valider">
+                <button type="submit" class="btn btn-success">Valider</button>
             </div>
         </form>
     </div>

@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire des Impayés</h1>
+        <h1>Formulaire des Impayés</h1></br>
         <form action="{{ route('Impayee.update', $Impayee->id) }}" method="post" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @method('PUT')
@@ -40,7 +40,7 @@
             </div>
 
             <div >
-                <input type="submit" value="Modifier">
+                <input type="submit" class="btn btn-success" value="Valider">
             </div>
         </form>
     </div>

@@ -10,7 +10,7 @@
         </div>
     @endif
     <div class="form">
-        <h1>Formulaire gestion des certificats</h1>
+        <h1>Formulaire gestion des certificats</h1></br>
         <form action="{{ url('Certificat') }}" method="post">
             {!! csrf_field() !!}
             <div>

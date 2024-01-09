@@ -14,10 +14,8 @@
                         </div>
                     @endif
 
-                    <div class="card">
-                        <div class="card-header">
-                            <h1>Formulaire d'ordonnance</h1>
-                        </div>
+                    <div class="form">
+                            <h1>Formulaire d'ordonnance</h1></br>
                         <div class="card-body">
                             <form action="{{ route('Ordonnance.update', $Ordonnance->id) }}" method="post"
                                 enctype="multipart/form-data">
@@ -26,32 +24,32 @@
                                 @csrf
 
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Nom du patient</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br>
                                     <input type="text" class="form-control" name="nom_pat"
                                         placeholder="Entrez le nom du patient" value="{{ $Ordonnance->nom_pat }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
                                     <input type="text" class="form-control" name="prenom_pat"
                                         value="{{ $Ordonnance->prenom_pat }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Nom du médecin</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Nom du médecin</label><br>
                                     <input type="text" class="form-control" name="nom_med"
                                         value="{{ $Ordonnance->nom_med }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">Prénom du médecin</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Prénom du médecin</label><br>
                                     <input type="text" class="form-control" name="prenom_med"
-                                        value="{{ $Ordonnance->prenom_med }}">
+                                        value="{{ $Ordonnance->prenom_med }}" >
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlInput1" class="form-label">La date</label>
+                                    <label for="exampleFormControlInput1" class="form-label">La date</label><br>
                                     <input type="date" class="form-control" name="date"
                                         value="{{ $Ordonnance->date }}">
                                 </div>
                                 <div class="mb-1">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                                    <label for="exampleFormControlTextarea1" class="form-label">Description</label><br>
                                     <textarea class="form-control" name="description" rows="3" placeholder="Ecrivez une description"
                                         value="{{ $Ordonnance->description }}"></textarea>
                                 </div>
@@ -60,7 +58,7 @@
                                     <link rel="stylesheet"
                                         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                                    <input type="submit" value="Valider">
+                                    <button type="submit" class="btn btn-success">Valider</button>
                                 </div>
                             </form>
 

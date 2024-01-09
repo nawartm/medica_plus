@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire des factures</h1>
+        <h1>Formulaire des factures</h1><br>
         <form action="/saveF" method="get" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
@@ -33,7 +33,7 @@
                 <input type="text" class="form-control" name="prenom_pat" value="2022-02-22">
             </div>
             <div>
-                <input type="submit" value="Valider">
+                <input type="submit" class="btn btn-success" value="Valider">
             </div>
         </form>
     </div>

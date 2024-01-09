@@ -2,11 +2,13 @@
 @section('app')
     <section>
         <!--for demo wrap-->
-        <h1>Gestion des rendez vous</h1>
+        <h1>Gestion des rendez-vous</h1>
+        <div style="margin:3em;">
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
-                class='fa fa-circle-o-notch fa-spin'></i><a href="/RDVRDV" style="color:white" class="btn btn-sm me-2">Ajouter
+                class='fa fa-circle-o-notch fa-spin'></i><a href="/RDVRDV" style="color:white" class="btn btn-sm me-2">+Ajouter
                 </a>
         </button>
+    </div>
         <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
@@ -34,8 +36,8 @@
 
                             <td>
                                 <a href="{{ url('/RDV/' . $RDV->id) }}" title="View RDV"><button
-                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                    Voir</button></a>
+                                    class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
+                                   </button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/edit', $RDV->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>

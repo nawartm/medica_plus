@@ -15,7 +15,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            background-image: url({{ asset('assets/subtle-prism.png') }});
+            background-color:#FBFCFC ;
         }
     </style>
     <title></title>
@@ -44,9 +44,12 @@
                 <li><a href="{{ route('Fiche_Examen.index') }}"><i class="fa-solid fa-stethoscope"></i><span
                             data-visible="true"> Examens</span></a>
                 </li>
+
+
                 <li><a href="{{ route('FicheMut.index') }}"><i class="fa-solid fa-hospital-user"></i><span
                             data-visible="true"> Mutuelles</span></a>
                 </li>
+
 
                 <!-- **************Gestion des comptabilités *****************-->
                 <li><a href="{{ route('Impayee.index') }}"><i class="fa-solid fa-file-invoice-dollar"></i><span

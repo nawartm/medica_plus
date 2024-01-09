@@ -10,7 +10,7 @@
         </div>
     @endif
     <div class="form">
-        <h1>Formulaire gestion des certificats</h1>
+        <h1>Formulaire gestion des certificats</h1></br>
         <form action="{{ url('Certificat/' . $certificats->id) }}" method="post">
             {!! csrf_field() !!}
             @method('PATCH')
@@ -48,7 +48,7 @@
                 <input type="text" name="dure" id="dure" value="{{ $certificats->dure }}" class="form-control"></br>
             </div>
 
-            <input type="submit" value="modifier" class="btn btn-success"></br>
+            <input type="submit" value="Valider" class="btn btn-success"></br>
         </form>
     </div>
 @endsection

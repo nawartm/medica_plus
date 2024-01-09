@@ -12,11 +12,14 @@
     @endif
 
     <h2> Gestion des fiches mutuelles</h2>
+    <div style="margin:3em;">
     <button type="button" class="btn btn-primary">
         <a href="{{ url('/FicheMut/create') }}"  title="Add New Fiche Mutuelle">
             <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
         </a>
+
     </button>
+    </div>
     <table class="table">
         <thead>
 
@@ -45,10 +48,10 @@
                     <td>{{ $item->montant_total }}</td>
                     <td>
                         <a href="{{ url('/FicheMut/' . $item->id) }}" title="View Fiche Mutuelle"><button
-                                class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                Voir</button></a>
+                                class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
+                                </button></a>
                         <a href="{{ url('/FicheMut/' . $item->id . '/edit') }}" title="Edit Fiche du Patient"><button
-                                class="btn btn-primary a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                 Modifier</button></a>
                         <form method="POST" action="{{ url('/FicheMut' . '/' . $item->id) }}" accept-charset="UTF-8"
                             style="display:inline">

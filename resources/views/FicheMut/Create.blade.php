@@ -10,7 +10,7 @@
                         </div>
                     @endif
                     <div class="form">
-                        <h1>Formulaire gestion des fiches mutuelles</h1>
+                        <h1>Formulaire gestion des fiches mutuelles</h1></br>
 
 
                         <form action="{{ url('FicheMut') }}" method="post">

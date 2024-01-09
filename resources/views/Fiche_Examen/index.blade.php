@@ -2,12 +2,14 @@
 @section('app')
     <section>
         <h2>Gestion des fiches d'examens</h2>
+        <div style="margin:3em;">
 
         <button type="button" class="btn btn-primary">
             <a href="{{ url('/Fiche_Examen/create') }}" title="Add New Fiche Examen">
                 <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
             </a>
         </button>
+    </div>
 
         <table class="table">
             <thead>
@@ -28,10 +30,10 @@
 
                         <td>
                             <a href="{{ url('/Fiche_Examen/' . $item->id) }}" title="View Fiche Examen"><button
-                                    class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>
-                                    Voir</button></a>
+                                    class="btn"><i class="fa fa-eye" aria-hidden="true"></i>
+                                    </button></a>
                             <a href="{{ url('/Fiche_Examen/' . $item->id . '/edit') }}" title="Edit Fiche Examen"><button
-                                    class="btn btn-primary a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                     Modifier</button></a>
                             <form method="POST" action="{{ url('/Fiche_Examen' . '/' . $item->id) }}"
                                 accept-charset="UTF-8" style="display:inline">

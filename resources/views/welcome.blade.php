@@ -10,7 +10,10 @@
 
     <style>
         body {
-            background-image: url({{ asset('assets/subtle-prism.png') }});
+            background-image: url({{ asset('assets/AdobeStock_260732248_Preview.jpeg') }});
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
     </style>
 

@@ -3,10 +3,12 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des dépenses</h1>
+        <div style="margin:3em;">
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
-                class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" class="btn btn-sm me-2">Ajouter
+                class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" class="btn btn-sm me-2">+Ajouter
                 </a>
         </button>
+    </div>
         <div>
             <table >
                 <thead>
@@ -29,9 +31,11 @@
                             <td>{{ $depense['motif_dep'] }}</td>
                             <td>{{ $depense['montant_dep'] }}</td>
                             <td>
-                                <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
+                                <button type="button" class="btn " id="load1"  >
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                    <a
                                     href="{{ route('/viewD', $depense->id) }}"
-                                    class="btn btn-warning ps-0 py-0 pe-0">Voir</a></button>
+                                    class="btn"></a></button>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('/editD', $depense->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>

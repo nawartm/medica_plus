@@ -27,7 +27,7 @@
             </div>
 
             <div>
-                <input type="submit" value="Valider">
+                <input type="submit"   class="btn btn-success" value="Valider">
             </div>
         </form>
 

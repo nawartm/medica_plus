@@ -2,10 +2,12 @@
 @section('app')
     <section>
         <h1>Gestion des factures</h1>
+        <div style="margin:3em;">
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('facture') }} " style="color:white"
-                class="btn btn-sm me-2">Ajouter </a>
+                class="btn btn-sm me-2">+Ajouter </a>
         </button>
+    </div>
         <div >
             <table >
                 <thead>
@@ -31,15 +33,18 @@
                             <td>{{ $facture['nom_pat'] }}</td>
                             <td>{{ $facture['prenom_pat'] }}</td>
                             <td>
+
+                                <button type="button" class="btn " id="load1" style=""><a
+                                    href="{{ route('/viewF', $facture->id) }}" cl class="btn ">
+
+                                </a> <i class="fa fa-eye" aria-hidden="true"></i></button>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
-                                        href="\deleteF?id={{ $facture['id'] }}"
-                                        class="btn btn-success ps-0 py-0 pe-0">Supprimer</a></button>
-                                <button type="button" class="btn btn-warning" id="load1" style="color:white"><a
                                         href="{{ route('/editF', $facture->id) }}"
-                                        class="btn btn-warning ps-0 py-0 pe-0">Modifier</a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0">Modifier</a></button>
+
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
-                                        href="{{ route('/viewF', $facture->id) }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0">Voir</a></button>
+                                            href="\deleteF?id={{ $facture['id'] }}"
+                                            class="btn btn-danger">Supprimer</a></button>
                             </td>
                         <tr>
                     @endforeach

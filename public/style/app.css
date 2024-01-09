@@ -146,8 +146,15 @@ img {
 .btn-primary {
     background-color: var(--add-new);
 }
-/* Forms */
 
+.btn-green {
+    background-color: var(--green);
+}
+/* Forms */
+.top-title {
+    display: flex ;
+    gap: 3rem ;
+}
 .form {
     display: grid;
     justify-content: center;
@@ -232,3 +239,9 @@ textarea {
     gap: 2rem ;
     padding: 3rem 2rem ;
 }
+ h1{
+    font-size: 2rem;
+ }
+ h2{
+    font-size: 2rem;
+ }

@@ -10,7 +10,7 @@
                         </div>
                     @endif
                     <div class="form">
-                        <h1>Formulaire Gestion des fiches mutuelles</h1>
+                        <h1>Formulaire Gestion des fiches mutuelles</h1></br>
 
                         <form action="{{ url('FicheMut/' . $fiche_muts->id) }}" method="post">
                             {!! csrf_field() !!}

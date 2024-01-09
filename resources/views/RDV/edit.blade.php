@@ -11,7 +11,7 @@
     @endif
 
     <div class="form">
-        <h1>Formulaire des rendez-vous</h1>
+        <h1>Formulaire des rendez-vous</h1><br>
         <form action="{{ route('/update', $RDV->id) }} " method="get" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
@@ -37,7 +37,7 @@
                 <input type="text" class="form-control" name="heure" value="{{ $RDV->heure }}">
             </div>
             <div >
-                <input type="submit" value="Valider">
+                <input type="submit" class="btn btn-success" value="Valider">
             </div>
         </form>
     </div>
