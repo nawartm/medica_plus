@@ -15,7 +15,7 @@
             <div class="container-fluid mt-5 mb-5">
 
                 <div class="row border border-dark ">
-                    <div class="col-sm bg-white float-start  p-4 ps-5 pe-0" style=" color:white;">
+                    <div class="col-sm bg-white float-start  p-4 ps-5 pe-0" >
                         <h3>Docteur {{ $fiche_muts->nom_med }} {{ $fiche_muts->prenom_med }}</h3><br />
                         <h3 class="fs-6 text-black-50">Médecin général</h3>
                         <h3 class="fs-6 text-black-50 ">Diplomé de la faculté de medcine à Fes</h3>
@@ -23,12 +23,7 @@
                             {{ $fiche_muts->prenom_pat }}
                         </h3>
                     </div>
-                    <div class="col-sm bg-white float-end fs-6 p-5 pe-5 ps-0">
-                        <h3 class="fs-6 text-black-50"> quartier daraa</h3>
-                        <h3 class="fs-6 text-black-50"> zagora</h3>
-                        <h3 class="fs-6 text-black-50"> Tel:05.78.45.94.76</h3>
-                        <h3 class="fs-6 text-black-50"> Tel:06.98.23.91.86</h3>
-                    </div>
+
                     <br>
 
 
@@ -41,11 +36,17 @@
                 </div>
 
             </div>
+            <div class="col-sm bg-white float-end fs-6 p-5 pe-5 ps-0">
+                <h3 class="fs-6 text-black-50"> quartier daraa</h3>
+                <h3 class="fs-6 text-black-50"> zagora</h3>
+                <h3 class="fs-6 text-black-50"> Tel:05.78.45.94.76</h3>
+                <h3 class="fs-6 text-black-50"> Tel:06.98.23.91.86</h3>
+            </div>
         </div>
-        <button type="button" class="btn btn-warning btn-lg float-sm-end" id="load2" style="color:white;"
+        <button type="button" class="btn btn-primary" id="load2" style="color:white;"
             data-loading-text=" Processing Order"><i class='fa fa-spinner fa-spin text-light '></i><a href="#"
-                onClick="imprimer('sectionAimprimer')" class="btn btn-sm ms-2">Envoyer au Bureau
-                Mutuelle</a>
+                onClick="imprimer('sectionAimprimer')" class="btn btn-sm ms-2">imprimer
+            </a>
 
     </div>
     </button>

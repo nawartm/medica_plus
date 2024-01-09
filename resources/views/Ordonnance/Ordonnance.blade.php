@@ -6,17 +6,17 @@
                 <div class="row border border-dark ">
                     <div class="col-sm bg-white float-start  p-4 ps-5 pe-0">
                         <h3>Docteur {{ $Ordonnance->nom_med }}</h3><br />
-                        <h3 class="fs-6 text-black-50">Médecin général</h3>
-                        <h3 class="fs-6 text-black-50 ">Diplomé de la faculté de médecine à Fès</h3>
+                        <h3 class="fs-6 text-black-50">Médecin général</h3><br/>
+                        <h3 class="fs-6 text-black-50 ">Diplomé de la faculté de médecine à Fès</h3><br/>
                         <h3 class="fs-6 text-black-50">Mr/Mm {{ $Ordonnance->nom_pat }} {{ $Ordonnance->prenom_pat }}
-                        </h3>
+                        </h3> <br/>
                     </div>
                     <br>
-                    <h3 class="float-end fs-6 text-black-50">{{ $Ordonnance->date }}</h3>
+                    <h3 class="float-end fs-6 text-black-50">{{ $Ordonnance->date }}</h3><br/>
 
                     <p name="" id="" cols="200" rows="10">Mm/Mr {{ $Ordonnance->nom_pat }}
                         {{ $Ordonnance->prenom_pat }}</p><br><br><br>
-                    <p name="" id="" cols="200" rows="10">{{ $Ordonnance->description }}</p>
+                    <p name="" id="" cols="200" rows="10">{{ $Ordonnance->description }}</p><br/>
                     <br>
 
                 </div>

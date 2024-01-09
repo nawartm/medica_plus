@@ -10,25 +10,26 @@
                             <h3>Laboratoire daraa</h3><br />
 
                         </div>
-                        <div class="col-sm bg-white float-end fs-6 p-5 pe-5 ps-0">
-                            <h3 class="fs-6 text-black-50"> Quartier daraa</h3>
-                            <h3 class="fs-6 text-black-50"> Zagora</h3>
-                            <h3 class="fs-6 text-black-50"> Tel:05.78.45.94.76</h3>
-                            <h3 class="fs-6 text-black-50"> Tel:06.98.23.91.86</h3>
-                        </div>
+
                         <br>
                         <h3 class="float-end fs-6 text-black-50">Date Examen : {{ $fiche_examens->date_examen }}</h3>
 
 
 
                         <p name="" id="" cols="200" rows="10"> Résultat :
-                            {{ $fiche_examens->resultat }}</p><br><br><br><br><br>
+                            {{ $fiche_examens->resultat }}</p><br>
 
                     </div>
 
                 </div>
+                <div class="col-sm bg-white float-end fs-6 p-5 pe-5 ps-0">
+                    <h3 class="fs-6 text-black-50"> Quartier daraa</h3>
+                    <h3 class="fs-6 text-black-50"> Zagora</h3>
+                    <h3 class="fs-6 text-black-50"> Tel:05.78.45.94.76</h3>
+                    <h3 class="fs-6 text-black-50"> Tel:06.98.23.91.86</h3>
+                </div>
             </div>
-            <button type="button" class="btn btn-warning btn-lg float-sm-end" id="load2" style="color:white;"
+            <button type="button" class="btn btn-primary " id="load2" style="color:white;"
                 data-loading-text=" Processing Order"><i class='fa fa-spinner fa-spin text-light '></i><a href="#"
                     onClick="imprimer('sectionAimprimer')" class="btn btn-sm ms-2">Imprimer</a>
                 <script>

@@ -26,7 +26,7 @@
                                 <div class="mb-1">
                                     <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br>
                                     <input type="text" class="form-control" name="nom_pat"
-                                        placeholder="Entrez le nom du patient" value="{{ $Ordonnance->nom_pat }}">
+                                         value="{{ $Ordonnance->nom_pat }}">
                                 </div>
                                 <div class="mb-1">
                                     <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="mb-1">
                                     <label for="exampleFormControlTextarea1" class="form-label">Description</label><br>
-                                    <textarea class="form-control" name="description" rows="3" placeholder="Ecrivez une description"
+                                    <textarea class="form-control" name="description" rows="3"
                                         value="{{ $Ordonnance->description }}"></textarea>
                                 </div>
 

@@ -19,7 +19,7 @@
 
             <div >
                 <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br>
-                <input type="text" class="form-control" name="nom_pat" placeholder="Entrez le nom du patient"
+                <input type="text" class="form-control" name="nom_pat"
                     value="{{ $Impayee->nom_pat }}">
             </div>
             <div >

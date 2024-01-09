@@ -18,7 +18,7 @@
             @csrf
             <div >
                 <label for="exampleFormControlInput1" class="form-label">Nom du patient</label><br>
-                <input type="text" class="form-control" name="nom_pat" placeholder="Entrez le nom du patient"
+                <input type="text" class="form-control" name="nom_pat"
                     value="{{ $Consultation->nom_pat }}">
             </div>
             <div >
@@ -27,7 +27,7 @@
             </div>
             <div >
                 <label for="exampleFormControlInput1" class="form-label">Nom du médecin</label><br>
-                <input type="text" class="form-control" name="nom_med" placeholder="Entrez le nom du patient"
+                <input type="text" class="form-control" name="nom_med"
                     value="{{ $Consultation->nom_med }}">
             </div>
             <div >
@@ -71,7 +71,7 @@
                 <input type="text" class="form-control" name="heure" value="{{ $Consultation->heure }}">
             </div>
 
-            <input type="submit" value="valider">
+            <input type="submit" class="btn btn-success" value="valider">
         </form>
     </div>
 

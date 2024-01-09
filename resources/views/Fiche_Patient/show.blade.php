@@ -26,8 +26,14 @@
                 </div>
 
             </div>
+            <div class="">
+                <h3>quartier daraa</h3>
+                <h3>zagora</h3>
+                <h3>Tel:05.78.45.94.76</h3>
+                <h3>Tel:06.98.23.91.86</h3>
+            </div>
         </div>
-        <button type="button" class="btn btn-warning" id="load2" style="color:white;"
+        <button type="button" class="btn btn-primary" id="load2" style="color:white;"
             data-loading-text=" Processing Order"><i class='fa fa-spinner fa-spin text-light '></i><a href="#"
                 onClick="imprimer('sectionAimprimer')" class="btn btn-sm ms-2">Imprimer</a>
             <script>
