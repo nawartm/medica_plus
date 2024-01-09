@@ -7,8 +7,8 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <div class="top-title">
-                <h3>Connectez-vous</h3>
-                <a href="{{ route('register') }}">Enregistrez-vous ?</a>
+                <h3>Se connecter</h3>
+                <a href="{{ route('register') }}">S'inscrire ?</a>
             </div>
             <label for="email">{{ __('Addresse email') }}</label>
             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email"
