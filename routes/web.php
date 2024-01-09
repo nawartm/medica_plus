@@ -33,7 +33,7 @@ Route::get('/RDV',[RendezVousController::class,'listRDV'])->name('listRDV');
 Route::get('/delete',[RendezVousController::class,'delete']);
 Route::get('/edit/{id}',[RendezVousController::class,'edit'])->name('/edit');
 Route::get('/update/{id}',[RendezVousController::class,'update'])->name('/update');
-Route::get('RendezVous/{id}', [RendezVousController::class, 'show'])->name('RendezVous.show');
+Route::get('RDV/{id}', [RendezVousController::class, 'show'])->name('RendezVous.show');
 /*---------Depense------------ */
 Route::get('/depense',[DepenseController::class,'index'])->name('depense');
 Route::get('/saveD',[DepenseController::class,'save']);

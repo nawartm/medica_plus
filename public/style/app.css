@@ -48,14 +48,7 @@ ul {
 
     color: var(--bright-green);
 }
-.login {
-    background-color: var(--dark-green);
-    grid-column: span 2 ;
-    padding: 1rem 0;
-    display: flex ;
-    justify-content: center ;
-    gap: 2rem ;
-}
+
 /*
 
 css nesting
@@ -67,6 +60,44 @@ ul li a span[data-visible="false"] {
 }
 
 /* body  */
+
+main{
+    grid-column: span 2;
+    display: grid ;
+    align-items: center ;
+    justify-content: center ;
+    min-height: 100%;
+
+    & .home {
+        padding: 2rem 3rem ;
+        display: grid ;
+        grid-template-columns: repeat(2, 1fr);
+
+        border: .2rem solid var(--dark-green );
+        border-radius: 1rem ;
+        background-color: hsl(1 10% 10%/0.4);
+        backdrop-filter: blur(0.5rem);
+        box-shadow: 0 0 5rem var(--dark);
+
+        & :first-child {
+            grid-column: span 2 ;
+        }
+
+        & header {
+            grid-column: span 2 ;
+
+            display: flex ;
+            gap: 3rem ;
+
+            & a {
+                background-color: var(--dark-green);
+                padding: .4rem .8rem ;
+                border-radius: .5rem ;
+            }
+
+        } 
+    }
+}
 
 body {
     display: grid;
@@ -125,9 +156,9 @@ table tbody tr:nth-of-type(even) {
     }
 }
 
-img {
+.img {
     aspect-ratio: 1 ;
-    max-height: 3rem ;
+    max-height: 10rem ;
 }
 
 .btn-success {
@@ -163,7 +194,8 @@ img {
 }
 
 .form form {
-    background-color: var(--bright-green);
+    background-color: hsl(120, 29%, 97%/0.5);
+    backdrop-filter: blur(.5rem);
     padding: 1rem 2rem;
 
     display: flex;

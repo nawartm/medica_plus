@@ -15,7 +15,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            background-color:#FBFCFC ;
+            /* background-image: url({{ asset('assets/wallpaper.jpg') }}); */
+            background-color: rgb(240, 240, 240);
         }
     </style>
     <title></title>
@@ -25,8 +26,7 @@
     @auth
         <nav>
             <a href="{{ route('home') }}">
-                <img src="{{ asset('assets/Green Medical Logo (1).png') }}" alt="Medica+" srcset="">
-                <span>Medica+</span>
+                <img class="img" src="{{ asset('assets/Logo.png') }}" alt="Medica+" srcset="">
             </a>
             <ul>
 

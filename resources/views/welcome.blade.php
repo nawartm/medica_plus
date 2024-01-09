@@ -10,42 +10,34 @@
 
     <style>
         body {
-            background-image: url({{ asset('assets/AdobeStock_260732248_Preview.jpeg') }});
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-image: url({{ asset('assets/healthcare-medical-symbol-c4g11g7l1o1hev4m.jpg') }} );
         }
     </style>
 
 </head>
 
 <body>
+    <main>
+        <div class="home">
+            <div>
+                <img src="{{ asset('assets/Logo.png') }}" alt="" srcset="">
+            </div>
+            <header>
+                @if (Route::has('login'))
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Se Connecter</a>
 
-    <header class="login">
-        @if (Route::has('login'))
-            @auth
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a href="{{ route('login') }}">Se Connecter</a>
-
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}">S'inscrire</a>
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">S'inscrire</a>
+                        @endif
+                    @endauth
                 @endif
-            @endauth
-        @endif
-    </header>
+            </header>
+        </div>
 
-    <section>
-        <h1> hello 1</h1>
-    </section>
-    <section>
-        <h1> hello 2</h1>
-    </section>
-    <section>
-        <h1> hello 3</h1>
-    </section>
-
-
+    </main>
 </body>
 
 </html>
