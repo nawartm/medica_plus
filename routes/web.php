@@ -58,7 +58,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::middleware(['auth','role:admin'])->group(function(){
 
 //dossier medical
-//safae
+
 /**********************************ordonnance************************************************************/
 Route::get('Ordonnance/list',[OrdonnanceController::class,'list'])->name('Ordonnance.index');
 Route::get('Ordonnance/voir/{id}',[OrdonnanceController::class,'show'])->name('Ordonnance.Voir');
