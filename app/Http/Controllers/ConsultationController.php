@@ -18,6 +18,16 @@ class ConsultationController extends Controller
         $Consultation = Consultation::orderBy('id', 'desc')->get();
         return response()->view('Consultation.index', array('Consultation' => $Consultation));
     }
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        $Consultation = Consultation::where(function ($query) use ($search) {
+            $query->where('nom_pat', 'like', "%$search%")->orWhere('prenom_pat', 'like', "%$search%");
+        })->get();  
+
+        return response()->view('Consultation.index', array('Consultation' => $Consultation));
+    }
     /**
      * Show the form for creating a new resource.
      *

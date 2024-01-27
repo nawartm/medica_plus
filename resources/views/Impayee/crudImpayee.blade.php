@@ -3,16 +3,16 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des impayés</h1>
-        <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order"><i
-                class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Impayee.create') }} " style="color:white"
-                >+Ajouter </a>
+        <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order">
+            <a href="{{ route('Impayee.create') }} " style="color:white"
+                >Ajouter </a>
         </button>
-        <form action="" method="post">
+        <form action="{{ url('ImpayeeSearch') }}" method="post">
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
             <button type="submit" class="btn btn-primary">Recherche</button>
         </form>
-        <div class="tbl-header">
+        <div >
             <table>
                 <thead>
                     <tr>

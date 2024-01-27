@@ -38,7 +38,16 @@ class FactureController extends Controller
 
         return view("facture.listFactures",['listF'=>$listFactures] );
     }
+    public function search(Request $request)
+    {
+        $search = $request->search;
 
+        $listFactures = Facture::where(function ($query) use ($search) {
+            $query->where('nom_pat', 'like', "%$search%")->orWhere('prenom_pat', 'like', "%$search%");
+        })->get();  
+
+        return view("facture.listFactures",['listF'=>$listFactures] );
+    }
     /*-------supprimer factures------- */
     public function delete(Request $request){
 

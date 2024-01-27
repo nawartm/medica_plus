@@ -16,6 +16,16 @@ class FichePatientController extends Controller
         $fiche_patients = Fiche_Patient::orderBy('id', 'desc')->get();
         return view ('Fiche_Patient.index')->with('fiche_patients', $fiche_patients);
     }
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        $fiche_patients = Fiche_Patient::where(function ($query) use ($search) {
+            $query->where('nom_pat', 'like', "%$search%")->orWhere('prenom_pat', 'like', "%$search%");
+        })->get();  
+
+        return view ('Fiche_Patient.index')->with('fiche_patients', $fiche_patients);
+    }
 
     /**
      * Show the form for creating a new resource.

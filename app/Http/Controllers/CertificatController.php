@@ -1,6 +1,9 @@
 <?php
+
 /*********************Certificat**********************/
+
 namespace App\Http\Controllers;
+
 use  App\Models\Certificat;
 use Illuminate\Http\Request;
 
@@ -14,7 +17,18 @@ class CertificatController extends Controller
     public function index()
     {
         $certificats = Certificat::orderBy('id', 'desc')->get();
-      return view ('Certificat.index')->with('certificats', $certificats);
+        return view('Certificat.index')->with('certificats', $certificats);
+    }
+
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        $certificats = Certificat::where(function ($query) use ($search) {
+            $query->where('nom_pat', 'like', "%$search%")->orWhere('prenom_pat', 'like', "%$search%");
+        })->get();  
+
+        return view('Certificat.index')->with('certificats', $certificats);
     }
 
     /**
@@ -37,18 +51,16 @@ class CertificatController extends Controller
     {
 
         $Certificat = new Certificat;
-        $Certificat->nom_pat=$request->input('nom_pat');
-        $Certificat->prenom_pat=$request->input('prenom_pat');
-        $Certificat->nom_med=$request->input('nom_med');
-        $Certificat->prenom_med=$request->input('prenom_med');
-        $Certificat->date=$request->input('date');
-        $Certificat->heure=$request->input('heure');
-        $Certificat->dure=$request->input('dure');
+        $Certificat->nom_pat = $request->input('nom_pat');
+        $Certificat->prenom_pat = $request->input('prenom_pat');
+        $Certificat->nom_med = $request->input('nom_med');
+        $Certificat->prenom_med = $request->input('prenom_med');
+        $Certificat->date = $request->input('date');
+        $Certificat->heure = $request->input('heure');
+        $Certificat->dure = $request->input('dure');
         $Certificat->save();
 
-           return redirect()->route('Certificat.index');
-
-
+        return redirect()->route('Certificat.index');
     }
 
     /**
@@ -58,7 +70,7 @@ class CertificatController extends Controller
      */
     public function destroy($id)
     {
-        $Certificat=Certificat::find($id)->delete();
+        $Certificat = Certificat::find($id)->delete();
         return redirect()->route('Certificat.index');
     }
 
@@ -72,13 +84,13 @@ class CertificatController extends Controller
     {
 
         $Certificat = Certificat::find($id);
-        $Certificat->nom_pat=$request->input('nom_pat');
-        $Certificat->prenom_pat=$request->input('prenom_pat');
-        $Certificat->nom_med=$request->input('nom_med');
-        $Certificat->prenom_med=$request->input('prenom_med');
-        $Certificat->date=$request->input('date');
-        $Certificat->heure=$request->input('heure');
-        $Certificat->dure=$request->input('dure');
+        $Certificat->nom_pat = $request->input('nom_pat');
+        $Certificat->prenom_pat = $request->input('prenom_pat');
+        $Certificat->nom_med = $request->input('nom_med');
+        $Certificat->prenom_med = $request->input('prenom_med');
+        $Certificat->date = $request->input('date');
+        $Certificat->heure = $request->input('heure');
+        $Certificat->dure = $request->input('dure');
         $Certificat->save();
         return redirect()->route('Certificat.index');
     }

@@ -5,15 +5,9 @@
 
         <button type="button" class="btn btn-primary">
             <a href="{{ url('/Fiche_Examen/create') }}" title="Add New Fiche Examen">
-                <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
+                Ajouter
             </a>
         </button>
-        <form action="" method="post">
-            @csrf
-            <input type="text" name="search" id="" placeholder="Recherche">
-            <button type="submit" class="btn btn-primary">Recherche</button>
-        </form>
-
         <table class="table">
             <thead>
                 <th class="table-primary">La date d'examen</th>

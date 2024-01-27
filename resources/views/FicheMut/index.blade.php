@@ -18,7 +18,7 @@
         </a>
 
     </button>
-    <form action="" method="post">
+    <form action="{{ url('MutSearch') }}" method="get">
         @csrf
         <input type="text" name="search" id="" placeholder="Recherche">
         <button type="submit" class="btn btn-primary">Recherche</button>

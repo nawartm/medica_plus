@@ -18,6 +18,16 @@ class MutuelleController extends Controller
         $fiche_muts = FicheMut::orderBy('id', 'desc')->get();
       return view ('FicheMut.index')->with('fiche_muts', $fiche_muts);
     }
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        $fiche_muts = FicheMut::where(function ($query) use ($search) {
+            $query->where('nom_pat', 'like', "%$search%")->orWhere('prenom_pat', 'like', "%$search%");
+        })->get();  
+
+        return view ('FicheMut.index')->with('fiche_muts', $fiche_muts);
+    }
 
     /**
      * Show the form for creating a new resource.

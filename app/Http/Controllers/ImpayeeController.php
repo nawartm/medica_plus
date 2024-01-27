@@ -25,6 +25,16 @@ class ImpayeeController extends Controller
         $Impayee =Impayee::orderBy('id', 'desc')->get();
         return view('Impayee.crudImpayee',compact('Impayee'));
     }
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        $Impayee = Impayee::where(function ($query) use ($search) {
+            $query->where('nom_pat', 'like', "%$search%")->orWhere('prenom_pat', 'like', "%$search%");
+        })->get();  
+
+        return view('Impayee.crudImpayee',compact('Impayee'));
+    }
 
      /* Show the form for creating a new resource.
      *

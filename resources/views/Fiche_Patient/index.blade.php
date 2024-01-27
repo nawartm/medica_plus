@@ -14,10 +14,10 @@
         <h2> Gestion des fiches patients</h2>
         <button type="button" class="btn btn-primary">
             <a href="{{ url('/Fiche_Patient/create') }}" title="Add New Fiche du Patient">
-                <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
+                 Ajouter
             </a>
         </button>
-        <form action="" method="post">
+        <form action="{{ url('PatientSearch') }}" method="get">
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
             <button type="submit" class="btn btn-primary">Recherche</button>

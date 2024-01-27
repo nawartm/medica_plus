@@ -30,7 +30,7 @@
 
             <div>
                 <label for="exampleFormControlInput1" class="form-label">Prénom du patient</label><br>
-                <input type="text" class="form-control" name="prenom_pat" value="2022-02-22">
+                <input type="text" class="form-control" name="prenom_pat">
             </div>
             <div>
                 <input type="submit" class="btn btn-success" value="Valider">

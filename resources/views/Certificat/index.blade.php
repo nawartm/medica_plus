@@ -16,11 +16,11 @@
                  Ajouter
             </a>
         </button>
-        <form action="" method="post">
+        <form action="{{ url('CertificatSearch') }}" method="get">
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
             <button type="submit" class="btn btn-primary">Recherche</button>
-        </form>
+        </form>        
         <table class="table">
             <thead>
                 <th class="table-primary">Nom patient</th>

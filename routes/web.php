@@ -50,6 +50,8 @@ Route::get('/deleteF',[FactureController::class,'delete']);
 Route::get('/editF /{id}',[FactureController::class,'edit'])->name('/editF');
 Route::get('/updateF/{id}',[FactureController::class,'update'])->name('/updateF');
 Route::get('/viewF/{id}',[FactureController::class,'show'])->name('/viewF');
+Route::match(['get', 'post'], '/factureSearch', [FactureController::class, 'search']);
+
 Auth::routes();
 
 /*---------Authentification--------*/
@@ -76,11 +78,15 @@ Route::post('Consultation/store',[ConsultationController::class,'store'])->name(
 Route::put('Consultation/update/{id}',[ConsultationController::class,'update'])->name('Consultation.update');
 Route::get('Consultation/delete/{id}',[ConsultationController::class,'destroy'])->name('Consultation.delete');
 Route::get('Consultation/{id}', [ConsultationController::class, 'show'])->name('Consultation.show');
+Route::match(['get', 'post'], '/ConsultationSearch', [CertificatController::class, 'search']);
+
 /*************************************certificat*********************************************/
 Route::resource('/Certificat', CertificatController::class);
+Route::match(['get', 'post'], '/CertificatSearch', [CertificatController::class, 'search']);
 
 /*************************************mutuelle*********************************************/
 Route::resource('/FicheMut', MutuelleController::class);
+Route::match(['get', 'post'], '/MutSearch', [MutuelleController::class, 'search']);
 
 /*************************************examen*********************************************/
 Route::resource('/Fiche_Examen', ExamenController::class);
@@ -98,7 +104,10 @@ Route::post('Impayee/store',[ImpayeeController::class,'store'])->name('Impayee.s
 Route::put('Impayee/update/{id}',[ImpayeeController::class,'update'])->name('Impayee.update');
 Route::get('Impayee/delete/{id}',[ImpayeeController::class,'destroy'])->name('Impayee.delete');
 Route::get('Impayee/{id}', [ImpayeeController::class, 'show'])->name('Impayee.show');
+Route::match(['get', 'post'], '/ImpayeeSearch', [ImpayeeController::class, 'search']);
+
 
 
 /**********************************fiche_patient************************************************************/
 Route::resource('/Fiche_Patient', FichePatientController::class);
+Route::match(['get', 'post'], '/PatientSearch', [FichePatientController::class, 'search']);
