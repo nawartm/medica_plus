@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem ;
+    flex-wrap: wrap ;
 }
 
 :root {
@@ -146,8 +147,27 @@ table tbody tr:nth-of-type(even) {
     background-color: var(--bright-green);
 }
 
+.content-boxes {
+    display: flex ;
+    gap: 1rem ;
+}
+
+.content-boxes div {
+    flex: 1 1 12rem;
+    background-color: var(--bright-green);
+    padding: 1rem 2rem ;
+    border-radius: .5rem ;
+    box-shadow: 0 0 .2rem var(--dark);
+
+    display: grid ;
+    gap: .5rem ;
+    justify-content: center ;
+
+}
+
+
 .btn {
-    padding: 0.2rem 0.4rem;
+    padding: 0.5rem 0.8rem;
     border: none;
     border-radius: .3rem ;
     font-size: 1rem;

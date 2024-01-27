@@ -13,7 +13,7 @@ class FichePatientController extends Controller
      */
     public function index()
     {
-        $fiche_patients = Fiche_Patient::all();
+        $fiche_patients = Fiche_Patient::orderBy('id', 'desc')->get();
         return view ('Fiche_Patient.index')->with('fiche_patients', $fiche_patients);
     }
 

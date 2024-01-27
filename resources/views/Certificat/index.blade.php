@@ -11,13 +11,16 @@
             </div>
         @endif
         <h2> Gestion des certificats</h2>
-        <div style="margin:3em;" >
-        <button type="button" class="btn btn-primary" >
+        <button type="button" class="btn btn-success" >
             <a href="{{ url('/Certificat/create') }}" title="Add New Certificat">
-                <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
+                 Ajouter
             </a>
         </button>
-        </div>
+        <form action="" method="post">
+            @csrf
+            <input type="text" name="search" id="" placeholder="Recherche">
+            <button type="submit" class="btn btn-primary">Recherche</button>
+        </form>
         <table class="table">
             <thead>
                 <th class="table-primary">Nom patient</th>

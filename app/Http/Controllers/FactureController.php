@@ -34,7 +34,7 @@ class FactureController extends Controller
     /*-------lister factures------- */
     public function listFactures(){
         $facture = new Facture();
-        $listFactures = $facture::all();
+        $listFactures = $facture::orderBy('id', 'desc')->get();
 
         return view("facture.listFactures",['listF'=>$listFactures] );
     }
@@ -74,17 +74,5 @@ class FactureController extends Controller
         $factures = Facture::where('id',$id)->first();
         return view('facture.show')->with('factures', $factures);
     }
-
-    //   public function show(Request $request ){
-       
-    //      $date =  $request['date'];
-    //      $tarif_cns =  $request['tarif_cns'];
-    //      $nom_pat =  $request['nom_pat'];
-    //      $prenom_pat =  $request['prenom_pat'];
-        
-    //      return view("facture.show" ,['date'=>$date  , 'tarif_cns'=>$tarif_cns , 'nom_pat'=>$nom_pat ,  'prenom_pat'=>$prenom_pat]);
-    //   }
-
-
 
 }

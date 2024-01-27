@@ -21,7 +21,7 @@ class OrdonnanceController extends Controller
     }
     public function list()
     {
-        $Ordonnances =Ordonnance::all();
+        $Ordonnances =Ordonnance::orderBy('id', 'desc')->get();
         return view('Ordonnance.crudOrdonnance',compact('Ordonnances'));
     }
     public function show($id){ 

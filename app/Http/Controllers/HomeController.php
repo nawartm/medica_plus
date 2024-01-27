@@ -3,6 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Ordonnance;
+use App\Models\Certificat;
+use App\Models\Consultation;
+use App\Models\Fiche_Examen;
+use App\Models\Facture;
+use app\Models\Depense;
+use app\models\RendezVous;
+use App\Models\Fiche_Patient;
+
 
 class HomeController extends Controller
 {
@@ -24,5 +33,11 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function filter(Request $request) 
+    {
+        
+
     }
 }

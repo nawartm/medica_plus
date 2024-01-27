@@ -3,12 +3,15 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des impayés</h1>
-        <div style="margin:3em;">
         <button type="button" class="btn btn-primary" id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Impayee.create') }} " style="color:white"
                 >+Ajouter </a>
         </button>
-    </div>
+        <form action="" method="post">
+            @csrf
+            <input type="text" name="search" id="" placeholder="Recherche">
+            <button type="submit" class="btn btn-primary">Recherche</button>
+        </form>
         <div class="tbl-header">
             <table>
                 <thead>

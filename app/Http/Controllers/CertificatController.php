@@ -13,7 +13,7 @@ class CertificatController extends Controller
      */
     public function index()
     {
-        $certificats = Certificat::all();
+        $certificats = Certificat::orderBy('id', 'desc')->get();
       return view ('Certificat.index')->with('certificats', $certificats);
     }
 

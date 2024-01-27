@@ -37,7 +37,7 @@ class RendezVousController extends Controller
     //lister
     public function listRDV(Request $request){
         $RDV = new RendezVous();
-        $listRDV = $RDV::all();
+        $listRDV = $RDV::orderBy('id', 'desc')->get();
 
         return view("RDV.listRDV",['listR'=>$listRDV] );
 

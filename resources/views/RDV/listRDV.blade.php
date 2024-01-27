@@ -3,12 +3,15 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des rendez-vous</h1>
-        <div style="margin:3em;">
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="/RDVRDV" style="color:white">+Ajouter
-                </a>
+            </a>
         </button>
-    </div>
+        <form action="" method="post">
+            @csrf
+            <input type="text" name="search" id="" placeholder="Recherche">
+            <button type="submit" class="btn btn-primary">Recherche</button>
+        </form>
         <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
@@ -35,16 +38,16 @@
                             <td>{{ $RDV['heure'] }}</td>
 
                             <td>
-                                <a href="{{ url('/RDV/' . $RDV->id) }}" title="View RDV"><button
-                                    class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
-                                   </button></a>
+                                <a href="{{ url('/RDV/' . $RDV->id) }}" title="View RDV"><button class="btn "><i
+                                            class="fa fa-eye" aria-hidden="true"></i>
+                                    </button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
-                                        href="{{ route('/edit', $RDV->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
+                                        href="{{ route('/edit', $RDV->id) }}" class="btn btn-success ps-0 py-0 pe-0"><i
+                                            class="fa-solid fa-pen-to-square"></i></a></button>
 
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
-                                        href="\delete?id={{ $RDV['id'] }}"
-                                        class="btn btn-danger ps-0 py-0 pe-0"><i class="fa-solid fa-trash"></i></a></button>
+                                        href="\delete?id={{ $RDV['id'] }}" class="btn btn-danger ps-0 py-0 pe-0"><i
+                                            class="fa-solid fa-trash"></i></a></button>
                             </td>
                         </tr>
                     @endforeach

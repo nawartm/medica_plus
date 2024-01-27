@@ -32,7 +32,7 @@ class DepenseController extends Controller
      /*-------lister depenses------- */
      public function listDepenses(){
         $depense = new Depense();
-        $listDepenses = $depense::all();
+        $listDepenses = $depense::orderBy('id', 'desc')->get();
 
         return view("depense.listDepenses",['listD'=>$listDepenses] );
     }

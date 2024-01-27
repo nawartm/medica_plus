@@ -3,12 +3,15 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des dépenses</h1>
-        <div style="margin:3em;">
         <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
                 class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" >+Ajouter
                 </a>
         </button>
-    </div>
+    <form action="" method="post">
+        @csrf
+        <input type="text" name="search" id="" placeholder="Recherche">
+        <button type="submit" class="btn btn-primary">Recherche</button>
+    </form>
         <div>
             <table >
                 <thead>

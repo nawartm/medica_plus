@@ -15,7 +15,7 @@ class ConsultationController extends Controller
      */
     public function index()
     {
-        $Consultation = Consultation::orderBy('id', 'ASC')->get();
+        $Consultation = Consultation::orderBy('id', 'desc')->get();
         return response()->view('Consultation.index', array('Consultation' => $Consultation));
     }
     /**

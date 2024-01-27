@@ -31,7 +31,6 @@
             <ul>
 
                 <!--***************************************Gestion du dossier medical************************************** -->
-
                 <li><a href="{{ route('Ordonnance.index') }}"><i class="fa-regular fa-paste"></i><span data-visible="true">
                             Ordonnances</span></a>
                 </li>
@@ -44,8 +43,7 @@
                 <li><a href="{{ route('Fiche_Examen.index') }}"><i class="fa-solid fa-stethoscope"></i><span
                             data-visible="true"> Examens</span></a>
                 </li>
-
-
+            
                 <li><a href="{{ route('FicheMut.index') }}"><i class="fa-solid fa-hospital-user"></i><span
                             data-visible="true"> Mutuelles</span></a>
                 </li>
@@ -58,9 +56,9 @@
                 <li><a href="{{ route('listFactures') }}"><i class="fa-solid fa-comments-dollar"></i><span
                             data-visible="true"> factures</span></a>
                 </li>
-                {{-- <li><a href="{{ route('listDepenses') }}"><i class="fa-solid fa-comment-dollar"></i><span
+                <li><a href="{{ route('listDepenses') }}"><i class="fa-solid fa-comment-dollar"></i><span
                             data-visible="true"> dépenses</span></a>
-                </li> --}}
+                </li>
 
 
                 <!-- *************************G.des Rdvs**************************-->

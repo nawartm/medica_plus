@@ -2,20 +2,20 @@
 @section('app')
     <section>
         <h2>Gestion des fiches d'examens</h2>
-        <div style="margin:3em;">
 
         <button type="button" class="btn btn-primary">
             <a href="{{ url('/Fiche_Examen/create') }}" title="Add New Fiche Examen">
                 <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
             </a>
         </button>
-    </div>
+        <form action="" method="post">
+            @csrf
+            <input type="text" name="search" id="" placeholder="Recherche">
+            <button type="submit" class="btn btn-primary">Recherche</button>
+        </form>
 
         <table class="table">
             <thead>
-
-
-
                 <th class="table-primary">La date d'examen</th>
                 <th class="table-primary">Résultat</th>
                 <th class="table-primary">Opérations </th>
@@ -31,9 +31,9 @@
                         <td>
                             <a href="{{ url('/Fiche_Examen/' . $item->id) }}" title="View Fiche Examen"><button
                                     class="btn"><i class="fa fa-eye" aria-hidden="true"></i>
-                                    </button></a>
+                                </button></a>
                             <a href="{{ url('/Fiche_Examen/' . $item->id . '/edit') }}" title="Edit Fiche Examen"><button
-                                class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                     <i class="fa-solid fa-pen-to-square"></i></button></a>
                             <form method="POST" action="{{ url('/Fiche_Examen' . '/' . $item->id) }}"
                                 accept-charset="UTF-8" style="display:inline">

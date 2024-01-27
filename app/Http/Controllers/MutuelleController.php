@@ -15,7 +15,7 @@ class MutuelleController extends Controller
      */
     public function index()
     {
-        $fiche_muts = FicheMut::all();
+        $fiche_muts = FicheMut::orderBy('id', 'desc')->get();
       return view ('FicheMut.index')->with('fiche_muts', $fiche_muts);
     }
 

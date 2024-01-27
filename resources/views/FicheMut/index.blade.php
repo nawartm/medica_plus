@@ -12,14 +12,17 @@
     @endif
 
     <h2> Gestion des fiches mutuelles</h2>
-    <div style="margin:3em;">
     <button type="button" class="btn btn-primary">
         <a href="{{ url('/FicheMut/create') }}"  title="Add New Fiche Mutuelle">
             <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
         </a>
 
     </button>
-    </div>
+    <form action="" method="post">
+        @csrf
+        <input type="text" name="search" id="" placeholder="Recherche">
+        <button type="submit" class="btn btn-primary">Recherche</button>
+    </form>
     <table class="table">
         <thead>
 

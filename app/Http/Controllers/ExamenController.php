@@ -16,7 +16,7 @@ class ExamenController extends Controller
      */
     public function index()
     {
-        $fiche_examens =  Fiche_Examen::all();
+        $fiche_examens =  Fiche_Examen::orderBy('id', 'desc')->get();
       return view ('Fiche_Examen.index')->with('fiche_examens', $fiche_examens);
     }
 

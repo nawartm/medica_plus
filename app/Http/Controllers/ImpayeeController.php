@@ -22,7 +22,7 @@ class ImpayeeController extends Controller
     }
     public function list()
     {
-        $Impayee =Impayee::all();
+        $Impayee =Impayee::orderBy('id', 'desc')->get();
         return view('Impayee.crudImpayee',compact('Impayee'));
     }
 
