@@ -10,7 +10,7 @@
 
     <style>
         body {
-            background-image: url({{ asset('assets/healthcare-medical-symbol-c4g11g7l1o1hev4m.jpg') }} );
+            background-image: url({{ asset('assets/wallpaper.jpg') }} );
         }
     </style>
 
@@ -27,7 +27,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Se Connecter</a>
+                        <a href="{{ route('login') }}">Se connecter</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">S'inscrire</a>

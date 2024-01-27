@@ -54,7 +54,7 @@
                             data-visible="true"> Impayés</span></a>
                 </li>
                 <li><a href="{{ route('listFactures') }}"><i class="fa-solid fa-comments-dollar"></i><span
-                            data-visible="true"> factures</span></a>
+                            data-visible="true"> Factures</span></a>
                 </li>
                 <li><a href="{{ route('listDepenses') }}"><i class="fa-solid fa-comment-dollar"></i><span
                             data-visible="true"> dépenses</span></a>
