@@ -7,7 +7,7 @@
                 class='fa fa-circle-o-notch fa-spin'></i><a href="/RDVRDV" style="color:white">+Ajouter
             </a>
         </button>
-        <form action="" method="post">
+        <form action="{{ url('RDVSearch') }}" method="post">
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
             <button type="submit" class="btn btn-primary">Recherche</button>

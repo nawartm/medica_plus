@@ -42,6 +42,16 @@ class RendezVousController extends Controller
         return view("RDV.listRDV",['listR'=>$listRDV] );
 
     }
+    public function search(Request $request)
+    {
+        $search = $request->search;
+    
+        $listRDV = RendezVous::where(function ($query) use ($search) {
+            $query->where('nom_pat', 'like', "%$search%")->orWhere('prenom_pat', 'like', "%$search%");
+        })->get();
+    
+        return view("RDV.listRDV",['listR'=>$listRDV] );
+    }
 
     //supprimer
     public function delete(Request $request){

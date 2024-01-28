@@ -8,7 +8,7 @@
                     class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Ordonnance.create') }} " style="color:white"
                     >+Ajouter </a>
             </button>
-        <form action="" method="post">
+        <form action="{{ url('OrdonnanceSearch') }}" method="post">
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
             <button type="submit" class="btn btn-primary">Recherche</button>

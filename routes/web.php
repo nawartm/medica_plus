@@ -34,6 +34,7 @@ Route::get('/delete',[RendezVousController::class,'delete']);
 Route::get('/edit/{id}',[RendezVousController::class,'edit'])->name('/edit');
 Route::get('/update/{id}',[RendezVousController::class,'update'])->name('/update');
 Route::get('RDV/{id}', [RendezVousController::class, 'show'])->name('RendezVous.show');
+Route::match(['get', 'post'], '/RDVSearch', [RendezVousController::class, 'search']);
 /*---------Depense------------ */
 Route::get('/depense',[DepenseController::class,'index'])->name('depense');
 Route::get('/saveD',[DepenseController::class,'save']);
@@ -69,6 +70,8 @@ Route::get('Ordonnance/edit/{id}',[OrdonnanceController::class,'edit'])->name('O
 Route::put('Ordonnance/update/{id}',[OrdonnanceController::class,'update'])->name('Ordonnance.update');
 Route::get('Ordonnance/create',[OrdonnanceController::class,'create'])->name('Ordonnance.create');
 Route::get('Ordonnance/delete/{id}',[OrdonnanceController::class,'destroy'])->name('Ordonnance.delete');
+Route::match(['get', 'post'], '/OrdonnanceSearch', [OrdonnanceController::class, 'search']);
+
 
 /*************************************Consultation*********************************************/
 Route::get('Consultation/create',[ConsultationController::class,'create'])->name('Consultation.create');

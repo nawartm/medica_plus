@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Ordonnance;
 
 use App\Http\Requests\OrdonnanceRequest;
+use Illuminate\Http\Request;
 class OrdonnanceController extends Controller
 {
 
@@ -24,6 +25,17 @@ class OrdonnanceController extends Controller
         $Ordonnances =Ordonnance::orderBy('id', 'desc')->get();
         return view('Ordonnance.crudOrdonnance',compact('Ordonnances'));
     }
+    public function search(Request $request)
+    {
+        $search = $request->search;
+    
+        $Ordonnances = Ordonnance::where(function ($query) use ($search) {
+            $query->where('nom_pat', 'like', "%$search%")->orWhere('prenom_pat', 'like', "%$search%");
+        })->get();
+    
+        return view('Ordonnance.crudOrdonnance', compact('Ordonnances'));
+    }
+    
     public function show($id){ 
    
         $Ordonnance=Ordonnance::where('id',$id)->first();// ??????????????? s'affiche pas 
