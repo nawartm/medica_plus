@@ -7,6 +7,11 @@
                 class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" >+Ajouter
                 </a>
         </button>
+        <form >
+            @csrf
+            <input type="text" name="search" id="" placeholder="Recherche">
+            <button type="submit" class="btn btn-primary">Recherche</button>
+        </form>
         <div>
             <table >
                 <thead>
