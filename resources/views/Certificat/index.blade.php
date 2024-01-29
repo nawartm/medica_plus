@@ -11,7 +11,7 @@
             </div>
         @endif
         <h2> Gestion des certificats</h2>
-        <button type="button" class="btn btn-success" >
+        <button type="button" class="btn btn-dark-green" >
             <a href="{{ url('/Certificat/create') }}" title="Add New Certificat">
                  Ajouter
             </a>
@@ -19,7 +19,7 @@
         <form action="{{ url('CertificatSearch') }}" method="get">
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
-            <button type="submit" class="btn btn-primary">Recherche</button>
+            <button type="submit" class="btn a btn-green">Recherche</button>
         </form>        
         <table class="table">
             <thead>

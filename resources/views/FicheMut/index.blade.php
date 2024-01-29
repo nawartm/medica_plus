@@ -12,16 +12,16 @@
     @endif
 
     <h2> Gestion des fiches mutuelles</h2>
-    <button type="button" class="btn btn-primary">
+    <button type="button" class="btn btn-dark-green">
         <a href="{{ url('/FicheMut/create') }}"  title="Add New Fiche Mutuelle">
-            <i class="fa fa-plus" aria-hidden="true"></i> Ajouter
+             Ajouter
         </a>
 
     </button>
     <form action="{{ url('MutSearch') }}" method="get">
         @csrf
         <input type="text" name="search" id="" placeholder="Recherche">
-        <button type="submit" class="btn btn-primary">Recherche</button>
+        <button type="submit" class="btn a btn-green">Recherche</button>
     </form>
     <table class="table">
         <thead>

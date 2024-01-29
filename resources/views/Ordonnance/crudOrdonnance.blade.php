@@ -4,14 +4,14 @@
         <!--for demo wrap-->
         <h1>Gestion des ordonnances</h1>
 
-            <button type="button" class="btn btn-primary " id="load1" data-loading-text=" Processing Order"><i
-                    class='fa fa-circle-o-notch fa-spin'></i><a href="{{ route('Ordonnance.create') }} " style="color:white"
-                    >+Ajouter </a>
+            <button type="button" class="btn btn-dark-green " id="load1" data-loading-text=" Processing Order">
+                <a href="{{ route('Ordonnance.create') }} "
+                    >Ajouter </a>
             </button>
         <form action="{{ url('OrdonnanceSearch') }}" method="post">
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
-            <button type="submit" class="btn btn-primary">Recherche</button>
+            <button type="submit" class="btn a btn-green">Recherche</button>
         </form>
         <div class="">
             <table>

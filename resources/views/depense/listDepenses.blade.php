@@ -3,8 +3,8 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des dépenses</h1>
-        <button type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text=" Processing Order"><i
-                class='fa fa-circle-o-notch fa-spin'></i><a href="\depense" style="color:white" >+Ajouter
+        <button type="button" class="btn btn-dark-green" id="load1" data-loading-text=" Processing Order">
+            <a href="\depense" style="color:white" >Ajouter
                 </a>
         </button>
         <div>

@@ -12,7 +12,7 @@
         @endif
 
         <h2> Gestion des fiches patients</h2>
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-dark-green">
             <a href="{{ url('/Fiche_Patient/create') }}" title="Add New Fiche du Patient">
                  Ajouter
             </a>
@@ -20,7 +20,7 @@
         <form action="{{ url('PatientSearch') }}" method="get">
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
-            <button type="submit" class="btn btn-primary">Recherche</button>
+            <button type="submit" class="btn a btn-green">Recherche</button>
         </form>
         <table class="table">
             <thead>

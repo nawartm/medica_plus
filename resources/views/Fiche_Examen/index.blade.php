@@ -3,7 +3,7 @@
     <section>
         <h2>Gestion des fiches d'examens</h2>
 
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-dark-green">
             <a href="{{ url('/Fiche_Examen/create') }}" title="Add New Fiche Examen">
                 Ajouter
             </a>

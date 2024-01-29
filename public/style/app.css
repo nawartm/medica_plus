@@ -204,6 +204,10 @@ table tbody tr:nth-of-type(even) {
 .btn-green {
     background-color: var(--green);
 }
+
+.btn-dark-green {
+    background-color: var(--dark-green);
+}
 /* Forms */
 .top-title {
     display: flex ;
