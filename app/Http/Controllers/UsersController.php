@@ -143,7 +143,8 @@ class UsersController extends Controller
         $this->registerPolicies();
 
         Gate::define('view-ordonnance', function ($user) {
-            return true;
+            return $user->role == 'admin';
+
         });
 
 
