@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
@@ -94,28 +95,28 @@ class UsersController extends Controller
     {
         // Find the user
         $user = User::find($id);
-    
+
         // Validate the request data
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'email' => 'required|email|unique:users,email,'.$user->id,
+            'email' => 'required|email|unique:users,email,' . $user->id,
             'password' => 'sometimes|min:6',
             'role' => 'required|in:admin,doctor,secretaire',
         ]);
-    
+
         // Update the user data
         $user->name = $validatedData['name'];
         $user->email = $validatedData['email'];
         $user->role = $validatedData['role'];
-    
+
         // Check if password is present in the request
         if ($request->has('password')) {
             $user->password = Hash::make($validatedData['password']);
         }
-    
+
         // Save the user to the database
         $user->save();
-    
+
         // Return a response
         return response()->json(['message' => 'User updated successfully'], 200);
     }
@@ -136,5 +137,19 @@ class UsersController extends Controller
         }
 
         return response()->json(['message' => 'User not found'], 404);
+    }
+    public function boot()
+    {
+        $this->registerPolicies();
+
+        Gate::define('view-ordonnance', function ($user) {
+            return true;
+        });
+
+
+        Gate::define('view-certificat', function ($user) {
+            // return true if the user has the right to view certificat
+        });
+
     }
 }
