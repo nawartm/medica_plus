@@ -11,7 +11,7 @@
             <input type="text" name="search" id="" placeholder="Recherche">
             <button type="submit" class="btn a btn-green">Recherche</button>
         </form>
-        <div class="tbl-header">
+        <div>
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
                     <tr>

@@ -22,45 +22,45 @@
         <div class="content-boxes">
             <div>
                 <h2>Ordonnances</h2>
-                <h4>Total <span>14</span></h4>
+                <h4>Total <span>{{ $ordonnances }}</span></h4>
             </div>
             <div>
                 <h2>Certificats</h2>
-                <h4>Total <span>12</span></h4>
+                <h4>Total <span>{{ $certificat }}</span></h4>
             </div>
             <div>
                 <h2>Consultations</h2>
-                <h4>Total <span>8</span></h4>
+                <h4>Total <span>{{ $consultation }}</span></h4>
             </div>
             <div>
                 <h2>Fiches Examens</h2>
-                <h4>Total <span>9</span></h4>
+                <h4>Total <span>{{ $fiche_examen }}</span></h4>
             </div>
             <div>
                 <h2>Mutuelles</h2>
-                    <h4>Total <span>450</span></h4>
-                    <h4>Mutuelle <span>150</span></h4>
+                    <h4>Total <span>{{ $totale_mat }}</span></h4>
+                    <h4>Mutuelle <span>{{ $montant_mut }}</span></h4>
             </div>
             <div>
                 <h2> Impayés</h2>
-                    <h4>APS <span>350</span></h4>
-                    <h4>RS <span>50</span></h4>
+                    <h4>APS <span>{{ $impyees_aps }}</span></h4>
+                    <h4>RS <span>{{ $impyees_rs }}</span></h4>
             </div>
             <div>
                 <h2>Factures</h2>
-                <h4>Total <span>1050</span></h4>
+                <h4>Total <span>{{ $factures }}</span></h4>
             </div>
             <div>
                 <h2>Dépenses</h2>
-                <h4>Total <span>750</span></h4>
+                <h4>Total <span>{{ $depense }}</span></h4>
             </div>
             <div>
                 <h2>Rendez-vous</h2>
-                <h4>Total <span>8</span></h4>
+                <h4>Total <span>{{ $rdv }}</span></h4>
             </div>
             <div>
                 <h2>Fiches Patients</h2>
-                <h4>Total <span>18</span></h4>
+                <h4>Total <span>{{ $patients }}</span></h4>
             </div>
         </div>
     </section>

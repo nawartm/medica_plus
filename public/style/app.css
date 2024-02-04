@@ -269,7 +269,8 @@ form h3 {
     }
 }
 
-input {
+input,
+option {
     padding: 0.5rem;
     border: var(--dark-green) solid 0.1rem;
     border-radius: 0.3rem;
@@ -278,11 +279,13 @@ input {
     width: 24rem;
 }
 
-input[type="submit"] {
+input[type="submit"],
+option {
     max-width: fit-content;
 }
 
-input:focus {
+input:focus,
+option:focus {
     border: var(--lite-green) solid 0.1rem;
 }
 

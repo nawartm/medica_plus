@@ -11,6 +11,7 @@ use App\Http\Controllers\CertificatController;
 use App\Http\Controllers\FichePatientController;
 use App\Http\Controllers\MutuelleController;
 use App\Http\Controllers\ExamenController;
+use App\Http\Controllers\UsersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -94,6 +95,8 @@ Route::match(['get', 'post'], '/MutSearch', [MutuelleController::class, 'search'
 /*************************************examen*********************************************/
 Route::resource('/Fiche_Examen', ExamenController::class);
 
+/*************************************examen*********************************************/
+Route::resource('/users', UsersController::class);
 
 });
 
