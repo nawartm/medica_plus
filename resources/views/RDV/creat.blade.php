@@ -12,7 +12,7 @@
 
     <div class="form">
         <h1>Formulaire de rendez-vous</h1><br>
-        <form action="/save" method="get" enctype="multipart/form-data">
+        <form action="{{ route('RDV.store') }}" method="post" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
             <div >

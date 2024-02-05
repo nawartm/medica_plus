@@ -3,7 +3,7 @@
     <section>
         <h1>Gestion des factures</h1>
         <button type="button" class="btn btn-dark-green " id="load1" data-loading-text=" Processing Order">
-            <a href="{{ route('facture') }} " style="color:white">Ajouter </a>
+            <a href="{{ route('facture.create') }} " style="color:white">Ajouter </a>
         </button>
         <form action="{{ url('factureSearch') }}" method="get">
             @csrf
@@ -35,11 +35,11 @@
                             <td>
 
                                 <button type="button" class="btn " id="load1" style=""><a
-                                        href="{{ route('/viewF', $facture->id) }}" cl class="btn ">
+                                        href="{{ route('facture.show', $facture->id) }}" cl class="btn ">
 
                                     </a> <i class="fa fa-eye" aria-hidden="true"></i></button>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
-                                        href="{{ route('/editF', $facture->id) }}" class="btn btn-success ps-0 py-0 pe-0"><i
+                                        href="{{ route('facture.edit', $facture->id) }}" class="btn btn-success ps-0 py-0 pe-0"><i
                                             class="fa-solid fa-pen-to-square"></i></a></button>
 
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a

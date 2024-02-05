@@ -39,15 +39,19 @@
                             <td>{{ Str::limit($Ordonnance->description, 6) }}</td>
                             <td>
                                 <a
-                                        href="{{ route('Ordonnance.Voir', $Ordonnance->id) }}"
+                                        href="{{ route('Ordonnance.show', $Ordonnance->id) }}"
                                         class="btn">
                                 <button type="button" class="btn" id="load1" style=""><i class="fa fa-eye" aria-hidden="true"></i></button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
-                                        href="{{ route('Ordonnance.Modify', $Ordonnance->id) }}"
+                                        href="{{ route('Ordonnance.update', $Ordonnance->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
-                                <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
-                                        href="{{ route('Ordonnance.delete', $Ordonnance->id) }}"
-                                        class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></button>
+                                        <form action="{{ route('Ordonnance.destroy', $Ordonnance->id) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger" id="load1" style="color:white">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </form>
                             </td>
                         </tr>
                     @endforeach

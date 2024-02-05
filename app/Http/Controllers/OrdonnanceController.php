@@ -15,16 +15,11 @@ class OrdonnanceController extends Controller
      */
     public function index()
     {
-       // $Ordonnance = Ordonnance::where('id',$id)->first();
-        return view('Ordonnance.crudOrdonnance');/*->with([
-            'Ordonnance'=> $Ordonnance
-        ]);*/
-    }
-    public function list()
-    {
         $Ordonnances =Ordonnance::orderBy('id', 'desc')->get();
         return view('Ordonnance.crudOrdonnance',compact('Ordonnances'));
+    
     }
+
     public function search(Request $request)
     {
         $search = $request->search;
@@ -38,7 +33,7 @@ class OrdonnanceController extends Controller
     
     public function show($id){ 
    
-        $Ordonnance=Ordonnance::where('id',$id)->first();// ??????????????? s'affiche pas 
+        $Ordonnance=Ordonnance::where('id',$id)->first();
           return view('Ordonnance.Ordonnance')->with([
           'Ordonnance' => $Ordonnance
           ]);

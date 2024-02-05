@@ -1,10 +1,9 @@
 @extends('nav_Med')
 @section('app')
     <section>
-        <!--for demo wrap-->
         <h1>Gestion des rendez-vous</h1>
         <button type="button" class="btn btn-dark-green" id="load1" data-loading-text=" Processing Order">
-            <a href="/RDVRDV" style="color:white">Ajouter</a>
+            <a href="{{ route('RDV.create') }}" style="color:white">Ajouter</a>
         </button>
         <form action="{{ url('RDVSearch') }}" method="post">
             @csrf
@@ -37,16 +36,20 @@
                             <td>{{ $RDV['heure'] }}</td>
 
                             <td>
-                                <a href="{{ url('/RDV/' . $RDV->id) }}" title="View RDV"><button class="btn "><i
+                                <a href="{{ route('RDV.show', $RDV->id) }}" title="View RDV"><button class="btn "><i
                                             class="fa fa-eye" aria-hidden="true"></i>
                                     </button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
-                                        href="{{ route('/edit', $RDV->id) }}" class="btn btn-success ps-0 py-0 pe-0"><i
+                                        href="{{ route('RDV.update', $RDV->id) }}" class="btn btn-success ps-0 py-0 pe-0"><i
                                             class="fa-solid fa-pen-to-square"></i></a></button>
 
-                                <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
-                                        href="\delete?id={{ $RDV['id'] }}" class="btn btn-danger ps-0 py-0 pe-0"><i
-                                            class="fa-solid fa-trash"></i></a></button>
+                                <form action="{{ route('RDV.destroy', $RDV->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger" id="load1" style="color:white">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach

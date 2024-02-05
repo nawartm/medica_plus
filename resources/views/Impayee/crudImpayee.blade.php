@@ -39,14 +39,14 @@
                             <td>{{ $Impayee->montant_RS }}</td>
 
                             <td>
-                                <a href="{{ url('/Impayee/' . $Impayee->id) }}" title="View Impayee"><button
+                                <a href="{{ route('Impayee.show' , $Impayee->id) }}" title="View Impayee"><button
                                     class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
                                     </button></a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
-                                        href="{{ route('Impayee.Modify', $Impayee->id) }}"
+                                        href="{{ route('Impayee.update', $Impayee->id) }}"
                                         class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
                                 <button type="button" class="btn btn-danger" id="load1" style="color:white"><a
-                                        href="{{ route('Impayee.delete', $Impayee->id) }}"
+                                        href="{{ route('Impayee.destroy', $Impayee->id) }}"
                                         class="btn btn-danger ps-0 py-0 pe-0"><i class="fa-solid fa-trash"></i></a></button>
                             </td>
                         </tr>

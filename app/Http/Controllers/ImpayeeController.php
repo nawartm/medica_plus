@@ -15,16 +15,11 @@ class ImpayeeController extends Controller
      */
     public function index()
     {
-       // $Ordonnance = Ordonnance::where('id',$id)->first();
-        return view('Impayee.crudImpayee');/*->with([
-            'Ordonnance'=> $Ordonnance
-        ]);*/
-    }
-    public function list()
-    {
         $Impayee =Impayee::orderBy('id', 'desc')->get();
         return view('Impayee.crudImpayee',compact('Impayee'));
+    
     }
+
     public function search(Request $request)
     {
         $search = $request->search;

@@ -18,10 +18,10 @@
                 <select id="role" name="role" class="form-control" required>
                     <option value="admin" {{ $user->role == 'admin' ? 'selected' : '' }}>Admin</option>
                     <option value="doctor" {{ $user->role == 'doctor' ? 'selected' : '' }}>Doctor</option>
-                    <option value="secretaire" {{ $user->role == 'secretaire' ? 'selected' : '' }}>Secretary</option>
+                    <option value="assistant" {{ $user->role == 'assistant' ? 'selected' : '' }}>Assistant</option>
                 </select>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" class="form-control" required>
+                <input type="password" id="password" name="password" class="form-control" >
 
                 <input type="submit" value="Update" class="btn btn-success">
             </form>

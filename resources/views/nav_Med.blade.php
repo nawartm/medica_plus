@@ -53,17 +53,17 @@
                 <li><a href="{{ route('Impayee.index') }}"><i class="fa-solid fa-file-invoice-dollar"></i><span
                             data-visible="true"> Impayés</span></a>
                 </li>
-                <li><a href="{{ route('listFactures') }}"><i class="fa-solid fa-comments-dollar"></i><span
+                <li><a href="{{ route('facture.index') }}"><i class="fa-solid fa-comments-dollar"></i><span
                             data-visible="true"> Factures</span></a>
                 </li>
-                <li><a href="{{ route('listDepenses') }}"><i class="fa-solid fa-comment-dollar"></i><span
+                <li><a href="{{ route('depense.index') }}"><i class="fa-solid fa-comment-dollar"></i><span
                             data-visible="true"> dépenses</span></a>
                 </li>
 
 
                 <!-- *************************G.des Rdvs**************************-->
 
-                <li><a href="{{ route('listRDV') }}"><i class="fa-regular fa-calendar-check"></i><span data-visible="true">
+                <li><a href="{{ route('RDV.index') }}"><i class="fa-regular fa-calendar-check"></i><span data-visible="true">
                             Gestion des rendez-vous</span></a>
                     <!-- First Tier Drop Down -->
                 </li>
@@ -73,6 +73,9 @@
                     <!-- First Tier Drop Down -->
                 </li>
 
+                <li>
+                    <a href="{{ route('users.index') }}"><i class="fa-solid fa-users"></i>utilisateurs</a>
+                </li>
 
             </ul>
             <ul>

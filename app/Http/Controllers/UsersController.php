@@ -144,13 +144,14 @@ class UsersController extends Controller
 
         Gate::define('view-ordonnance', function ($user) {
             return $user->role == 'admin';
-
         });
-
 
         Gate::define('view-certificat', function ($user) {
-            // return true if the user has the right to view certificat
+            return $user->role == 'doctor' || $user->role == 'admin';
         });
 
+        Gate::define('view-consultation', function ($user) {
+            return $user->role == 'assistant' || $user->role == 'doctor' || $user->role == 'admin';
+        });
     }
 }

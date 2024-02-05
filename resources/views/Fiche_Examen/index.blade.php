@@ -29,8 +29,8 @@
                             <a href="{{ url('/Fiche_Examen/' . $item->id . '/edit') }}" title="Edit Fiche Examen"><button
                                     class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                     <i class="fa-solid fa-pen-to-square"></i></button></a>
-                            <form method="POST" action="{{ url('/Fiche_Examen' . '/' . $item->id) }}"
-                                accept-charset="UTF-8" style="display:inline">
+                            <form method="POST" action="{{ route('Fiche_Examen.destroy' , $item->id) }}"
+                                accept-charset="UTF-8">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
                                 <button type="submit" class="btn btn-danger a" title="Delete Fiche Examen"

@@ -49,12 +49,11 @@
                                     class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
                                    </button></a>
                                    <a href="{{ url('/Certificat/' . $item->id . '/edit') }}" title="Edit Certificat"><button class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><i class="fa-solid fa-pen-to-square"></i></button></a>
-                            <form method="POST" action="{{ url('/Certificat' . '/' . $item->id) }}" accept-charset="UTF-8"
+                            <form method="POST" action="{{ route('Certificat.destroy' , $item->id) }}" accept-charset="UTF-8"
                                 style="display:inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
-                                <button type="submit" class="btn btn-danger a" title="Delete Certificat"
-                                    onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa-solid fa-trash"></i></button>
+                                <button type="submit" class="btn btn-danger a" title="Delete Certificat"><i class="fa-solid fa-trash"></i></button>
                             </form>
 
                         </td>

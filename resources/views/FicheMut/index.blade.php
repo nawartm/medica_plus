@@ -50,10 +50,10 @@
                     <td>{{ $item->montant_total }}</td>
                     <td>{{ $item->montant_total }}</td>
                     <td>
-                        <a href="{{ url('/FicheMut/' . $item->id) }}" title="View Fiche Mutuelle"><button
+                        <a href="{{ route('FicheMut.show',$item->id) }}" title="View Fiche Mutuelle"><button
                                 class="btn "><i class="fa fa-eye" aria-hidden="true"></i>
                                 </button></a>
-                        <a href="{{ url('/FicheMut/' . $item->id . '/edit') }}" title="Edit Fiche du Patient"><button
+                        <a href="{{ route('FicheMut.update', $item->id . '/edit') }}" title="Edit Fiche du Patient"><button
                                 class="btn btn-success a"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                 <i class="fa-solid fa-pen-to-square"></i></button></a>
                         <form method="POST" action="{{ url('/FicheMut' . '/' . $item->id) }}" accept-charset="UTF-8"

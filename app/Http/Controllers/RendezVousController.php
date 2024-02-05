@@ -10,8 +10,10 @@ class RendezVousController extends Controller
 
     //ajouter
      public function index(){
-         return view('RDV.creat');
-     }
+        $listRDV = RendezVous::orderBy('id', 'desc')->get();
+
+        return view("RDV.listRDV",['listR'=>$listRDV] );
+    }
 
     //enregistrer
     public function save(Request $request){
@@ -34,14 +36,7 @@ class RendezVousController extends Controller
         return redirect::Route('listRDV');
     }
 
-    //lister
-    public function listRDV(Request $request){
-        $RDV = new RendezVous();
-        $listRDV = $RDV::orderBy('id', 'desc')->get();
 
-        return view("RDV.listRDV",['listR'=>$listRDV] );
-
-    }
     public function search(Request $request)
     {
         $search = $request->search;
@@ -54,14 +49,17 @@ class RendezVousController extends Controller
     }
 
     //supprimer
-    public function delete(Request $request){
+    public function destroy(Request $request)
+{
+    $RDV = RendezVous::find($request->id);
 
-        $id =  $request['id'];
-        $RDV = new RendezVous();
-        $RDV->find($id)->delete();
-
-        return Redirect::route('listRDV')->with(['message'=> 'Successfully deleted!!']);
+    if ($RDV) {
+        $RDV->delete();
+        return redirect()->route('RDV.index')->with('message', 'Successfully deleted!');
     }
+
+    return redirect()->route('RDV.index')->with('error', 'RendezVous not found.');
+}
 
     //modifier
     public function edit($id){
@@ -84,5 +82,9 @@ class RendezVousController extends Controller
     {
         $RDV =  RendezVous::find($id);
         return view('RDV.show')->with('RDV', $RDV) ;
+    }
+
+    public function create(){
+        return view('RDV.creat');
     }
 }
