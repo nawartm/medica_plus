@@ -29,54 +29,49 @@
                 <img class="img" src="{{ asset('assets/Logo.png') }}" alt="Medica+" srcset="">
             </a>
             <ul>
-
-                <!--***************************************Gestion du dossier medical************************************** -->
-                <li><a href="{{ route('Ordonnance.index') }}"><i class="fa-regular fa-paste"></i><span data-visible="true">
-                            Ordonnances</span></a>
-                </li>
-                <li><a href="{{ route('Certificat.index') }}"><i class="fa-regular fa-newspaper"></i><span
-                            data-visible="true"> Certificats</span></a>
-                </li>
-                <li><a href="{{ route('Consultation.index') }}"><i class="fa-solid fa-user-doctor"></i><span
-                            data-visible="true"> Consultations</span></a>
-                </li>
-                <li><a href="{{ route('Fiche_Examen.index') }}"><i class="fa-solid fa-stethoscope"></i><span
-                            data-visible="true"> Examens</span></a>
-                </li>
+                @can('view-ordonnance')
+                <li><a href="{{ route('Ordonnance.index') }}"><i class="fa-regular fa-paste"></i><span data-visible="true">Ordonnances</span></a></li>
+                @endcan
             
-                <li><a href="{{ route('FicheMut.index') }}"><i class="fa-solid fa-hospital-user"></i><span
-                            data-visible="true"> Mutuelles</span></a>
-                </li>
-
-
-                <!-- **************Gestion des comptabilités *****************-->
-                <li><a href="{{ route('Impayee.index') }}"><i class="fa-solid fa-file-invoice-dollar"></i><span
-                            data-visible="true"> Impayés</span></a>
-                </li>
-                <li><a href="{{ route('facture.index') }}"><i class="fa-solid fa-comments-dollar"></i><span
-                            data-visible="true"> Factures</span></a>
-                </li>
-                <li><a href="{{ route('depense.index') }}"><i class="fa-solid fa-comment-dollar"></i><span
-                            data-visible="true"> dépenses</span></a>
-                </li>
-
-
-                <!-- *************************G.des Rdvs**************************-->
-
-                <li><a href="{{ route('RDV.index') }}"><i class="fa-regular fa-calendar-check"></i><span data-visible="true">
-                            Gestion des rendez-vous</span></a>
-                    <!-- First Tier Drop Down -->
-                </li>
-                <!-- ******************************Gestion des fiches patients************************************ -->
-                <li><a href="{{ route('Fiche_Patient.index') }}"><i class="fa-solid fa-bed-pulse"></i><span
-                            data-visible="true"> Gestion des fiches patients</span></a>
-                    <!-- First Tier Drop Down -->
-                </li>
-
-                <li>
-                    <a href="{{ route('users.index') }}"><i class="fa-solid fa-users"></i>utilisateurs</a>
-                </li>
-
+                @can('view-certificat')
+                <li><a href="{{ route('Certificat.index') }}"><i class="fa-regular fa-newspaper"></i><span data-visible="true"> Certificats</span></a></li>
+                @endcan
+            
+                @can('view-consultation')
+                <li><a href="{{ route('Consultation.index') }}"><i class="fa-solid fa-user-doctor"></i><span data-visible="true"> Consultations</span></a></li>
+                @endcan
+            
+                @can('view-Fiche_Examen')
+                <li><a href="{{ route('Fiche_Examen.index') }}"><i class="fa-solid fa-stethoscope"></i><span data-visible="true"> Examens</span></a></li>
+                @endcan
+            
+                @can('view-FicheMut')
+                <li><a href="{{ route('FicheMut.index') }}"><i class="fa-solid fa-hospital-user"></i><span data-visible="true"> Mutuelles</span></a></li>
+                @endcan
+            
+                @can('view-Impayee')
+                <li><a href="{{ route('Impayee.index') }}"><i class="fa-solid fa-file-invoice-dollar"></i><span data-visible="true"> Impayés</span></a></li>
+                @endcan
+            
+                @can('view-facture')
+                <li><a href="{{ route('facture.index') }}"><i class="fa-solid fa-comments-dollar"></i><span data-visible="true"> Factures</span></a></li>
+                @endcan
+            
+                @can('view-depense')
+                <li><a href="{{ route('depense.index') }}"><i class="fa-solid fa-comment-dollar"></i><span data-visible="true"> dépenses</span></a></li>
+                @endcan
+            
+                @can('view-RDV')
+                <li><a href="{{ route('RDV.index') }}"><i class="fa-regular fa-calendar-check"></i><span data-visible="true">Gestion des rendez-vous</span></a></li>
+                @endcan
+            
+                @can('view-Fiche_Patient')
+                <li><a href="{{ route('Fiche_Patient.index') }}"><i class="fa-solid fa-bed-pulse"></i><span data-visible="true"> Gestion des fiches patients</span></a></li>
+                @endcan
+            
+                @can('manage-users')
+                <li><a href="{{ route('users.index') }}"><i class="fa-solid fa-users"></i>utilisateurs</a></li>
+                @endcan
             </ul>
             <ul>
                 <li class="nav-item dropdown">

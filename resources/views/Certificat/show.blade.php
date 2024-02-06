@@ -43,9 +43,8 @@
             </div>
         </div>
 
-        <button type="button" class="btn btn-primary" id="load2" style="color:white;"
-            data-loading-text=" Processing Order"><i class='fa fa-spinner fa-spin text-light '></i><a href="#"
-                onClick="imprimer('sectionAimprimer')" class="btn btn-sm ms-2">Imprimer</a></button>
+        <button type="button" class="btn btn-dark-green" id="load2" style="color:white;"
+            ><a href="#" onClick="imprimer('sectionAimprimer')" >Imprimer</a></button>
     </section>
 
     <script>

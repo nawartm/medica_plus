@@ -18,8 +18,11 @@
                 <select id="role" name="role" class="form-control" required>
                     <option value="admin" {{ $user->role == 'admin' ? 'selected' : '' }}>Admin</option>
                     <option value="doctor" {{ $user->role == 'doctor' ? 'selected' : '' }}>Doctor</option>
-                    <option value="assistant" {{ $user->role == 'assistant' ? 'selected' : '' }}>Assistant</option>
+                    <option value="secretaire" {{ $user->role == 'secretaire' ? 'selected' : '' }}>Secretaire</option>
                 </select>
+                @error('role')
+                    <small class="text-danger">{{ $message }}</small>
+                @enderror
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" class="form-control" >
 

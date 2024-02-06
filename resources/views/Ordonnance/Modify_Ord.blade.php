@@ -43,10 +43,7 @@
                 </div>
 
                 <div class="mb-1">
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                    <button type="submit" class="btn btn-success">Valider</button>
+                        <button type="submit" class="btn btn-success">Valider</button>
                 </div>
             </form>
 

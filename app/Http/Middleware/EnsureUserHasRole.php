@@ -14,10 +14,14 @@ class EnsureUserHasRole
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next , string $role )
+    public function handle($request, Closure $next, )
     {
-        if($request->user()->role===$role)    return $next($request);
-        abort(403);
-        //abort("Ops!! vous ne pouvez pas integrer cette interface");
+        $roles = ['admin', 'doctor', 'secretaire'];
+        if (!in_array($request->user()->role, $roles)) {
+
+            abort(403);
+        }
+
+        return $next($request);
     }
 }

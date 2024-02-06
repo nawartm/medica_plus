@@ -3,7 +3,7 @@
     <section>
         <h1>Gestion des utilisateurs</h1>
 
-        <button type="button" class="btn btn-dark-green" id="load1" data-loading-text=" Processing Order">
+        <button type="button" class="btn btn-dark-green" id="load1"  >
             <a href="/users/create" style="color:white">Ajouter</a>
         </button>
         <form action="{{ url('UserSearch') }}" method="post">

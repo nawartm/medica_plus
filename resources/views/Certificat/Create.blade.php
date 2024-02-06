@@ -2,7 +2,7 @@
 @section('app')
     <div class="form">
         <h1>Formulaire gestion des certificats</h1></br>
-        <form action="{{ url('Certificat') }}" method="post">
+        <form action="{{ route('Certificat.store') }}" method="post">
             {!! csrf_field() !!}
             <div>
                 <label>Nom patient</label></br>
@@ -34,7 +34,7 @@
             </div>
             <div>
                 <label>La date</label></br>
-                <input type="text" name="date" id="date" class="form-control">
+                <input type="date" name="date" id="date" class="form-control">
                 @error('date')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror

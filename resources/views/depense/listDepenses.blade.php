@@ -3,7 +3,7 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des dépenses</h1>
-        <button type="button" class="btn btn-dark-green" id="load1" data-loading-text=" Processing Order">
+        <button type="button" class="btn btn-dark-green" id="load1"  >
             <a href="{{ route('depense.create') }}" style="color:white" >Ajouter
                 </a>
         </button>

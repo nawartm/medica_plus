@@ -2,7 +2,7 @@
 @section('app')
     <section>
         <h1>Gestion des rendez-vous</h1>
-        <button type="button" class="btn btn-dark-green" id="load1" data-loading-text=" Processing Order">
+        <button type="button" class="btn btn-dark-green" id="load1"  >
             <a href="{{ route('RDV.create') }}" style="color:white">Ajouter</a>
         </button>
         <form action="{{ url('RDVSearch') }}" method="post">

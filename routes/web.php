@@ -26,9 +26,11 @@ Route::middleware(['auth'])->group(function(){
     Route::match(['get', 'post'], '/ImpayeeSearch', [ImpayeeController::class, 'search']);
     Route::resource('Fiche_Patient', FichePatientController::class);
     Route::match(['get', 'post'], '/PatientSearch', [FichePatientController::class, 'search']);
+    Route::resource('Consultation', ConsultationController::class);
+    Route::match(['get', 'post'], '/ConsultationSearch', [CertificatController::class, 'search']);
 });
 
-Route::middleware(['auth','role:assistant'])->group(function(){
+Route::middleware(['auth','role:secretaire'])->group(function(){
     Route::resource('Consultation', ConsultationController::class);
     Route::match(['get', 'post'], '/ConsultationSearch', [CertificatController::class, 'search']);
 });

@@ -12,7 +12,7 @@
 
     <div class="form">
         <h1>Formulaire des factures</h1><br>
-        <form action="{{ route('facture.store') }}" method="get" enctype="multipart/form-data">
+        <form action="{{ route('facture.store') }}" method="POST" enctype="multipart/form-data">
             <!-- 'enctype' est important car il informe qu' on va envoyer un fichier-->
             @csrf
             <div>

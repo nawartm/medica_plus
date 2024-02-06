@@ -13,8 +13,8 @@
     <p class="card-text">Nom du patient : {{ $depense->motif_dep }}</p>
     <p class="card-text">Prénom du patient : {{ $depense->montant_dep }}</p>
     <button type="button" class="btn btn-warning btn-lg float-sm-end" id="load2" style="color:white;"
-        data-loading-text=" Processing Order"><i class='fa fa-spinner fa-spin text-light '></i><a href="#"
-            onClick="imprimer('sectionAimprimer')" class="btn btn-sm ms-2">Imprimer</a>
+         > <a href="#"
+            onClick="imprimer('sectionAimprimer')" class="btn btn-dark-green ">Imprimer</a>
         <script>
             function imprimer(divName) {
                 var printContents = document.getElementById(divName).innerHTML;
