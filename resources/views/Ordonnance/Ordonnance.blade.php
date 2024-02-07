@@ -31,7 +31,7 @@
 
         </div>
 
-        <button type="button" onClick="imprimer('sectionAimprimer')" class="btn btn-primary" id="load2"
+        <button type="button" onClick="imprimer('sectionAimprimer')" class="btn btn-dark-green" id="load2"
             style="color:white;" data-loading-text="Processing Order">
             <i class='fa fa-spinner fa-spin text-light'></i>
             Imprimer

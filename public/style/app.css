@@ -1,20 +1,19 @@
-
 * {
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem ;
-    flex-wrap: wrap ;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1rem;
+    flex-wrap: wrap;
 }
 
 :root {
-    --dark: #17202A ;
+    --dark: #17202a;
     --dark-green: #0e6655;
     --green: #74b49b;
     --lite-green: #a7d7c5;
     --bright-green: #f4f9f4;
-    --delete: #FE0202;
+    --delete: #fe0202;
     --varning: #ffcd4b;
     --edit: #219c90;
     --add-new: #0079ff;
@@ -25,9 +24,9 @@ nav {
     text-transform: capitalize;
     background-color: var(--dark-green);
     padding: 0.5rem 1rem;
-    min-height: 100% ;
+    min-height: 100%;
 
-    display: flex ;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 
@@ -42,7 +41,8 @@ ul {
 
     list-style: none;
 }
-.a, a {
+.a,
+a {
     text-decoration: none;
     font-weight: 800;
     font-size: large;
@@ -56,49 +56,46 @@ css nesting
 
 */
 
-
-
 /* body  */
 body {
     background-size: cover;
-    background-position: center ;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
-main{
+main {
     grid-column: span 2;
-    display: grid ;
-    align-items: center ;
-    justify-content: center ;
+    display: grid;
+    align-items: center;
+    justify-content: center;
     min-height: 100%;
 
     & .home {
-        padding: 2rem 3rem ;
-        display: grid ;
+        padding: 2rem 3rem;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-        border: .2rem solid var(--dark-green );
-        border-radius: 1rem ;
+        border: 0.2rem solid var(--dark-green);
+        border-radius: 1rem;
         background-color: hsla(198, 59%, 69%, 0.4);
         backdrop-filter: blur(0.5rem);
         box-shadow: 0 0 5rem var(--dark);
 
         & :first-child {
-            grid-column: span 2 ;
+            grid-column: span 2;
         }
 
         & header {
-            grid-column: span 2 ;
+            grid-column: span 2;
 
-            display: flex ;
-            gap: 3rem ;
+            display: flex;
+            gap: 3rem;
 
             & a {
                 background-color: var(--dark-green);
-                padding: .4rem .8rem ;
-                border-radius: .5rem ;
+                padding: 0.4rem 0.8rem;
+                border-radius: 0.5rem;
             }
-
         }
     }
 }
@@ -138,7 +135,7 @@ table td {
 }
 
 table tbody tr {
-    border-bottom: .25rem solid var(--dark-green);
+    border-bottom: 0.25rem solid var(--dark-green);
 }
 
 table tbody tr:nth-of-type(even) {
@@ -146,28 +143,26 @@ table tbody tr:nth-of-type(even) {
 }
 
 .content-boxes {
-    display: flex ;
-    gap: 1rem ;
+    display: flex;
+    gap: 1rem;
 }
 
 .content-boxes div {
     flex: 1 1 12rem;
     background-color: var(--bright-green);
-    padding: 1rem 2rem ;
-    border-radius: .5rem ;
-    box-shadow: 0 0 .2rem var(--dark);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem var(--dark);
 
-    display: grid ;
-    gap: .5rem ;
-    justify-content: center ;
-
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;
 }
-
 
 .btn {
     padding: 0.5rem 0.8rem;
     border: none;
-    border-radius: .3rem ;
+    border-radius: 0.3rem;
     font-size: 1rem;
 
     max-width: fit-content;
@@ -180,8 +175,8 @@ table tbody tr:nth-of-type(even) {
 }
 
 .img {
-    aspect-ratio: 1 ;
-    max-height: 10rem ;
+    aspect-ratio: 1;
+    max-height: 10rem;
 }
 
 .btn-success {
@@ -197,7 +192,7 @@ table tbody tr:nth-of-type(even) {
     background-color: var(--delete);
 }
 
-.btn-primary {
+.btn-dark-green {
     background-color: var(--add-new);
 }
 
@@ -210,8 +205,8 @@ table tbody tr:nth-of-type(even) {
 }
 /* Forms */
 .top-title {
-    display: flex ;
-    gap: 3rem ;
+    display: flex;
+    gap: 3rem;
 }
 .form {
     display: grid;
@@ -222,7 +217,7 @@ table tbody tr:nth-of-type(even) {
 
 .form form {
     background-color: hsl(120, 29%, 97%/0.5);
-    backdrop-filter: blur(.5rem);
+    backdrop-filter: blur(0.5rem);
     padding: 1rem 2rem;
 
     display: flex;
@@ -231,8 +226,7 @@ table tbody tr:nth-of-type(even) {
 
     border-radius: 1rem;
 
-   
-    border: .2rem solid var(--edit);
+    border: 0.2rem solid var(--edit);
     width: fit-content;
 
     a {
@@ -243,7 +237,7 @@ table tbody tr:nth-of-type(even) {
 .remember {
     max-width: fit-content;
 
-    input[type="checkbox"]{
+    input[type="checkbox"] {
         max-width: fit-content;
     }
 }
@@ -296,14 +290,34 @@ textarea {
 }
 
 #sectionAimprimer {
-    display: grid ;
-    justify-content: center ;
-    gap: 2rem ;
-    padding: 3rem 2rem ;
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
 }
- h1{
+h1 {
     font-size: 2rem;
- }
- h2{
+}
+h2 {
     font-size: 2rem;
- }
+}
+
+#sectionAimprimer {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+#sectionAimprimer h3 {
+    color: #444;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#sectionAimprimer p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}

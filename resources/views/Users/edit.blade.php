@@ -18,7 +18,7 @@
                 <select id="role" name="role" class="form-control" required>
                     <option value="admin" {{ $user->role == 'admin' ? 'selected' : '' }}>Admin</option>
                     <option value="doctor" {{ $user->role == 'doctor' ? 'selected' : '' }}>Doctor</option>
-                    <option value="secretaire" {{ $user->role == 'secretaire' ? 'selected' : '' }}>Secretaire</option>
+                    <option value="assistante" {{ $user->role == 'assistante' ? 'selected' : '' }}>assistante</option>
                 </select>
                 @error('role')
                     <small class="text-danger">{{ $message }}</small>

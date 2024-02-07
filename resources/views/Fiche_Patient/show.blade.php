@@ -33,7 +33,7 @@
                 <h3>Tel:06.98.23.91.86</h3>
             </div>
         </div>
-        <button type="button" class="btn btn-primary" id="load2" style="color:white;"
+        <button type="button" class="btn btn-dark-green" id="load2" style="color:white;"
              > <a href="#"
                 onClick="imprimer('sectionAimprimer')" class="btn btn-dark-green ">Imprimer</a>
             <script>

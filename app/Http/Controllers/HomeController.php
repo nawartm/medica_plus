@@ -60,13 +60,41 @@ class HomeController extends Controller
             'factures' => $factures,
             'depense' => $depense,
             'patients' => $patients,
-            'rdv' => $rdv,            
+            'rdv' => $rdv,
         ]);
     }
 
-    public function filter(Request $request) 
+    public function filter(Request $request)
     {
-        
+        $start_date = $request->start_date;
+        $end_date = $request->end_date;
 
+        $Ordonnances = Ordonnance::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->count();
+        $Certificat = Certificat::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->count();
+        $Consultation = Consultation::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->count();
+        $Fiche_Examen = Fiche_Examen::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->count();
+        $totale_mat = FicheMut::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->sum('montant_total');
+        $montant_mut = FicheMut::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->sum('montant_mut');
+        $impyees_aps = Impayee::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->sum('montant_aps');
+        $impyees_rs = Impayee::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->sum('montant_rs');
+        $factures = Facture::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->sum('tarif_cns');
+        $depense = Depense::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->sum('montant_dep');
+        $patients = Patient::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->count();
+        $rdv = RendezVous::whereDate('created_at', '>=', $start_date)->whereDate('created_at', '<=', $end_date)->count();
+
+        return view('home', [
+            'ordonnances' => $Ordonnances,
+            'certificat' => $Certificat,
+            'consultation' => $Consultation,
+            'fiche_examen' => $Fiche_Examen,
+            'totale_mat' => $totale_mat,
+            'montant_mut' => $montant_mut,
+            'impyees_aps' => $impyees_aps,
+            'impyees_rs' => $impyees_rs,
+            'factures' => $factures,
+            'depense' => $depense,
+            'patients' => $patients,
+            'rdv' => $rdv,
+        ]);
     }
 }

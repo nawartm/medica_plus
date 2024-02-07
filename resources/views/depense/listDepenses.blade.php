@@ -3,17 +3,17 @@
     <section>
         <!--for demo wrap-->
         <h1>Gestion des dépenses</h1>
-        <button type="button" class="btn btn-dark-green" id="load1"  >
-            <a href="{{ route('depense.create') }}" style="color:white" >Ajouter
-                </a>
+        <button type="button" class="btn btn-dark-green" id="load1">
+            <a href="{{ route('depense.create') }}" style="color:white">Ajouter
+            </a>
         </button>
-        <form >
+        <form>
             @csrf
             <input type="text" name="search" id="" placeholder="Recherche">
             <button type="submit" class="btn a btn-green">Recherche</button>
         </form>
         <div>
-            <table >
+            <table>
                 <thead>
                     <tr>
                         <th class="table-primary"> Id </th>
@@ -34,22 +34,23 @@
                             <td>{{ $depense['motif_dep'] }}</td>
                             <td>{{ $depense['montant_dep'] }}</td>
                             <td>
-                                <button type="button" class="btn " id="load1"  >
-                                    <i class="fa fa-eye" aria-hidden="true"></i>
-                                    <a
-                                    href="{{ route('depense.show', $depense->id) }}"
-                                    class="btn"></a></button>
+                                <a href="{{ route('depense.show', $depense->id) }}" class="btn">
+                                <button type="button" class="btn " id="load1">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </button>
+                                </a>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('depense.edit', $depense->id) }}"
-                                        class="btn btn-success ps-0 py-0 pe-0"><i class="fa-solid fa-pen-to-square"></i></a></button>
+                                        class="btn btn-success ps-0 py-0 pe-0"><i
+                                            class="fa-solid fa-pen-to-square"></i></a></button>
 
-                                        <form action="{{ route('depense.destroy', $depense->id) }}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger" id="load1" style="color:white">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </form>
+                                <form action="{{ route('depense.destroy', $depense->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger" id="load1" style="color:white">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach

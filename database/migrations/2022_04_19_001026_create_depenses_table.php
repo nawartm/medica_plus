@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('depenses', function (Blueprint $table) {
             $table->id();
 
-            $table->unsignedBigInteger("secretaire_id")->nullable();
-            $table->foreign('secretaire_id')->references('id')->on('secretaires')->onDelete('cascade');
+            $table->unsignedBigInteger("assistante_id")->nullable();
+            $table->foreign('assistante_id')->references('id')->on('assistantes')->onDelete('cascade');
 
             $table->string('mois_dep');
             $table->string('motif_dep');

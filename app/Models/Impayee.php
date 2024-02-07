@@ -22,9 +22,9 @@ class Impayee extends Model
          return $this->belongsTo(Patient::class);
      }
  
-     //une impayee est rempie par une seule secretaire
-     public function secretaire()
+     //une impayee est rempie par une seule assistante
+     public function assistante()
      {
-         return $this->belongsTo(Secretaire::class);
+         return $this->belongsTo(assistante::class);
      }
 }

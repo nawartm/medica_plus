@@ -38,7 +38,7 @@
                 <select name="role" id="role">
                     <option value="admin">Admin</option>
                     <option value="doctor">Doctor</option>
-                    <option value="secretaire">Secretaire</option>
+                    <option value="assistante">assistante</option>
                 </select>
                 @error('role')
                     <span class="invalid-feedback" role="alert">

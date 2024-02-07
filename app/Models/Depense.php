@@ -15,10 +15,10 @@ class Depense extends Model
         'montant_dep'
     ];
 
-    //une depense est rempli par une seule secretaire
-    public function secretaire()
+    //une depense est rempli par une seule assistante
+    public function assistante()
     {
-        return $this->belongsTo(Secretaire::class);
+        return $this->belongsTo(assistante::class);
     }
 
     

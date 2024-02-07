@@ -36,8 +36,9 @@
 
                                 <button type="button" class="btn " id="load1" style=""><a
                                         href="{{ route('facture.show', $facture->id) }}" cl class="btn ">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a> </button>
 
-                                    </a> <i class="fa fa-eye" aria-hidden="true"></i></button>
                                 <button type="button" class="btn btn-success" id="load1" style="color:white"><a
                                         href="{{ route('facture.edit', $facture->id) }}" class="btn btn-success ps-0 py-0 pe-0"><i
                                             class="fa-solid fa-pen-to-square"></i></a></button>

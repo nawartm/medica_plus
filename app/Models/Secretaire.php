@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Secretaire extends Model
+class assistante extends Model
 {
     use HasFactory;
     protected $fillable = [
@@ -18,13 +18,13 @@ class Secretaire extends Model
     //relationship methode_heritage
 
 
-    //une secretaire rempli plusieurs depenses
+    //une assistante rempli plusieurs depenses
     public function depense()
     {
         return $this->hasMany(Depense::class);
     }
 
-    //une secretaire rempli plusieurs fiches patient
+    //une assistante rempli plusieurs fiches patient
     public function FichePatient()
     {
         return $this->hasMany(Fiche_Patient::class);

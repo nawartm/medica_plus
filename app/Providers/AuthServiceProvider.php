@@ -34,7 +34,7 @@ class AuthServiceProvider extends ServiceProvider
         });
 
         Gate::define('view-consultation', function ($user) {
-            return $user->role == 'secretaire' || $user->role == 'doctor' || $user->role == 'admin';
+            return $user->role == 'assistante' || $user->role == 'doctor' || $user->role == 'admin';
         });
 
         Gate::define('view-RDV', function ($user) {

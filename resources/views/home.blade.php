@@ -12,10 +12,10 @@
     <section>
         <div class="filter">
             <h2>Filtre</h2><br><br>
-            <form action="" method="post">
+            <form action="{{ route('filter') }}" method="post">
                 @csrf
-                <input type="date" name="start-date" id="">
-                <input type="date" name="end-date" id="">
+                <input type="date" name="start_date" id="">
+                <input type="date" name="end_date" id="">
                 <button type="submit" class="btn btn-success">Filtre</button>
             </form>
         </div><br>

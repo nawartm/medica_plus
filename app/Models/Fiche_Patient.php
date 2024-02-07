@@ -25,9 +25,9 @@ class Fiche_Patient extends Model
          return $this->belongsTo(Patient::class);
      }
 
-     //une fiche_patient n'a remplie que par une seule secretaire
-     public function secretaire()
+     //une fiche_patient n'a remplie que par une seule assistante
+     public function assistante()
      {
-         return $this->belongsTo(Secretaire::class);
+         return $this->belongsTo(assistante::class);
      } 
 }

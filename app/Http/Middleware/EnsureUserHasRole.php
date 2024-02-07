@@ -16,7 +16,7 @@ class EnsureUserHasRole
      */
     public function handle($request, Closure $next, )
     {
-        $roles = ['admin', 'doctor', 'secretaire'];
+        $roles = ['admin', 'doctor', 'assistante'];
         if (!in_array($request->user()->role, $roles)) {
 
             abort(403);

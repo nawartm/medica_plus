@@ -43,7 +43,7 @@ class UsersController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
-            'role' => 'required|in:admin,doctor,secretaire',
+            'role' => 'required|in:admin,doctor,assistante',
         ]);
 
         // Create a new user instance
@@ -99,7 +99,7 @@ class UsersController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'role' => 'required|in:admin,doctor,secretaire',
+            'role' => 'required|in:admin,doctor,assistante',
         ]);
     
         // Update the user data

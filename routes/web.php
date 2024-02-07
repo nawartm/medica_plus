@@ -30,7 +30,7 @@ Route::middleware(['auth'])->group(function(){
     Route::match(['get', 'post'], '/ConsultationSearch', [CertificatController::class, 'search']);
 });
 
-Route::middleware(['auth','role:secretaire'])->group(function(){
+Route::middleware(['auth','role:assistante'])->group(function(){
     Route::resource('Consultation', ConsultationController::class);
     Route::match(['get', 'post'], '/ConsultationSearch', [CertificatController::class, 'search']);
 });
@@ -67,9 +67,10 @@ Route::middleware(['auth','role:admin'])->group(function(){
     Route::resource('Fiche_Examen', ExamenController::class);
     Route::resource('Consultation', ConsultationController::class);
     Route::match(['get', 'post'], '/ConsultationSearch', [CertificatController::class, 'search']);
-
+    
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::match(['get', 'post'],'/homeFilter', [App\Http\Controllers\HomeController::class, 'filter'])->name('filter');
