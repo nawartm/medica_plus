@@ -20,6 +20,16 @@ class UsersController extends Controller
         return view('Users.index', ['users' => $users]);
     }
 
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        $users = User::where(function ($query) use ($search) {
+            $query->where('name', 'like', "%$search%")->orWhere('email', 'like', "%$search%");
+        })->get();
+
+        return view('Users.index', ['users' => $users]);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -94,27 +104,27 @@ class UsersController extends Controller
     {
         // Find the user
         $user = User::find($id);
-    
+
         // Validate the request data
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|unique:users,email,' . $user->id,
             'role' => 'required|in:admin,doctor,assistante',
         ]);
-    
+
         // Update the user data
         $user->name = $validatedData['name'];
         $user->email = $validatedData['email'];
         $user->role = $validatedData['role'];
-    
+
         // Check if password is present in the request
         if ($request->has('password') && $request->get('password')) {
             $user->password = Hash::make($request->get('password'));
         }
-    
+
         // Save the user to the database
         $user->save();
-    
+
         // Return a response
         return redirect()->route('users.index');
     }
@@ -136,5 +146,4 @@ class UsersController extends Controller
 
         return response()->json(['message' => 'User not found'], 404);
     }
-   
 }

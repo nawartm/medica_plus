@@ -16,7 +16,7 @@ class RendezVousController extends Controller
     }
 
     //enregistrer
-    public function save(Request $request){
+    public function store(Request $request){
 
         $nom_patient =  $request['nom_patient'];
         $prenom_patient =  $request['prenom_patient'];
@@ -33,7 +33,7 @@ class RendezVousController extends Controller
         $RDV->heure=$heure;
 
         $RDV->save();
-        return redirect::Route('listRDV');
+        return redirect()->route('RDV.index');
     }
 
 
