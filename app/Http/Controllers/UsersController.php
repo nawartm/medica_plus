@@ -67,7 +67,7 @@ class UsersController extends Controller
         $user->save();
 
         // Return a response
-        return response()->json(['message' => 'User created successfully'], 201);
+        return redirect()->route('users.index');
     }
     /**
      * Display the specified resource.
